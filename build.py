@@ -11,6 +11,7 @@ import json
 import os
 import pathlib
 import re
+import shutil
 import sys
 import urllib.parse
 import urllib.request
@@ -138,7 +139,10 @@ def upgrade_image(url):
     url = re.sub(r"(ichef\.bbci\.co\.uk/(?:ace/standard|news))/\d+/", r"\1/800/", url)
     return url if url.startswith(("http://", "https://")) else ""
 
-def parse_feed(raw, source):
+def is_google(url):
+    return "news.google." in urllib.parse.urlsplit(url).netloc
+
+def parse_feed(raw, source, google=False):
     root = ET.fromstring(_fix_entities(_decode(raw)))
     out = []
     items = [e for e in root.iter() if _local(e.tag) in ("item", "entry")]
@@ -158,11 +162,22 @@ def parse_feed(raw, source):
             continue
         date = parse_date(_text(it, "pubdate", "published", "updated", "date", "issued"))
         summary = strip_html(_text(it, "description", "summary") or _text(it, "encoded", "content"))
-        out.append({
+        item = {
             "source": source, "title": title, "link": link.replace("http://", "https://", 1),
             "date": date.isoformat() if date else None, "summary": summary,
             "image": pick_image(it),
-        })
+        }
+        if google:
+            # Google News titles end in " - Publisher"; the real outlet is also in <source>
+            pub = _text(it, "source")
+            if pub and title.endswith(" - " + pub):
+                title = title[: -len(pub) - 3].strip()
+            elif " - " in title:
+                title, tail = title.rsplit(" - ", 1)
+                pub = pub or tail.strip()
+            item.update(title=title, source=pub or "Google News", summary="Via Google News.",
+                        image="", via="google")
+        out.append(item)
     return out
 
 
@@ -175,7 +190,15 @@ def norm_link(u):
 def norm_title(t):
     return re.sub(r"[^a-z0-9 ]", "", t.lower())[:70]
 
-def select(items, n, per_source, seen):
+def pub_key(name):
+    name = re.sub(r"\b(the|news|online|english)\b", "", name.lower())
+    return re.sub(r"[^a-z0-9]", "", name)
+
+def same_outlet(a, b):
+    a, b = pub_key(a), pub_key(b)
+    return len(a) >= 3 and len(b) >= 3 and (a.startswith(b) or b.startswith(a))
+
+def select(items, n, per_source, seen, max_google=3, direct=()):
     fresh = []
     for hours in (36, 96, 24 * 30):
         fresh = [i for i in items if i["date"] and (NOW - dt.datetime.fromisoformat(i["date"])).total_seconds() < hours * 3600]
@@ -184,15 +207,20 @@ def select(items, n, per_source, seen):
     if len(fresh) < n:
         fresh += [i for i in items if not i["date"]]
     fresh.sort(key=lambda i: i["date"] or "", reverse=True)
-    by_source = {}
+    by_source, google_used = {}, 0
     for i in fresh:
         k1, k2 = norm_link(i["link"]), norm_title(i["title"])
         if k1 in seen or k2 in seen:
             continue
+        if i.get("via") == "google":
+            # prefer the outlet's own feed (it has photos); keep Google to a few extra outlets
+            if google_used >= max_google or any(same_outlet(i["source"], d) for d in direct):
+                continue
         by_source.setdefault(i["source"], [])
         if len(by_source[i["source"]]) < per_source:
             by_source[i["source"]].append(i)
             seen.update((k1, k2))
+            google_used += i.get("via") == "google"
     # round-robin so each row opens with a mix of newsrooms, newest first within each
     picked, queues = [], sorted(by_source.values(), key=lambda q: q[0]["date"] or "", reverse=True)
     while queues and len(picked) < n:
@@ -203,7 +231,8 @@ def select(items, n, per_source, seen):
                     break
             if not q:
                 queues.remove(q)
-    return picked
+    # stories with the outlet's own photo lead the row; Google News extras follow
+    return [i for i in picked if i.get("via") != "google"] + [i for i in picked if i.get("via") == "google"]
 
 
 def og_image(url):
@@ -223,12 +252,14 @@ def og_image(url):
 def main():
     cfg = json.loads((ROOT / os.environ.get("FEEDS_FILE", "feeds.json")).read_text(encoding="utf-8"))
     n, per_source = cfg.get("per_section", 12), cfg.get("max_per_source", 4)
+    max_google = cfg.get("max_google_per_section", 3)
+    direct = {s["id"]: [f["source"] for f in s["feeds"] if not is_google(f["url"])] for s in cfg["sections"]}
     jobs = [(s["id"], f) for s in cfg["sections"] for f in s["feeds"]]
 
     def load(job):
         sid, f = job
         try:
-            return sid, f, parse_feed(fetch(f["url"]), f["source"]), None
+            return sid, f, parse_feed(fetch(f["url"]), f["source"], is_google(f["url"])), None
         except Exception as e:  # one broken feed never stops the edition
             return sid, f, [], f"{type(e).__name__}: {e}"[:160]
 
@@ -247,11 +278,11 @@ def main():
     ids = [s["id"] for s in cfg["sections"]]
     order = [i for i in ("my", "sg") if i in ids] + [i for i in ids if i not in ("my", "sg")]
     for sid in order:
-        for i in select(raw[sid], n, per_source, seen):
+        for i in select(raw[sid], n, per_source, seen, max_google, direct[sid]):
             i["cat"] = sid
             stories.append(i)
 
-    missing = [s for s in stories if not s["image"]]
+    missing = [s for s in stories if not s["image"] and s.get("via") != "google"]
     with cf.ThreadPoolExecutor(max_workers=12) as ex:
         for s, img in zip(missing, ex.map(lambda s: og_image(s["link"]), missing)):
             s["image"] = img
@@ -272,8 +303,11 @@ def main():
     page = (ROOT / "template.html").read_text(encoding="utf-8").replace("__DATA__", blob)
     (ROOT / "site").mkdir(exist_ok=True)
     (ROOT / "site" / "index.html").write_text(page, encoding="utf-8")
+    if (ROOT / "icons").is_dir():   # home screen and browser tab icons
+        shutil.copytree(ROOT / "icons", ROOT / "site" / "icons", dirs_exist_ok=True)
     with_img = sum(1 for s in stories if s["image"])
-    print(f"Built site/index.html — {len(stories)} stories, {with_img} with photos.")
+    via_g = sum(1 for s in stories if s.get("via") == "google")
+    print(f"Built site/index.html — {len(stories)} stories, {with_img} with photos, {via_g} via Google News.")
 
 
 if __name__ == "__main__":

@@ -1,7 +1,8 @@
 {
-  "_help": "Sections and the free RSS feeds each one reads. Add or remove feeds here; a feed that fails is skipped and the rest still build. Order of sections = order on the page.",
+  "_help": "Sections and the free RSS feeds each one reads. Add or remove feeds here; a feed that fails is skipped and the rest still build. Order of sections = order on the page. Google News feeds (news.google.com) show the real publisher's name, have no photos, and are limited to max_google_per_section stories per row.",
   "per_section": 12,
   "max_per_source": 4,
+  "max_google_per_section": 3,
   "sections": [
     {
       "id": "world",
@@ -13,7 +14,8 @@
         {"source": "NPR", "url": "https://feeds.npr.org/1004/rss.xml"},
         {"source": "DW", "url": "https://rss.dw.com/rdf/rss-en-world"},
         {"source": "CNN", "url": "http://rss.cnn.com/rss/edition_world.rss"},
-        {"source": "France 24", "url": "https://www.france24.com/en/rss"}
+        {"source": "France 24", "url": "https://www.france24.com/en/rss"},
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-MY&gl=MY&ceid=MY:en"}
       ]
     },
     {
@@ -26,7 +28,8 @@
         {"source": "The Guardian", "url": "https://www.theguardian.com/business/rss"},
         {"source": "Nikkei Asia", "url": "https://asia.nikkei.com/rss/feed/nar"},
         {"source": "NPR", "url": "https://feeds.npr.org/1006/rss.xml"},
-        {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/money"}
+        {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/money"},
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-MY&gl=MY&ceid=MY:en"}
       ]
     },
     {
@@ -38,7 +41,8 @@
         {"source": "TechCrunch", "url": "https://techcrunch.com/feed/"},
         {"source": "Engadget", "url": "https://www.engadget.com/rss.xml"},
         {"source": "BBC News", "url": "https://feeds.bbci.co.uk/news/technology/rss.xml"},
-        {"source": "Wired", "url": "https://www.wired.com/feed/rss"}
+        {"source": "Wired", "url": "https://www.wired.com/feed/rss"},
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=en-MY&gl=MY&ceid=MY:en"}
       ]
     },
     {
@@ -51,7 +55,8 @@
         {"source": "Kotaku", "url": "https://kotaku.com/rss"},
         {"source": "PC Gamer", "url": "https://www.pcgamer.com/rss/"},
         {"source": "GameSpot", "url": "https://www.gamespot.com/feeds/news/"},
-        {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/showbiz"}
+        {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/showbiz"},
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-MY&gl=MY&ceid=MY:en"}
       ]
     },
     {
@@ -61,7 +66,8 @@
         {"source": "The Star", "url": "https://www.thestar.com.my/rss/News/Nation"},
         {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/malaysia"},
         {"source": "Free Malaysia Today", "url": "https://www.freemalaysiatoday.com/category/nation/feed/"},
-        {"source": "The Edge Malaysia", "url": "https://theedgemalaysia.com/rss.xml"}
+        {"source": "The Edge Malaysia", "url": "https://theedgemalaysia.com/rss.xml"},
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/NATION?hl=en-MY&gl=MY&ceid=MY:en"}
       ]
     },
     {
@@ -71,7 +77,8 @@
         {"source": "CNA", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=10416"},
         {"source": "The Straits Times", "url": "https://www.straitstimes.com/news/singapore/rss.xml"},
         {"source": "Mothership", "url": "https://mothership.sg/feed/"},
-        {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/singapore"}
+        {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/singapore"},
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/NATION?hl=en-SG&gl=SG&ceid=SG:en"}
       ]
     }
   ]
