@@ -1,0 +1,644 @@
+{
+ "compiled": "2026-09-11T10:23:37.530996+00:00",
+ "repo": "efronong/daily-twenty",
+ "sections": [
+  {
+   "id": "world",
+   "name": "World"
+  },
+  {
+   "id": "business",
+   "name": "Business & Markets"
+  },
+  {
+   "id": "tech",
+   "name": "Technology"
+  },
+  {
+   "id": "ent",
+   "name": "Entertainment & Games"
+  },
+  {
+   "id": "my",
+   "name": "Malaysia"
+  },
+  {
+   "id": "sg",
+   "name": "Singapore"
+  }
+ ],
+ "stories": [
+  {
+   "source": "Free Malaysia Today",
+   "title": "More Sabah, Sarawak seats will bring back parliamentary balance, says Salleh",
+   "link": "https://www.freemalaysiatoday.com/category/nation/2026/09/11/more-sabah-sarawak-seats-will-bring-back-parliamentary-balance-says-salleh",
+   "date": "2026-09-11T10:17:23+00:00",
+   "summary": "Former Sabah chief minister Salleh Said Keruak says it will restore the one-third representation envisaged when Malaysia was formed.",
+   "image": "https://media.freemalaysiatoday.com/wp-content/uploads/2026/01/55c59ba4-salleh-said-keruak-resize-bernama-pic-310126.webp",
+   "cat": "my"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "Malaysians scamming Malaysians: Indonesia nab 30 in Pontianak hotel raid",
+   "link": "https://www.malaymail.com/news/malaysia/2026/09/11/malaysians-scamming-malaysians-indonesia-nab-30-in-pontianak-hotel-raid/234852",
+   "date": "2026-09-11T09:30:19+00:00",
+   "summary": "JAKARTA, Sept 11 — Indonesian authorities have detained 30 Malaysians suspected of running online scam activities...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361989.jpg",
+   "cat": "my"
+  },
+  {
+   "source": "Free Malaysia Today",
+   "title": "Past Malay unity attempts failed because of seat clashes, says Tampin Umno chief",
+   "link": "https://www.freemalaysiatoday.com/category/nation/2026/09/11/past-malay-unity-attempts-failed-because-of-seat-clashes-says-tampin-umno-chief",
+   "date": "2026-09-11T09:49:00+00:00",
+   "summary": "Isam Isa says Umno’s willingness to sacrifice winnable seats in Negeri Sembilan helped unite Malay voters and return the party to power.",
+   "image": "https://media.freemalaysiatoday.com/v3/2026/09/409d6ac4-eec2-4787-9cc9-7c025f2b7d72-Mohd-Isam-Mohd-Isa-fmt-110926-1.jpg",
+   "cat": "my"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "Chief minister says Melaka election not far off, dissolution of DUN required by year‑end",
+   "link": "https://www.malaymail.com/news/malaysia/2026/09/11/chief-minister-says-melaka-election-not-far-off-dissolution-of-dun-required-by-yearend/234850",
+   "date": "2026-09-11T09:26:46+00:00",
+   "summary": "KUALA LUMPUR, September 11 — As talks and speculation on the upcoming Melaka state election intensify, Melaka Chie...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361988.jpg",
+   "cat": "my"
+  },
+  {
+   "source": "Free Malaysia Today",
+   "title": "Umno must not lose sight of survival in Malay-Muslim unity, says Perak delegate",
+   "link": "https://www.freemalaysiatoday.com/category/nation/2026/09/11/umno-must-not-lose-sight-of-survival-in-malay-muslim-unity-says-perak-delegate",
+   "date": "2026-09-11T09:44:00+00:00",
+   "summary": "Iqbal Jamaluddin says voters must support Umno on its own merits, not simply because they are dissatisfied with Pakatan Harapan.",
+   "image": "https://media.freemalaysiatoday.com/v3/2026/09/cf9844dc-2577-4305-9716-781e493f6bf1-Muhammad-Iqbal-Jamaluddin-fmt-110926.jpg",
+   "cat": "my"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "DNA results for five Long Lellang crash victims due by tomorrow, say Sarawak police",
+   "link": "https://www.malaymail.com/news/malaysia/2026/09/11/dna-results-for-five-long-lellang-crash-victims-due-by-tomorrow-say-sarawak-police/234847",
+   "date": "2026-09-11T08:51:52+00:00",
+   "summary": "MIRI, Sept 11 — The deoxyribonucleic acid (DNA) analysis for all five victims of the Flying Doctor Service helicop...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361984.jpg",
+   "cat": "my"
+  },
+  {
+   "source": "Free Malaysia Today",
+   "title": "Malaysia Day joy: Anwar to announce interim payment for Sarawak",
+   "link": "https://www.freemalaysiatoday.com/category/nation/2026/09/11/malaysia-day-joy-anwar-to-announce-interim-payment-for-sarawak",
+   "date": "2026-09-11T09:28:00+00:00",
+   "summary": "The prime minister says although the state is not covered under Article 112D of the Federal Constitution on special grants and revenue, 'the same spirit should be taken into consideration'.",
+   "image": "https://media.freemalaysiatoday.com/v3/2026/09/40562136-2e00-4c96-bdd7-d9252d82faf8-Anwar-Ibrahim-bernama-040926-1.jpg",
+   "cat": "my"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "Newborn’s body found in Dungun hostel locker, police investigating",
+   "link": "https://www.malaymail.com/news/malaysia/2026/09/11/newborns-body-found-in-dungun-hostel-locker-police-investigating/234844",
+   "date": "2026-09-11T08:39:48+00:00",
+   "summary": "DUNGUN, Sept 11 — A 19-year-old student allegedly hid her newborn baby’s body in a hostel locker after givin...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361983.jpg",
+   "cat": "my"
+  },
+  {
+   "source": "Mothership",
+   "title": "Khaw Boon Wan to step down as SPH Media Trust chairman",
+   "link": "https://mothership.sg/2026/09/khaw-boon-wan-step-down-sph-media-trust-chairman/",
+   "date": "2026-09-11T14:01:05+00:00",
+   "summary": "Chan Yeng Kit will take over as chairman and continue as CEO.",
+   "image": "https://static.mothership.sg/1/2026/09/khaw-boon-wan-chan-yeng-kit.jpg",
+   "cat": "sg"
+  },
+  {
+   "source": "The Straits Times",
+   "title": "Six tembusu trees removed from MacRitchie Reservoir Park for public safety reasons: NParks",
+   "link": "https://www.straitstimes.com/singapore/six-tembusu-trees-removed-from-macritchie-reservoir-park-for-public-safety-reasons-nparks",
+   "date": "2026-09-11T10:15:00+00:00",
+   "summary": "A variety of native species will be planted at the site to replace the trees that were removed.",
+   "image": "https://cassette.sphdigital.com.sg/image/straitstimes/58ef7ca6209f77f046f62c4fe24ec980921dd1bed715ae6b9aa69ccc797573e6",
+   "cat": "sg"
+  },
+  {
+   "source": "CNA",
+   "title": "Anthony Chen's We Are All Strangers selected as Singapore's Oscars entry for 2027",
+   "link": "https://www.channelnewsasia.com/entertainment/anthony-chen-we-are-all-strangers-singapore-oscars-entry-2027-6378461",
+   "date": "2026-09-11T09:55:00+00:00",
+   "summary": "We Are All Strangers, Anthony Chen's latest film starring Yeo Yann Yann and Koh Jia Ler, has been selected as Singapore's official submission in the Best International Feature Film category at the 99th Academy Awards in 2027.",
+   "image": "https://dam.mediacorp.sg/image/upload/s--2-bFsAMr--/c_crop,h_1079,w_1919,x_37,y_1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/11/we_are_all_strangers_-_waas_still_04_main.jpg?itok=wH6KEJ2F",
+   "cat": "sg"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "Indonesian ship crew member jailed eight weeks for smuggling elephant tusk into Singapore",
+   "link": "https://www.malaymail.com/news/singapore/2026/09/11/indonesian-ship-crew-member-jailed-eight-weeks-for-smuggling-elephant-tusk-into-singapore/234805",
+   "date": "2026-09-11T04:51:58+00:00",
+   "summary": "SINGAPORE, Sept 11 — A ship crew member hid an African elephant tusk inside a modified thermos flask in an a...",
+   "image": "https://www.malaymail.com/theme_malaymail/images/no-image.png",
+   "cat": "sg"
+  },
+  {
+   "source": "Mothership",
+   "title": "True Fitness & True Yoga customers report over S$63,000 in losses from unutilised memberships, packages: CASE",
+   "link": "https://mothership.sg/2026/09/true-fitness-true-yoga-customers-report-losses/",
+   "date": "2026-09-11T13:54:18+00:00",
+   "summary": "CASE has received 28 complaints from affected consumers so far.",
+   "image": "https://static.mothership.sg/1/2026/09/coverimage-2026-09-11T133342.488.png",
+   "cat": "sg"
+  },
+  {
+   "source": "The Straits Times",
+   "title": "Jail for man linked to Cambodia scam syndicate that targeted S’poreans; victims lost over $52m",
+   "link": "https://www.straitstimes.com/singapore/courts-crime/jail-for-man-linked-to-cambodia-scam-syndicate-that-targeted-sporeans-victims-lost-over-52m",
+   "date": "2026-09-11T10:06:38+00:00",
+   "summary": "Callurn Lim Yuan Jin was arrested after he returned to Singapore on Sept 11, 2025.",
+   "image": "https://cassette.sphdigital.com.sg/image/straitstimes/7295a027eac2fdfc50c0a8c5faf4332a1c0d9a9a73c05f0a5e5194e9dcf0b197",
+   "cat": "sg"
+  },
+  {
+   "source": "CNA",
+   "title": "Toei Animation store with One Piece, Dragon Ball and Digimon to open at Jewel Changi Airport in October",
+   "link": "https://www.channelnewsasia.com/entertainment/toei-animation-store-singapore-one-piece-jewel-changi-airport-6378286",
+   "date": "2026-09-11T09:02:00+00:00",
+   "summary": "The official Toei Animation Store will open at Jewel Changi Airport on Oct 3, taking over the space previously occupied by the One Piece-themed Mugiwara Store.",
+   "image": "https://dam.mediacorp.sg/image/upload/s--dx7ynMqK--/c_crop,h_1123,w_1997,x_3,y_124/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/11/toei_animation_store_one_piece_dragon_ball_jewel_changi_airport.png?itok=JsHtBTQn",
+   "cat": "sg"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "Singapore haze eases as PSI readings return to moderate range",
+   "link": "https://www.malaymail.com/news/singapore/2026/09/11/singapore-haze-eases-as-psi-readings-return-to-moderate-range/234800",
+   "date": "2026-09-11T04:04:08+00:00",
+   "summary": "SINGAPORE, Sept 11 — Singapore’s air quality has improved, with the 24-hour Pollutant Standards Index...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361911.jpg",
+   "cat": "sg"
+  },
+  {
+   "source": "Mothership",
+   "title": "S'pore boy, 9, collects 200 cans & bottles in 2 months after learning about BCRS, gets S$20 refund",
+   "link": "https://mothership.sg/2026/09/boy-collect-200-bottles-cans-bcrs/",
+   "date": "2026-09-11T12:48:49+00:00",
+   "summary": "For now, his goal is to continue recycling regularly and make it a habit.",
+   "image": "https://static.mothership.sg/1/2026/09/cover-pic-19.png",
+   "cat": "sg"
+  },
+  {
+   "source": "The Straits Times",
+   "title": "Ex-Singapore Idol judge Ken Lim appeals against conviction for molesting woman in 2021",
+   "link": "https://www.straitstimes.com/singapore/courts-crime/ex-singapore-idol-judge-ken-lim-appeals-against-conviction-for-molesting-woman-in-2021",
+   "date": "2026-09-11T09:25:08+00:00",
+   "summary": "His lawyer argued that the conviction was unsafe given the contradictions in the woman’s testimony.",
+   "image": "https://cassette.sphdigital.com.sg/image/straitstimes/e9705850c46d03eeed492c8c673ff519471b415b4fac6c1e82890bd5b21bd467",
+   "cat": "sg"
+  },
+  {
+   "source": "CNA",
+   "title": "MRT reliability hits record high in August",
+   "link": "https://www.channelnewsasia.com/singapore/mrt-train-rail-reliability-report-august-2026-6377956",
+   "date": "2026-09-11T06:39:00+00:00",
+   "summary": "In August, the MRT network's mean kilometres between failures (MKBF) rose to a record 2.88 million train-km.",
+   "image": "https://dam.mediacorp.sg/image/upload/s--HxZzj8Q8--/c_crop,h_1406,w_2500,x_0,y_126/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/tdy-migration/31332054.JPG?itok=RBGcPYiU",
+   "cat": "sg"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "Malaysia-Singapore ties must stay strong to withstand uncertain global environment, says envoy",
+   "link": "https://www.malaymail.com/news/singapore/2026/09/11/malaysia-singapore-ties-must-stay-strong-to-withstand-uncertain-global-environment-says-envoy/234787",
+   "date": "2026-09-11T02:18:40+00:00",
+   "summary": "SINGAPORE, Sept 11 — Sustaining strong and forward-looking Malaysia-Singapore relations is crucial to the re...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361892.jpg",
+   "cat": "sg"
+  },
+  {
+   "source": "DW",
+   "title": "Turks in Germany anxious after AfD wins in Saxony-Anhalt",
+   "link": "https://www.dw.com/en/turks-in-germany-anxious-after-afd-wins-in-saxony-anhalt/a-79221764?maca=en-rss-en-world-4025-rdf",
+   "date": "2026-09-11T10:07:00+00:00",
+   "summary": "The Alternative for Germany party's win in Saxony-Anhalt has alarmed people of Turkish origin in eastern states. Will workers and business owners abandon the increasingly AfD-friendly region for the more welcoming west?",
+   "image": "https://www.dw.com/en/turks-in-germany-anxious-after-afd-wins-in-saxony-anhalt/image/jpeg",
+   "cat": "world"
+  },
+  {
+   "source": "The Guardian",
+   "title": "MPs to vote again on assisted dying as bill returns to parliament – UK politics live",
+   "link": "https://www.theguardian.com/politics/live/2026/sep/11/assisted-dying-vote-uk-politics-latest-news-labour-andy-burnham",
+   "date": "2026-09-11T10:03:12+00:00",
+   "summary": "Bill would allow terminally ill adults with less than six months to live to end their lives, after the approval of a panel of experts While the debate continues, we have a comment from Sam Royston, executive director of research…",
+   "image": "https://i.guim.co.uk/img/media/bda97ddc628ceb4fa53f31b2cc34f951693967ec/1100_0_6830_5464/master/6830.jpg?width=700&quality=85&auto=format&fit=max&s=e42919a22121af927d95c89c6ecef2fb",
+   "cat": "world"
+  },
+  {
+   "source": "BBC News",
+   "title": "Six Nigerians accused of romance scams to be extradited to the US",
+   "link": "https://www.bbc.co.uk/news/articles/cj3dy704l71o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-11T09:54:51+00:00",
+   "summary": "The six will face wire fraud and money-laundry charges in the US, South African police say.",
+   "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/d453/live/3f2e4160-adc3-11f1-bc1f-3f186ca4140c.jpg",
+   "cat": "world"
+  },
+  {
+   "source": "France 24",
+   "title": "Nepal: Rescue efforts continue in the aftermath of a flash flooding disaster",
+   "link": "https://www.france24.com/en/tv-shows/reporters/20260911-nepal-rescue-efforts-continue-in-the-aftermath-of-a-flash-flooding-disaster",
+   "date": "2026-09-11T09:41:40+00:00",
+   "summary": "Two weeks after the devastating flash floods, the number of dead and missing continues to rise. At Kathmandu’s public hospital, as well as outside the military base in Bidur, hundreds of photographs of missing people have been…",
+   "image": "https://s.france24.com/media/display/9842b8cc-adc2-11f1-b741-005056bfb2b6/w:1024/p:16x9/reporters-11-9-2026.jpeg",
+   "cat": "world"
+  },
+  {
+   "source": "Al Jazeera",
+   "title": "Japan, India, Ukraine: Why some countries are uneasy about new UN map",
+   "link": "https://www.aljazeera.com/news/2026/9/11/japan-india-ukraine-why-some-countries-are-uneasy-about-new-un-map?traffic_source=rss",
+   "date": "2026-09-11T09:11:42+00:00",
+   "summary": "The countries are not opposed to a new map per se; they're testy about the colour shades.",
+   "image": "https://www.aljazeera.com/wp-content/uploads/2025/05/AP875187547197-1748359022.jpg?resize=1920%2C1440",
+   "cat": "world"
+  },
+  {
+   "source": "NPR",
+   "title": "The U.S.-Canada trade war is creating a headache for auto-parts makers",
+   "link": "https://www.npr.org/2026/09/11/nx-s1-5961530/canada-trade-war-auto-parts-supply-chain",
+   "date": "2026-09-11T09:00:00+00:00",
+   "summary": "For decades, the U.S. and Canadian auto supply chains have been tightly woven together. The trade war is threatening to unravel a complex system.",
+   "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3746x2498+0+0/resize/3746x2498!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5d%2F4f%2Ff5ecab764bd3ba1267b758e5492d%2Fus-canada-bridge.jpg",
+   "cat": "world"
+  },
+  {
+   "source": "DW",
+   "title": "Hong Kong Tiananmen activists sentenced up to 7 years",
+   "link": "https://www.dw.com/en/hong-kong-tiananmen-activists-sentenced-up-to-7-years/a-79224243?maca=en-rss-en-world-4025-rdf",
+   "date": "2026-09-11T08:40:00+00:00",
+   "summary": "Three pro-democracy activists who organized annual commemorations of China's deadly 1989 Tiananmen crackdown were charged under Hong Kong's Beijing-backed national security law.",
+   "image": "https://www.dw.com/en/hong-kong-tiananmen-activists-sentenced-up-to-7-years/image/jpeg",
+   "cat": "world"
+  },
+  {
+   "source": "The Guardian",
+   "title": "9/11 families to gather at World Trade Center and Pentagon to remember victims on 25th anniversary – US politics live",
+   "link": "https://www.theguardian.com/us-news/live/2026/sep/11/september-11-anniversary-memorials-world-trade-center-pentagon-vance-trump-us-politics-live",
+   "date": "2026-09-11T10:02:19+00:00",
+   "summary": "Victims of those killed in September 11 attacks honored at memorials across the US For the first time, this year’s ceremony will add a silent moment to honor people who were exposed to the clouds of toxic dust released by the…",
+   "image": "https://i.guim.co.uk/img/media/f037d3cf70add0bd842823e5a104368ab4262606/189_0_2500_2000/master/2500.jpg?width=700&quality=85&auto=format&fit=max&s=bb7a3dd515201023e968f2982c9caaa3",
+   "cat": "world"
+  },
+  {
+   "source": "BBC News",
+   "title": "Five dead and dozens injured in coach crash in Swiss Alps",
+   "link": "https://www.bbc.co.uk/news/articles/cx2z70xr0y3o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-11T08:54:20+00:00",
+   "summary": "The tourist coach was carrying dozens of Dutch passengers when it overturned in the south-eastern Swiss Alps.",
+   "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/d79c/live/94f7da60-ad56-11f1-8128-99eda56e535a.png",
+   "cat": "world"
+  },
+  {
+   "source": "France 24",
+   "title": "Israel says destroys Hezbollah tunnels as explosions triggers tremor",
+   "link": "https://www.france24.com/en/video/20260911-israel-says-destroys-hezbollah-tunnels-as-explosions-triggers-tremor",
+   "date": "2026-09-11T09:34:01+00:00",
+   "summary": "Israel said Thursday it demolished key tunnels built by the Iran-backed Hezbollah group beneath the strategic Ali al-Taher ridge in southern Lebanon, with the force of the explosions enough to trigger a 4.1 magnitude tremor. It…",
+   "image": "https://s.france24.com/media/display/5dfbd1a8-adc2-11f1-9dc5-005056bfb2b6/w:1024/p:16x9/EN-20260911-100940-101114-CS.jpg",
+   "cat": "world"
+  },
+  {
+   "source": "Al Jazeera",
+   "title": "World Athletics Ultimate Championship opens with record $10m prize pot",
+   "link": "https://www.aljazeera.com/sports/2026/9/11/world-athletics-ultimate-championship-opens-with-record-10m-prize-pot?traffic_source=rss",
+   "date": "2026-09-11T08:50:40+00:00",
+   "summary": "The inaugural Ultimate Championship opens with Olympic Games champions competing for a record prize pot of $10m.",
+   "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6aa306e7dc-1789069031.jpg?resize=1920%2C1440",
+   "cat": "world"
+  },
+  {
+   "source": "NPR",
+   "title": "Why Houthi gains in Yemen could push gas prices even higher",
+   "link": "https://www.npr.org/2026/09/11/nx-s1-5966379/houthi-gains-gas-prices",
+   "date": "2026-09-11T07:32:27+00:00",
+   "summary": "A Houthi advance along Yemen's Red Sea coast could help push gas prices up even more as the Iran-backed group also launches attacks on Saudi Arabia's oil facilities",
+   "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6720x4480+0+0/resize/6720x4480!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F6f%2F0a%2Ffdf525e34ee2bf4d5e8bddc334ba%2Fap26253328596062.jpg",
+   "cat": "world"
+  },
+  {
+   "source": "BBC News",
+   "title": "AI boom helps drive surprise UK growth in July",
+   "link": "https://www.bbc.co.uk/news/articles/cq5xjlvn71lo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-11T10:17:28+00:00",
+   "summary": "The economy expanded by 0.4%, official figures show, whereas analysts had predicted no growth.",
+   "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/e509/live/199aa930-adb8-11f1-a540-61c3f7fc4e6c.jpg",
+   "cat": "business"
+  },
+  {
+   "source": "Bloomberg",
+   "title": "US Economy Probably Needs Three Fed Rate Hikes, BNP’s Mateos y Lago Says",
+   "link": "https://www.bloomberg.com/news/videos/2026-09-11/us-probably-needs-three-fed-rate-hikes-bnp-paribas-video",
+   "date": "2026-09-11T10:10:26+00:00",
+   "summary": "Isabelle Mateos y Lago, chief economist at BNP Paribas, discusses the weight of Friday’s US CPI report on the upcoming Federal Reserve interest-rate decision. She says her firm believes “monetary policy is not restrictive enough”…",
+   "image": "",
+   "cat": "business"
+  },
+  {
+   "source": "NPR",
+   "title": "US diesel prices soar past $6 a gallon, deepening strain for hauling everyday goods",
+   "link": "https://www.npr.org/2026/09/11/g-s1-142842/us-diesel-6-a-gallon",
+   "date": "2026-09-11T10:04:04+00:00",
+   "summary": "Diesel prices in the U.S. has hit yet another record, soaring past $6 a gallon on average as Washington's war with Iran disrupts the world's flow of fuel",
+   "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5233x3489+0+0/resize/5233x3489!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F34%2Ffc%2Fddd121964005b309f321abeed8c7%2Fap26247695683233.jpg",
+   "cat": "business"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "BYD scraps Tanjung Malim CKD plant plans but local assembly remains on track",
+   "link": "https://www.malaymail.com/news/money/2026/09/11/byd-scraps-tanjung-malim-ckd-plant-plans-but-local-assembly-remains-on-track/234841",
+   "date": "2026-09-11T08:17:51+00:00",
+   "summary": "KUALA LUMPUR, Sept 11 — BYD Malaysia has confirmed that it will not proceed with plans to build a completely...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361977.jpg",
+   "cat": "business"
+  },
+  {
+   "source": "CNBC",
+   "title": "Macy's posts strong results, raises guidance as turnaround begins to take hold",
+   "link": "https://www.cnbc.com/2026/09/10/macys-m-q2-2026-earnings.html",
+   "date": "2026-09-10T20:49:05+00:00",
+   "summary": "Macy's posted strong fiscal second-quarter results on Thursday and raised its full-year guidance.",
+   "image": "https://image.cnbcfm.com/api/v1/image/108313290-1779985103558-gettyimages-2252283674-1535022-me-glendale-galleria-holiday-shopping-12-mjc.jpeg?v=1779985128&w=1920&h=1080",
+   "cat": "business"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Global bond sell-off resumes as surging oil prices stoke fears about inflation",
+   "link": "https://www.theguardian.com/business/2026/sep/10/global-bond-selloff-oil-prices-inflation-middle-east-conflict-government-borrowing",
+   "date": "2026-09-10T18:05:15+00:00",
+   "summary": "Crude jumps above $107 a barrel amid concerns over Middle East conflict and out-of-control government borrowing Nervous investors across big economies have been dumping government bonds, driving up the cost of borrowing, as…",
+   "image": "https://i.guim.co.uk/img/media/c02da40e4e29e37ae776cb95a76580f1032455e4/0_0_4115_3292/master/4115.jpg?width=700&quality=85&auto=format&fit=max&s=729dcb9097e6eff95759dfa9d18a5e8e",
+   "cat": "business"
+  },
+  {
+   "source": "BBC News",
+   "title": "Alstom to build new battery-electric train fleet",
+   "link": "https://www.bbc.co.uk/news/articles/cd94y7d7qyzo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-11T09:17:00+00:00",
+   "summary": "The government says the work will support thousands of jobs across the UK.",
+   "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/b9bb/live/3cc415a0-adb7-11f1-b1d1-571ed4d7ff2c.jpg",
+   "cat": "business"
+  },
+  {
+   "source": "Bloomberg",
+   "title": "UBS Buys $7.9 Billion of Credit Suisse Bonds in Biggest Buyback",
+   "link": "https://www.bloomberg.com/news/articles/2026-09-11/ubs-buys-7-9-billion-of-credit-suisse-bonds-in-biggest-buyback",
+   "date": "2026-09-11T10:00:32+00:00",
+   "summary": "UBS Group AG is buying back $7.9 billion of old Credit Suisse bonds, its biggest move yet to shrink the debt load it inherited when taking over its crosstown rival.",
+   "image": "",
+   "cat": "business"
+  },
+  {
+   "source": "NPR",
+   "title": "From DOGE to space lasers, Alex Gibney peels back the many layers of Elon Musk",
+   "link": "https://www.npr.org/2026/09/11/nx-s1-5962167/alex-gibney-elon-musk-documentary-review",
+   "date": "2026-09-11T09:00:00+00:00",
+   "summary": "In the Oscar-winning filmmaker's latest documentary, director Alex Gibney investigates the rise of Elon Musk and says what's behind Musk's success are distressing truths.",
+   "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6166x4111+0+0/resize/6166x4111!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fdb%2F30%2Fa3f50d3a4ac9a4e25e74c240a5eb%2Fgettyimages-2200924488.jpg",
+   "cat": "business"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "Bursa Malaysia opens lower as Wall Street weakness, US-Iran conflict weigh on sentiment",
+   "link": "https://www.malaymail.com/news/money/2026/09/11/bursa-malaysia-opens-lower-as-wall-street-weakness-us-iran-conflict-weigh-on-sentiment/234786",
+   "date": "2026-09-11T02:14:16+00:00",
+   "summary": "KUALA LUMPUR, Sept 11 — Bursa Malaysia opened lower today tracking continued weakness on Wall Street as...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361889.jpg",
+   "cat": "business"
+  },
+  {
+   "source": "CNBC",
+   "title": "Ford announces $1 billion investment at Kentucky plant following DOT criticism on China",
+   "link": "https://www.cnbc.com/2026/09/10/ford-1-billion-investment-kentucky-plant.html",
+   "date": "2026-09-10T20:48:14+00:00",
+   "summary": "Ford Motor on Thursday announced a $1 billion investment to build a new paint shop at its crucial truck plant in Kentucky.",
+   "image": "https://image.cnbcfm.com/api/v1/image/108138834-1746032874620-IMG_8425.JPG?v=1769532730&w=1920&h=1080",
+   "cat": "business"
+  },
+  {
+   "source": "The Guardian",
+   "title": "The Odyssey and Spider-Man propel record-breaking summer box office worldwide",
+   "link": "https://www.theguardian.com/film/2026/sep/10/the-odyssey-and-spider-man-make-for-record-breaking-summer-box-office-worldwide",
+   "date": "2026-09-10T13:57:06+00:00",
+   "summary": "The biggest May to September of all time was recorded in US cinemas, with the UK enjoying a 56% rise in audiences, outstripped by an 88% lift in the Middle East and Africa As well as celebrating their wedding, the actors Tom…",
+   "image": "https://i.guim.co.uk/img/media/f3206997a753b107b0fbecf0231589cdaef64144/115_0_4334_3466/master/4334.jpg?width=700&quality=85&auto=format&fit=max&s=9f23ea7d78277bd775c0707184dfdb08",
+   "cat": "business"
+  },
+  {
+   "source": "Wired",
+   "title": "How 9/11 Made Everyone a Conspiracy Theorist",
+   "link": "https://www.wired.com/story/conspiracy-how-9-11-broke-americas-brain/",
+   "date": "2026-09-11T10:00:00+00:00",
+   "summary": "Crackpot theories were once the stuff of shortwave radio, but September 11 unleashed the Age of Alex Jones.",
+   "image": "https://media.wired.com/photos/6aa3274315a68f9c2571c796/master/pass/TheBigStory_Garrett%20Graff%209-11%20Truth%20Anniversary%20Essay_v2.2.jpg",
+   "cat": "tech"
+  },
+  {
+   "source": "Engadget",
+   "title": "iPhone 18 Pro Max vs Samsung Galaxy S26 Ultra: How these XL phones compete",
+   "link": "https://www.engadget.com/2255321/iphone-18-pro-max-vs-samsung-galaxy-s26-ultra-comparison/",
+   "date": "2026-09-10T23:00:00+00:00",
+   "summary": "Apple or Samsung? It really comes down to which ecosystem you prefer.",
+   "image": "https://www.engadget.com/img/gallery/iphone-18-pro-max-vs-samsung-galaxy-s26-ultra-how-these-xl-phones-compete/l-intro-1789068272.jpg",
+   "cat": "tech"
+  },
+  {
+   "source": "TechCrunch",
+   "title": "Thrive Capital led VCs into pro sports ownership; Collaborative Fund just upped that play",
+   "link": "https://techcrunch.com/2026/09/10/thrive-capital-showed-vcs-the-way-into-pro-sports-ownership-collaborative-fund-is-now-trying-its-own-version-of-the-same-play/",
+   "date": "2026-09-10T22:30:00+00:00",
+   "summary": "Collaborative Fund just bought into D.C. United and its stadium, with firm founder Craig Shapiro pitching it as a way to showcase for the firm's startups.",
+   "image": "https://techcrunch.com/wp-content/uploads/2026/09/DC-United.jpg?resize=1200,800",
+   "cat": "tech"
+  },
+  {
+   "source": "Ars Technica",
+   "title": "Boy developed \"toasted skin\" condition from using a laptop every day",
+   "link": "https://arstechnica.com/health/2026/09/boy-developed-toasted-skin-condition-from-using-a-laptop-every-day/",
+   "date": "2026-09-10T22:16:05+00:00",
+   "summary": "Laptops don't usually get hot enough to burn—but they can still be harmful.",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1370964080-1152x648.jpg",
+   "cat": "tech"
+  },
+  {
+   "source": "The Verge",
+   "title": "Slack can now vibe-code interactive charts and reports inside chats",
+   "link": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
+   "date": "2026-09-10T21:25:21+00:00",
+   "summary": "A new feature coming to Slack will allow you to build interactive reports, polls, dashboards, presentations, microsites, and other tools directly inside a chat. With Slackforce Surfaces, you can describe to Slackbot what you…",
+   "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/IMG_2464.png?quality=90&strip=all&crop=0,0,100,100",
+   "cat": "tech"
+  },
+  {
+   "source": "BBC News",
+   "title": "UK needs new laws for AI in healthcare, says watchdog",
+   "link": "https://www.bbc.co.uk/news/articles/c3wjn3pl63xo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-10T00:48:35+00:00",
+   "summary": "The technology will soon be routinely used within the NHS, MHRA chief Lawrence Tallon tells the BBC.",
+   "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/c4b9/live/69dbfa80-ac63-11f1-be57-03729df1d736.jpg",
+   "cat": "tech"
+  },
+  {
+   "source": "Wired",
+   "title": "The US and Mexico Announce They’re Teaming Up Against Drones",
+   "link": "https://www.wired.com/story/us-and-mexico-announce-teaming-up-against-drones/",
+   "date": "2026-09-11T09:15:00+00:00",
+   "summary": "The new joint operation uses laser-based technology capable of detecting, tracking, and disabling commercial drones linked to human and drug trafficking.",
+   "image": "https://media.wired.com/photos/6aa1c319e3b72ced9abda322/master/pass/drones%20M%C3%A9xico%20EE%20UU%20operativo%202244404487.jpg",
+   "cat": "tech"
+  },
+  {
+   "source": "Engadget",
+   "title": "CA governor signs 'landmark' laws on youth use of social media and AI chatbots",
+   "link": "https://www.engadget.com/2255569/ca-governor-signs-landmark-laws-on-youth-use-of-social-media-and-ai-chatbots/",
+   "date": "2026-09-10T22:45:45+00:00",
+   "summary": "They're aimed at protecting minors, but the rules are not universally supported.",
+   "image": "https://www.engadget.com/img/gallery/ca-governor-signs-landmark-laws-on-youth-use-of-social-media-and-ai-chatbots/l-intro-1789080229.jpg",
+   "cat": "tech"
+  },
+  {
+   "source": "TechCrunch",
+   "title": "Jensen Huang explains why Nvidia will grow an astounding 70% next year",
+   "link": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
+   "date": "2026-09-10T21:51:59+00:00",
+   "summary": "Nvidia has its finger in every pie, and sees another year of plenty in its future, Jensen Huang says. But, he insists, its deals are not circular.",
+   "image": "https://techcrunch.com/wp-content/uploads/2026/03/jensen-huang-gtc-getty.jpg?resize=1200,781",
+   "cat": "tech"
+  },
+  {
+   "source": "Ars Technica",
+   "title": "LinkedIn beats \"BrowserGate\" lawsuits over scanning users' Chrome extensions",
+   "link": "https://arstechnica.com/tech-policy/2026/09/linkedin-beats-browsergate-lawsuits-over-scanning-users-chrome-extensions/",
+   "date": "2026-09-10T20:55:29+00:00",
+   "summary": "Judge tosses lawsuits, says plaintiffs didn't allege any real privacy violation.",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/linkedin-headquarters-1152x648-1789072079.jpg",
+   "cat": "tech"
+  },
+  {
+   "source": "The Verge",
+   "title": "Schools are catching on to Big Tech’s playbook",
+   "link": "https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids",
+   "date": "2026-09-10T19:44:20+00:00",
+   "summary": "It's the hot new thing in tech, and it's where all the jobs are. Students who don't learn to use it fall behind. And to help them catch up in time, its creators are graciously providing the resources and curriculum for learning…",
+   "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK483_EDUCATION_D.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "cat": "tech"
+  },
+  {
+   "source": "Wired",
+   "title": "Why So Many AI Researchers Think the Machines Could Kill Everyone",
+   "link": "https://www.wired.com/story/why-so-many-ai-researchers-think-the-machines-could-kill-everyone/",
+   "date": "2026-09-11T09:00:00+00:00",
+   "summary": "A combination of rapid advances, recursive self-improvement, and agentic swarms are genuinely “spooking people” inside big labs.",
+   "image": "https://media.wired.com/photos/6aa1c85ef107c265a15668ae/master/pass/Why-All-These-AI-Researchers-Freaking-Out-About-AI-Killing-Us-All-Business-MCDTETH_EC026.jpg",
+   "cat": "tech"
+  },
+  {
+   "source": "PC Gamer",
+   "title": "PSA: Keep social media trends away from your laptops, unless you want broken hinges",
+   "link": "https://www.pcgamer.com/hardware/gaming-laptops/psa-keep-social-media-trends-away-from-your-laptops-unless-you-want-broken-hinges/",
+   "date": "2026-09-11T09:58:34+00:00",
+   "summary": "One Redditor found this out the hard way.",
+   "image": "https://cdn.mos.cms.futurecdn.net/ctzkRZzreuDiFoziBfVhJm-1280-80.jpg",
+   "cat": "ent"
+  },
+  {
+   "source": "Variety",
+   "title": "Venice Final Cut Winner Machérie Ekwa Bahango on ‘Madi Makambu’ and Why She Wants Congo to Be Seen: ‘We’re a Great Nation That Needs to Write Its Own History’",
+   "link": "https://variety.com/2026/film/awards/venice-final-cut-macherie-ekwa-bahango-madi-makambu-congo-1236858450/",
+   "date": "2026-09-11T09:41:09+00:00",
+   "summary": "Machérie Ekwa Bahango wants Congo to be noticed by the industry. “Through my films, I would like Congo to be seen as part of the world. Not for the labels people stick on it, but for what it really is,” she tells Variety. “The…",
+   "image": "https://variety.com/wp-content/uploads/2026/09/MixCollage-11-Sep-2026-10-45-AM-2308.jpg",
+   "cat": "ent"
+  },
+  {
+   "source": "Polygon",
+   "title": "13 Horror Movies Coming Out This October",
+   "link": "https://www.polygon.com/13-horror-movies-coming-out-this-october/",
+   "date": "2026-09-11T09:00:14+00:00",
+   "summary": "This October is stacked with horror movies, from new creature features to a re-release of a '70s classic.",
+   "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/the-devils.jpg",
+   "cat": "ent"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "BTS’ South American ‘Arirang’ concerts to screen live at Malaysian cinemas, tickets on sale Sept 17",
+   "link": "https://www.malaymail.com/news/showbiz/2026/09/11/bts-south-american-arirang-concerts-to-screen-live-at-malaysian-cinemas-tickets-on-sale-sept-17/234845",
+   "date": "2026-09-11T08:57:27+00:00",
+   "summary": "KUALA LUMPUR, Sept 11 — Malaysian BTS fans will be able to watch two of the K-pop group’s “Arirang&rdq...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361982.jpg",
+   "cat": "ent"
+  },
+  {
+   "source": "GameSpot",
+   "title": "GTA 6 Is Going To Be Huge. So Why Is Take-Two’s Stock Having Such A Bad Year?",
+   "link": "https://www.gamespot.com/articles/gta-6-is-going-to-be-huge-so-why-is-take-twos-stock-having-such-a-bad-year/",
+   "date": "2026-09-11T08:07:00+00:00",
+   "summary": "Take-Two owns one of the largest entertainment franchises out there in Grand Theft Auto. The newest entry, GTA 6, launches this November. There is enormous hype for the new game, which is expected to sell millions of copies at…",
+   "image": "https://www.gamespot.com/wp-content/uploads/2026/09/Jason_and_Lucia_09.jpg?w=300",
+   "cat": "ent"
+  },
+  {
+   "source": "BBC News",
+   "title": "Oasis tease tour announcement with drone display",
+   "link": "https://www.bbc.co.uk/news/articles/cwyz8k6d600o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-11T07:31:32+00:00",
+   "summary": "The band illuminated the sky over the Etihad's Joie Stadium, home to Manchester City Woman.",
+   "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/8fe7/live/782df350-adb1-11f1-8ac2-99a6f36b284a.jpg",
+   "cat": "ent"
+  },
+  {
+   "source": "Kotaku",
+   "title": "Miami Beach Debates Taking Millions From Rockstar To Advertise GTA 6: ‘We’re Not Giving Away Pistols And Cocaine To People’",
+   "link": "https://kotaku.com/miami-beach-debates-taking-millions-from-rockstar-to-advertise-gta-6-were-not-giving-away-pistols-and-cocaine-to-people-2000733378",
+   "date": "2026-09-11T04:55:07+00:00",
+   "summary": "Local commissioners voted 4-3 to approve negotiating a marketing campaign after some bizarre grandstanding",
+   "image": "https://kotaku.com/app/uploads/2026/09/miami-beach-1280x716.jpg",
+   "cat": "ent"
+  },
+  {
+   "source": "PC Gamer",
+   "title": "How to increase your inventory in Valheim",
+   "link": "https://www.pcgamer.com/games/survival-crafting/valheim-increase-inventory-size/",
+   "date": "2026-09-11T00:08:01+00:00",
+   "summary": "Valheim 1.0 finally lets you deepen your pockets, but it'll cost you.",
+   "image": "https://cdn.mos.cms.futurecdn.net/4qChWiFxFCC5RjYjGMjh2M-1280-80.jpg",
+   "cat": "ent"
+  },
+  {
+   "source": "Variety",
+   "title": "France, South Korea Take Center Stage as Global Film and TV Leaders Confront Industry Upheaval at Lumiere Summit: ‘Culture Itself Is Becoming a Driver of Growth’",
+   "link": "https://variety.com/2026/film/news/france-korea-macron-lumiere-summit-ai-saint-paul-de-vence-1236857980/",
+   "date": "2026-09-11T09:22:22+00:00",
+   "summary": "From Hollywood heavyweights and festival chiefs to exhibitors, broadcasters, streamers, heads of state and industry figures from more than 60 countries converged at a historic site in the south of France, where pine trees…",
+   "image": "https://variety.com/wp-content/uploads/2026/09/SL26_07-09_WilliamLentz-212-e1789108172197.jpg",
+   "cat": "ent"
+  },
+  {
+   "source": "Polygon",
+   "title": "Star Trek's 3 Versions Of Captain James T. Kirk: The Definitive Ranking",
+   "link": "https://www.polygon.com/all-captain-kirks-ranked/",
+   "date": "2026-09-11T08:00:14+00:00",
+   "summary": ": The best Captain Kirk isn't up for debate. What each actor added to the character is.",
+   "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/captain-kirk-og.png",
+   "cat": "ent"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "‘Without permission’: Hasbro objects to US immigration authorities using Optimus Prime in AI deportation campaign",
+   "link": "https://www.malaymail.com/news/showbiz/2026/09/11/without-permission-hasbro-objects-to-us-immigration-authorities-using-optimus-prime-in-ai-deportation-campaign/234809",
+   "date": "2026-09-11T05:49:27+00:00",
+   "summary": "WASHINGTON, Sept 11 — Hasbro has responded to the US Department of Homeland Security’s (DHS) use of Optimus...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361935.jpg",
+   "cat": "ent"
+  },
+  {
+   "source": "GameSpot",
+   "title": "Nintendo Finally Adds Some Life To The Switch 2",
+   "link": "https://www.gamespot.com/articles/nintendo-finally-adds-some-life-to-the-switch-2/",
+   "date": "2026-09-10T23:34:58+00:00",
+   "summary": "Both of Nintendo's Switch consoles have been cursed with deafening silence in their menus and eShops. But the latest version 23.0.0 update for the Switch 2 at least injects a little bit of personality and nostalgia into one of…",
+   "image": "https://www.gamespot.com/wp-content/uploads/2026/09/20260910-01M26J492AFRC6ZHJ4RSWY9MTM-12D75A81-95AA-4B1A-A9D1-89FFB8792B35.jpeg?w=300",
+   "cat": "ent"
+  }
+ ]
+}
