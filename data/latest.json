@@ -1,5 +1,5 @@
 {
- "compiled": "2026-09-11T10:23:37.530996+00:00",
+ "compiled": "2026-09-11T10:43:14.659360+00:00",
  "repo": "efronong/daily-twenty",
  "sections": [
   {
@@ -29,10 +29,37 @@
  ],
  "stories": [
   {
+   "source": "Malay Mail",
+   "title": "GISBH fails in bid to challenge Kedah fatwa declaring teachings deviant",
+   "link": "https://www.malaymail.com/news/malaysia/2026/09/11/gisbh-fails-in-bid-to-challenge-kedah-fatwa-declaring-teachings-deviant/234857",
+   "date": "2026-09-11T10:41:17+00:00",
+   "summary": "PUTRAJAYA, Sept 11 — The Alor Setar High Court has dismissed an application by GISB Holdings Sdn Bhd (GISBH) and i...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/362000.jpg",
+   "cat": "my"
+  },
+  {
+   "source": "Free Malaysia Today",
+   "title": "Oct 26 declared as replacement holiday for Selangor sultan’s Silver Jubilee",
+   "link": "https://www.freemalaysiatoday.com/category/nation/2026/09/11/oct-26-declared-as-replacement-holiday-for-selangor-sultan-s-silver-jubilee",
+   "date": "2026-09-11T10:26:55+00:00",
+   "summary": "This is because the main celebration and special public holiday on Oct 25 falls on a Sunday.",
+   "image": "https://media.freemalaysiatoday.com/wp-content/uploads/2024/03/3707cf25-sultan-sharafuddin-idris-shah-bernama-270324.webp",
+   "cat": "my"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "Penang LRT works to close part of Jalan Magazine for 21 days from Sept 14",
+   "link": "https://www.malaymail.com/news/malaysia/2026/09/11/penang-lrt-works-to-close-part-of-jalan-magazine-for-21-days-from-sept-14/234855",
+   "date": "2026-09-11T10:33:59+00:00",
+   "summary": "GEORGE TOWN, Sept 11 — Jalan Magazine here will be closed for 21 days from September 14 to facilitate road widenin...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361997.jpg",
+   "cat": "my"
+  },
+  {
    "source": "Free Malaysia Today",
    "title": "More Sabah, Sarawak seats will bring back parliamentary balance, says Salleh",
    "link": "https://www.freemalaysiatoday.com/category/nation/2026/09/11/more-sabah-sarawak-seats-will-bring-back-parliamentary-balance-says-salleh",
-   "date": "2026-09-11T10:17:23+00:00",
+   "date": "2026-09-11T10:17:00+00:00",
    "summary": "Former Sabah chief minister Salleh Said Keruak says it will restore the one-third representation envisaged when Malaysia was formed.",
    "image": "https://media.freemalaysiatoday.com/wp-content/uploads/2026/01/55c59ba4-salleh-said-keruak-resize-bernama-pic-310126.webp",
    "cat": "my"
@@ -74,33 +101,6 @@
    "cat": "my"
   },
   {
-   "source": "Malay Mail",
-   "title": "DNA results for five Long Lellang crash victims due by tomorrow, say Sarawak police",
-   "link": "https://www.malaymail.com/news/malaysia/2026/09/11/dna-results-for-five-long-lellang-crash-victims-due-by-tomorrow-say-sarawak-police/234847",
-   "date": "2026-09-11T08:51:52+00:00",
-   "summary": "MIRI, Sept 11 — The deoxyribonucleic acid (DNA) analysis for all five victims of the Flying Doctor Service helicop...",
-   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361984.jpg",
-   "cat": "my"
-  },
-  {
-   "source": "Free Malaysia Today",
-   "title": "Malaysia Day joy: Anwar to announce interim payment for Sarawak",
-   "link": "https://www.freemalaysiatoday.com/category/nation/2026/09/11/malaysia-day-joy-anwar-to-announce-interim-payment-for-sarawak",
-   "date": "2026-09-11T09:28:00+00:00",
-   "summary": "The prime minister says although the state is not covered under Article 112D of the Federal Constitution on special grants and revenue, 'the same spirit should be taken into consideration'.",
-   "image": "https://media.freemalaysiatoday.com/v3/2026/09/40562136-2e00-4c96-bdd7-d9252d82faf8-Anwar-Ibrahim-bernama-040926-1.jpg",
-   "cat": "my"
-  },
-  {
-   "source": "Malay Mail",
-   "title": "Newborn’s body found in Dungun hostel locker, police investigating",
-   "link": "https://www.malaymail.com/news/malaysia/2026/09/11/newborns-body-found-in-dungun-hostel-locker-police-investigating/234844",
-   "date": "2026-09-11T08:39:48+00:00",
-   "summary": "DUNGUN, Sept 11 — A 19-year-old student allegedly hid her newborn baby’s body in a hostel locker after givin...",
-   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361983.jpg",
-   "cat": "my"
-  },
-  {
    "source": "Mothership",
    "title": "Khaw Boon Wan to step down as SPH Media Trust chairman",
    "link": "https://mothership.sg/2026/09/khaw-boon-wan-step-down-sph-media-trust-chairman/",
@@ -110,21 +110,21 @@
    "cat": "sg"
   },
   {
+   "source": "CNA",
+   "title": "MHA refutes claims that the death penalty was discussed during visit by Israel's security ministry",
+   "link": "https://www.channelnewsasia.com/singapore/israel-death-penalty-visit-mha-6378526",
+   "date": "2026-09-11T10:25:40+00:00",
+   "summary": "The Ministry of Home Affairs says discussions with the Israeli government involved the sharing of best practices in emergency response, crime prevention and forensics. Issues relating to the death penalty “were never part of the…",
+   "image": "https://dam.mediacorp.sg/image/upload/s--TOlRRpIW--/c_crop,h_1125,w_2000,x_0,y_170/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/07/27/mha_logo_ministry_of_home_affairs.jpg?itok=AWs7hXOx",
+   "cat": "sg"
+  },
+  {
    "source": "The Straits Times",
    "title": "Six tembusu trees removed from MacRitchie Reservoir Park for public safety reasons: NParks",
    "link": "https://www.straitstimes.com/singapore/six-tembusu-trees-removed-from-macritchie-reservoir-park-for-public-safety-reasons-nparks",
    "date": "2026-09-11T10:15:00+00:00",
    "summary": "A variety of native species will be planted at the site to replace the trees that were removed.",
    "image": "https://cassette.sphdigital.com.sg/image/straitstimes/58ef7ca6209f77f046f62c4fe24ec980921dd1bed715ae6b9aa69ccc797573e6",
-   "cat": "sg"
-  },
-  {
-   "source": "CNA",
-   "title": "Anthony Chen's We Are All Strangers selected as Singapore's Oscars entry for 2027",
-   "link": "https://www.channelnewsasia.com/entertainment/anthony-chen-we-are-all-strangers-singapore-oscars-entry-2027-6378461",
-   "date": "2026-09-11T09:55:00+00:00",
-   "summary": "We Are All Strangers, Anthony Chen's latest film starring Yeo Yann Yann and Koh Jia Ler, has been selected as Singapore's official submission in the Best International Feature Film category at the 99th Academy Awards in 2027.",
-   "image": "https://dam.mediacorp.sg/image/upload/s--2-bFsAMr--/c_crop,h_1079,w_1919,x_37,y_1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/11/we_are_all_strangers_-_waas_still_04_main.jpg?itok=wH6KEJ2F",
    "cat": "sg"
   },
   {
@@ -138,11 +138,20 @@
   },
   {
    "source": "Mothership",
-   "title": "True Fitness & True Yoga customers report over S$63,000 in losses from unutilised memberships, packages: CASE",
+   "title": "True Fitness & True Yoga customers report over S$609,000 in losses from unutilised memberships, packages: CASE",
    "link": "https://mothership.sg/2026/09/true-fitness-true-yoga-customers-report-losses/",
    "date": "2026-09-11T13:54:18+00:00",
    "summary": "CASE has received 28 complaints from affected consumers so far.",
    "image": "https://static.mothership.sg/1/2026/09/coverimage-2026-09-11T133342.488.png",
+   "cat": "sg"
+  },
+  {
+   "source": "CNA",
+   "title": "Anthony Chen's We Are All Strangers selected as Singapore's Oscars entry for 2027",
+   "link": "https://www.channelnewsasia.com/entertainment/anthony-chen-we-are-all-strangers-singapore-oscars-entry-2027-6378461",
+   "date": "2026-09-11T09:55:00+00:00",
+   "summary": "We Are All Strangers, Anthony Chen's latest film starring Yeo Yann Yann and Koh Jia Ler, has been selected as Singapore's official submission in the Best International Feature Film category at the 99th Academy Awards in 2027.",
+   "image": "https://dam.mediacorp.sg/image/upload/s--2-bFsAMr--/c_crop,h_1079,w_1919,x_37,y_1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/11/we_are_all_strangers_-_waas_still_04_main.jpg?itok=wH6KEJ2F",
    "cat": "sg"
   },
   {
@@ -152,15 +161,6 @@
    "date": "2026-09-11T10:06:38+00:00",
    "summary": "Callurn Lim Yuan Jin was arrested after he returned to Singapore on Sept 11, 2025.",
    "image": "https://cassette.sphdigital.com.sg/image/straitstimes/7295a027eac2fdfc50c0a8c5faf4332a1c0d9a9a73c05f0a5e5194e9dcf0b197",
-   "cat": "sg"
-  },
-  {
-   "source": "CNA",
-   "title": "Toei Animation store with One Piece, Dragon Ball and Digimon to open at Jewel Changi Airport in October",
-   "link": "https://www.channelnewsasia.com/entertainment/toei-animation-store-singapore-one-piece-jewel-changi-airport-6378286",
-   "date": "2026-09-11T09:02:00+00:00",
-   "summary": "The official Toei Animation Store will open at Jewel Changi Airport on Oct 3, taking over the space previously occupied by the One Piece-themed Mugiwara Store.",
-   "image": "https://dam.mediacorp.sg/image/upload/s--dx7ynMqK--/c_crop,h_1123,w_1997,x_3,y_124/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/11/toei_animation_store_one_piece_dragon_ball_jewel_changi_airport.png?itok=JsHtBTQn",
    "cat": "sg"
   },
   {
@@ -182,21 +182,21 @@
    "cat": "sg"
   },
   {
+   "source": "CNA",
+   "title": "Toei Animation store with One Piece, Dragon Ball and Digimon to open at Jewel Changi Airport in October",
+   "link": "https://www.channelnewsasia.com/entertainment/toei-animation-store-singapore-one-piece-jewel-changi-airport-6378286",
+   "date": "2026-09-11T09:02:00+00:00",
+   "summary": "The official Toei Animation Store will open at Jewel Changi Airport on Oct 3, taking over the space previously occupied by the One Piece-themed Mugiwara Store.",
+   "image": "https://dam.mediacorp.sg/image/upload/s--dx7ynMqK--/c_crop,h_1123,w_1997,x_3,y_124/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/11/toei_animation_store_one_piece_dragon_ball_jewel_changi_airport.png?itok=JsHtBTQn",
+   "cat": "sg"
+  },
+  {
    "source": "The Straits Times",
    "title": "Ex-Singapore Idol judge Ken Lim appeals against conviction for molesting woman in 2021",
    "link": "https://www.straitstimes.com/singapore/courts-crime/ex-singapore-idol-judge-ken-lim-appeals-against-conviction-for-molesting-woman-in-2021",
    "date": "2026-09-11T09:25:08+00:00",
    "summary": "His lawyer argued that the conviction was unsafe given the contradictions in the woman’s testimony.",
    "image": "https://cassette.sphdigital.com.sg/image/straitstimes/e9705850c46d03eeed492c8c673ff519471b415b4fac6c1e82890bd5b21bd467",
-   "cat": "sg"
-  },
-  {
-   "source": "CNA",
-   "title": "MRT reliability hits record high in August",
-   "link": "https://www.channelnewsasia.com/singapore/mrt-train-rail-reliability-report-august-2026-6377956",
-   "date": "2026-09-11T06:39:00+00:00",
-   "summary": "In August, the MRT network's mean kilometres between failures (MKBF) rose to a record 2.88 million train-km.",
-   "image": "https://dam.mediacorp.sg/image/upload/s--HxZzj8Q8--/c_crop,h_1406,w_2500,x_0,y_126/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/tdy-migration/31332054.JPG?itok=RBGcPYiU",
    "cat": "sg"
   },
   {
@@ -209,21 +209,30 @@
    "cat": "sg"
   },
   {
+   "source": "The Guardian",
+   "title": "MPs to vote again on assisted dying as bill returns to parliament – UK politics live",
+   "link": "https://www.theguardian.com/politics/live/2026/sep/11/assisted-dying-vote-uk-politics-latest-news-labour-andy-burnham",
+   "date": "2026-09-11T10:37:22+00:00",
+   "summary": "Bill would allow terminally ill adults with less than six months to live to end their lives, after the approval of a panel of experts While the debate continues, we have a comment from Sam Royston, executive director of research…",
+   "image": "https://i.guim.co.uk/img/media/bda97ddc628ceb4fa53f31b2cc34f951693967ec/1100_0_6830_5464/master/6830.jpg?width=700&quality=85&auto=format&fit=max&s=e42919a22121af927d95c89c6ecef2fb",
+   "cat": "world"
+  },
+  {
+   "source": "Al Jazeera",
+   "title": "Family members wait after deadly Philippines ferry fire",
+   "link": "https://www.aljazeera.com/video/newsfeed/2026/9/11/family-members-wait-after-deadly-philippines-ferry-fire?traffic_source=rss",
+   "date": "2026-09-11T10:29:53+00:00",
+   "summary": "Dozens of passengers are missing after a fire tore through a ferry in the Philippines, killing at least 5 people.",
+   "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789122516.jpg?resize=1920%2C1080&quality=80",
+   "cat": "world"
+  },
+  {
    "source": "DW",
    "title": "Turks in Germany anxious after AfD wins in Saxony-Anhalt",
    "link": "https://www.dw.com/en/turks-in-germany-anxious-after-afd-wins-in-saxony-anhalt/a-79221764?maca=en-rss-en-world-4025-rdf",
    "date": "2026-09-11T10:07:00+00:00",
    "summary": "The Alternative for Germany party's win in Saxony-Anhalt has alarmed people of Turkish origin in eastern states. Will workers and business owners abandon the increasingly AfD-friendly region for the more welcoming west?",
    "image": "https://www.dw.com/en/turks-in-germany-anxious-after-afd-wins-in-saxony-anhalt/image/jpeg",
-   "cat": "world"
-  },
-  {
-   "source": "The Guardian",
-   "title": "MPs to vote again on assisted dying as bill returns to parliament – UK politics live",
-   "link": "https://www.theguardian.com/politics/live/2026/sep/11/assisted-dying-vote-uk-politics-latest-news-labour-andy-burnham",
-   "date": "2026-09-11T10:03:12+00:00",
-   "summary": "Bill would allow terminally ill adults with less than six months to live to end their lives, after the approval of a panel of experts While the debate continues, we have a comment from Sam Royston, executive director of research…",
-   "image": "https://i.guim.co.uk/img/media/bda97ddc628ceb4fa53f31b2cc34f951693967ec/1100_0_6830_5464/master/6830.jpg?width=700&quality=85&auto=format&fit=max&s=e42919a22121af927d95c89c6ecef2fb",
    "cat": "world"
   },
   {
@@ -245,21 +254,30 @@
    "cat": "world"
   },
   {
-   "source": "Al Jazeera",
-   "title": "Japan, India, Ukraine: Why some countries are uneasy about new UN map",
-   "link": "https://www.aljazeera.com/news/2026/9/11/japan-india-ukraine-why-some-countries-are-uneasy-about-new-un-map?traffic_source=rss",
-   "date": "2026-09-11T09:11:42+00:00",
-   "summary": "The countries are not opposed to a new map per se; they're testy about the colour shades.",
-   "image": "https://www.aljazeera.com/wp-content/uploads/2025/05/AP875187547197-1748359022.jpg?resize=1920%2C1440",
-   "cat": "world"
-  },
-  {
    "source": "NPR",
    "title": "The U.S.-Canada trade war is creating a headache for auto-parts makers",
    "link": "https://www.npr.org/2026/09/11/nx-s1-5961530/canada-trade-war-auto-parts-supply-chain",
    "date": "2026-09-11T09:00:00+00:00",
    "summary": "For decades, the U.S. and Canadian auto supply chains have been tightly woven together. The trade war is threatening to unravel a complex system.",
    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3746x2498+0+0/resize/3746x2498!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5d%2F4f%2Ff5ecab764bd3ba1267b758e5492d%2Fus-canada-bridge.jpg",
+   "cat": "world"
+  },
+  {
+   "source": "The Guardian",
+   "title": "9/11 families to gather at World Trade Center and Pentagon to remember victims on 25th anniversary – US politics live",
+   "link": "https://www.theguardian.com/us-news/live/2026/sep/11/september-11-anniversary-memorials-world-trade-center-pentagon-vance-trump-us-politics-live",
+   "date": "2026-09-11T10:27:44+00:00",
+   "summary": "Victims of those killed in September 11 attacks honored at memorials across the US It’s been 25 years since the terrorist attacks of September 11, and during this time Muslim Americans have learned how to live in that dangerous…",
+   "image": "https://i.guim.co.uk/img/media/f037d3cf70add0bd842823e5a104368ab4262606/189_0_2500_2000/master/2500.jpg?width=700&quality=85&auto=format&fit=max&s=bb7a3dd515201023e968f2982c9caaa3",
+   "cat": "world"
+  },
+  {
+   "source": "Al Jazeera",
+   "title": "Houthis take control of Yemen’s Red Sea coast, key shipping route",
+   "link": "https://www.aljazeera.com/news/2026/9/11/houthis-take-control-of-yemens-red-sea-coast-key-shipping-route?traffic_source=rss",
+   "date": "2026-09-11T10:11:17+00:00",
+   "summary": "Rapid advance of Iran-backed force threatens key alternative shipping route to Strait of Hormuz.",
+   "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-07-15T145635Z_188060635_RC2EEMAOW6BY_RTRMADP_3_IRAN-CRISIS-YEMEN-RED-SEA-SATELLITE-1789117807.jpg?resize=1200%2C675",
    "cat": "world"
   },
   {
@@ -272,21 +290,12 @@
    "cat": "world"
   },
   {
-   "source": "The Guardian",
-   "title": "9/11 families to gather at World Trade Center and Pentagon to remember victims on 25th anniversary – US politics live",
-   "link": "https://www.theguardian.com/us-news/live/2026/sep/11/september-11-anniversary-memorials-world-trade-center-pentagon-vance-trump-us-politics-live",
-   "date": "2026-09-11T10:02:19+00:00",
-   "summary": "Victims of those killed in September 11 attacks honored at memorials across the US For the first time, this year’s ceremony will add a silent moment to honor people who were exposed to the clouds of toxic dust released by the…",
-   "image": "https://i.guim.co.uk/img/media/f037d3cf70add0bd842823e5a104368ab4262606/189_0_2500_2000/master/2500.jpg?width=700&quality=85&auto=format&fit=max&s=bb7a3dd515201023e968f2982c9caaa3",
-   "cat": "world"
-  },
-  {
    "source": "BBC News",
-   "title": "Five dead and dozens injured in coach crash in Swiss Alps",
-   "link": "https://www.bbc.co.uk/news/articles/cx2z70xr0y3o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-11T08:54:20+00:00",
-   "summary": "The tourist coach was carrying dozens of Dutch passengers when it overturned in the south-eastern Swiss Alps.",
-   "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/d79c/live/94f7da60-ad56-11f1-8128-99eda56e535a.png",
+   "title": "Trump shadow looms large over Brics as Modi hosts Putin and Xi in Delhi",
+   "link": "https://www.bbc.co.uk/news/articles/c07lv53l7jjo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-11T09:38:23+00:00",
+   "summary": "As Brics leaders meet in Delhi, divisions within the bloc make a united response to Washington unlikely",
+   "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/e0f3/live/80be8820-adcc-11f1-82c1-5ff19bf7a2f2.jpg",
    "cat": "world"
   },
   {
@@ -299,15 +308,6 @@
    "cat": "world"
   },
   {
-   "source": "Al Jazeera",
-   "title": "World Athletics Ultimate Championship opens with record $10m prize pot",
-   "link": "https://www.aljazeera.com/sports/2026/9/11/world-athletics-ultimate-championship-opens-with-record-10m-prize-pot?traffic_source=rss",
-   "date": "2026-09-11T08:50:40+00:00",
-   "summary": "The inaugural Ultimate Championship opens with Olympic Games champions competing for a record prize pot of $10m.",
-   "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6aa306e7dc-1789069031.jpg?resize=1920%2C1440",
-   "cat": "world"
-  },
-  {
    "source": "NPR",
    "title": "Why Houthi gains in Yemen could push gas prices even higher",
    "link": "https://www.npr.org/2026/09/11/nx-s1-5966379/houthi-gains-gas-prices",
@@ -315,6 +315,24 @@
    "summary": "A Houthi advance along Yemen's Red Sea coast could help push gas prices up even more as the Iran-backed group also launches attacks on Saudi Arabia's oil facilities",
    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6720x4480+0+0/resize/6720x4480!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F6f%2F0a%2Ffdf525e34ee2bf4d5e8bddc334ba%2Fap26253328596062.jpg",
    "cat": "world"
+  },
+  {
+   "source": "Bloomberg",
+   "title": "Bond Yields in Distinct Uptrends, Says NewEdge’s Dawson",
+   "link": "https://www.bloomberg.com/news/videos/2026-09-11/bond-yields-in-distinct-uptrends-says-newedge-s-dawson-video",
+   "date": "2026-09-11T10:40:05+00:00",
+   "summary": "“We have to appreciate that we could be in the midst of a now secular uptrend in bond yields,” says Cameron Dawson, chief investment officer at NewEdge Wealth. She does see “tactical buying opportunities” in US Treasuries and…",
+   "image": "",
+   "cat": "business"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "Ringgit eases against US dollar but gains against most major, regional currencies",
+   "link": "https://www.malaymail.com/news/money/2026/09/11/ringgit-eases-against-us-dollar-but-gains-against-most-major-regional-currencies/234856",
+   "date": "2026-09-11T10:35:10+00:00",
+   "summary": "KUALA LUMPUR, Sept 11 — The ringgit appreciated against most major and regional currencies today, although it decl...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361999.jpg",
+   "cat": "business"
   },
   {
    "source": "BBC News",
@@ -326,30 +344,12 @@
    "cat": "business"
   },
   {
-   "source": "Bloomberg",
-   "title": "US Economy Probably Needs Three Fed Rate Hikes, BNP’s Mateos y Lago Says",
-   "link": "https://www.bloomberg.com/news/videos/2026-09-11/us-probably-needs-three-fed-rate-hikes-bnp-paribas-video",
-   "date": "2026-09-11T10:10:26+00:00",
-   "summary": "Isabelle Mateos y Lago, chief economist at BNP Paribas, discusses the weight of Friday’s US CPI report on the upcoming Federal Reserve interest-rate decision. She says her firm believes “monetary policy is not restrictive enough”…",
-   "image": "",
-   "cat": "business"
-  },
-  {
    "source": "NPR",
    "title": "US diesel prices soar past $6 a gallon, deepening strain for hauling everyday goods",
    "link": "https://www.npr.org/2026/09/11/g-s1-142842/us-diesel-6-a-gallon",
    "date": "2026-09-11T10:04:04+00:00",
    "summary": "Diesel prices in the U.S. has hit yet another record, soaring past $6 a gallon on average as Washington's war with Iran disrupts the world's flow of fuel",
    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5233x3489+0+0/resize/5233x3489!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F34%2Ffc%2Fddd121964005b309f321abeed8c7%2Fap26247695683233.jpg",
-   "cat": "business"
-  },
-  {
-   "source": "Malay Mail",
-   "title": "BYD scraps Tanjung Malim CKD plant plans but local assembly remains on track",
-   "link": "https://www.malaymail.com/news/money/2026/09/11/byd-scraps-tanjung-malim-ckd-plant-plans-but-local-assembly-remains-on-track/234841",
-   "date": "2026-09-11T08:17:51+00:00",
-   "summary": "KUALA LUMPUR, Sept 11 — BYD Malaysia has confirmed that it will not proceed with plans to build a completely...",
-   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361977.jpg",
    "cat": "business"
   },
   {
@@ -371,6 +371,24 @@
    "cat": "business"
   },
   {
+   "source": "Bloomberg",
+   "title": "OpenAI Considers Slowing AI Development",
+   "link": "https://www.bloomberg.com/news/videos/2026-09-11/the-pulse-9-11-2026-video",
+   "date": "2026-09-11T10:29:11+00:00",
+   "summary": "\"The Pulse With Francine Lacqua\" is all about conversations with high profile guests in the beating heart of global business, economics, finance and politics. Based in London, we go wherever the story is, bringing you exclusive…",
+   "image": "",
+   "cat": "business"
+  },
+  {
+   "source": "Malay Mail",
+   "title": "BYD scraps Tanjung Malim CKD plant plans but local assembly remains on track",
+   "link": "https://www.malaymail.com/news/money/2026/09/11/byd-scraps-tanjung-malim-ckd-plant-plans-but-local-assembly-remains-on-track/234841",
+   "date": "2026-09-11T08:17:51+00:00",
+   "summary": "KUALA LUMPUR, Sept 11 — BYD Malaysia has confirmed that it will not proceed with plans to build a completely...",
+   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361977.jpg",
+   "cat": "business"
+  },
+  {
    "source": "BBC News",
    "title": "Alstom to build new battery-electric train fleet",
    "link": "https://www.bbc.co.uk/news/articles/cd94y7d7qyzo?at_medium=RSS&at_campaign=rss",
@@ -380,30 +398,12 @@
    "cat": "business"
   },
   {
-   "source": "Bloomberg",
-   "title": "UBS Buys $7.9 Billion of Credit Suisse Bonds in Biggest Buyback",
-   "link": "https://www.bloomberg.com/news/articles/2026-09-11/ubs-buys-7-9-billion-of-credit-suisse-bonds-in-biggest-buyback",
-   "date": "2026-09-11T10:00:32+00:00",
-   "summary": "UBS Group AG is buying back $7.9 billion of old Credit Suisse bonds, its biggest move yet to shrink the debt load it inherited when taking over its crosstown rival.",
-   "image": "",
-   "cat": "business"
-  },
-  {
    "source": "NPR",
    "title": "From DOGE to space lasers, Alex Gibney peels back the many layers of Elon Musk",
    "link": "https://www.npr.org/2026/09/11/nx-s1-5962167/alex-gibney-elon-musk-documentary-review",
    "date": "2026-09-11T09:00:00+00:00",
    "summary": "In the Oscar-winning filmmaker's latest documentary, director Alex Gibney investigates the rise of Elon Musk and says what's behind Musk's success are distressing truths.",
    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6166x4111+0+0/resize/6166x4111!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fdb%2F30%2Fa3f50d3a4ac9a4e25e74c240a5eb%2Fgettyimages-2200924488.jpg",
-   "cat": "business"
-  },
-  {
-   "source": "Malay Mail",
-   "title": "Bursa Malaysia opens lower as Wall Street weakness, US-Iran conflict weigh on sentiment",
-   "link": "https://www.malaymail.com/news/money/2026/09/11/bursa-malaysia-opens-lower-as-wall-street-weakness-us-iran-conflict-weigh-on-sentiment/234786",
-   "date": "2026-09-11T02:14:16+00:00",
-   "summary": "KUALA LUMPUR, Sept 11 — Bursa Malaysia opened lower today tracking continued weakness on Wall Street as...",
-   "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/11/361889.jpg",
    "cat": "business"
   },
   {
@@ -426,11 +426,20 @@
   },
   {
    "source": "Wired",
-   "title": "How 9/11 Made Everyone a Conspiracy Theorist",
-   "link": "https://www.wired.com/story/conspiracy-how-9-11-broke-americas-brain/",
-   "date": "2026-09-11T10:00:00+00:00",
-   "summary": "Crackpot theories were once the stuff of shortwave radio, but September 11 unleashed the Age of Alex Jones.",
-   "image": "https://media.wired.com/photos/6aa3274315a68f9c2571c796/master/pass/TheBigStory_Garrett%20Graff%209-11%20Truth%20Anniversary%20Essay_v2.2.jpg",
+   "title": "We Tried the Most Popular Mushroom Coffees. These Are the Best (2026)",
+   "link": "https://www.wired.com/gallery/best-mushroom-coffee/",
+   "date": "2026-09-11T10:33:00+00:00",
+   "summary": "“Coffee” made with functional mushrooms like lion’s mane and chaga is all the rage. We tried the most popular brands to find which were the most palatable.",
+   "image": "https://media.wired.com/photos/68422670b6a5ae04b97cb39e/master/pass/Best%20Mushroom%20Coffee%20(update)_.png",
+   "cat": "tech"
+  },
+  {
+   "source": "The Verge",
+   "title": "Apple addresses iPhone Duo copycats",
+   "link": "https://www.theverge.com/tech/993795/apple-addresses-iphone-duo-copycats",
+   "date": "2026-09-11T10:02:58+00:00",
+   "summary": "Apple was far from the first company to announce a passport-shaped folding phone this year, but that doesn't mean it wasn't copied. As my colleague Dom Preston already explained, it's almost impossible to keep product development…",
+   "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2293827608.jpg?quality=90&strip=all&crop=0,0,100,100",
    "cat": "tech"
   },
   {
@@ -461,15 +470,6 @@
    "cat": "tech"
   },
   {
-   "source": "The Verge",
-   "title": "Slack can now vibe-code interactive charts and reports inside chats",
-   "link": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
-   "date": "2026-09-10T21:25:21+00:00",
-   "summary": "A new feature coming to Slack will allow you to build interactive reports, polls, dashboards, presentations, microsites, and other tools directly inside a chat. With Slackforce Surfaces, you can describe to Slackbot what you…",
-   "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/IMG_2464.png?quality=90&strip=all&crop=0,0,100,100",
-   "cat": "tech"
-  },
-  {
    "source": "BBC News",
    "title": "UK needs new laws for AI in healthcare, says watchdog",
    "link": "https://www.bbc.co.uk/news/articles/c3wjn3pl63xo?at_medium=RSS&at_campaign=rss",
@@ -480,11 +480,20 @@
   },
   {
    "source": "Wired",
-   "title": "The US and Mexico Announce They’re Teaming Up Against Drones",
-   "link": "https://www.wired.com/story/us-and-mexico-announce-teaming-up-against-drones/",
-   "date": "2026-09-11T09:15:00+00:00",
-   "summary": "The new joint operation uses laser-based technology capable of detecting, tracking, and disabling commercial drones linked to human and drug trafficking.",
-   "image": "https://media.wired.com/photos/6aa1c319e3b72ced9abda322/master/pass/drones%20M%C3%A9xico%20EE%20UU%20operativo%202244404487.jpg",
+   "title": "The Trump Alien ‘Disclosure Speech’ Rumors Are Reaching a Fever Pitch",
+   "link": "https://www.wired.com/story/the-trump-alien-disclosure-speech-rumors-are-reaching-a-fever-pitch/",
+   "date": "2026-09-11T10:30:00+00:00",
+   "summary": "The US government has been sharing more information about UFOs. That's fueling excitement over the possibility of the president announcing that humans are not alone.",
+   "image": "https://media.wired.com/photos/6aa085cf50048b9f2b3259a5/master/pass/Trump-Alien-Disclosure-Speech.jpg",
+   "cat": "tech"
+  },
+  {
+   "source": "The Verge",
+   "title": "Slack can now vibe-code interactive charts and reports inside chats",
+   "link": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
+   "date": "2026-09-10T21:25:21+00:00",
+   "summary": "A new feature coming to Slack will allow you to build interactive reports, polls, dashboards, presentations, microsites, and other tools directly inside a chat. With Slackforce Surfaces, you can describe to Slackbot what you…",
+   "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/IMG_2464.png?quality=90&strip=all&crop=0,0,100,100",
    "cat": "tech"
   },
   {
@@ -515,21 +524,12 @@
    "cat": "tech"
   },
   {
-   "source": "The Verge",
-   "title": "Schools are catching on to Big Tech’s playbook",
-   "link": "https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids",
-   "date": "2026-09-10T19:44:20+00:00",
-   "summary": "It's the hot new thing in tech, and it's where all the jobs are. Students who don't learn to use it fall behind. And to help them catch up in time, its creators are graciously providing the resources and curriculum for learning…",
-   "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK483_EDUCATION_D.jpg?quality=90&strip=all&crop=0,0,100,100",
-   "cat": "tech"
-  },
-  {
    "source": "Wired",
-   "title": "Why So Many AI Researchers Think the Machines Could Kill Everyone",
-   "link": "https://www.wired.com/story/why-so-many-ai-researchers-think-the-machines-could-kill-everyone/",
-   "date": "2026-09-11T09:00:00+00:00",
-   "summary": "A combination of rapid advances, recursive self-improvement, and agentic swarms are genuinely “spooking people” inside big labs.",
-   "image": "https://media.wired.com/photos/6aa1c85ef107c265a15668ae/master/pass/Why-All-These-AI-Researchers-Freaking-Out-About-AI-Killing-Us-All-Business-MCDTETH_EC026.jpg",
+   "title": "How 9/11 Made Everyone a Conspiracy Theorist",
+   "link": "https://www.wired.com/story/conspiracy-how-9-11-broke-americas-brain/",
+   "date": "2026-09-11T10:00:00+00:00",
+   "summary": "Crackpot theories were once the stuff of shortwave radio, but September 11 unleashed the Age of Alex Jones.",
+   "image": "https://media.wired.com/photos/6aa3274315a68f9c2571c796/master/pass/TheBigStory_Garrett%20Graff%209-11%20Truth%20Anniversary%20Essay_v2.2.jpg",
    "cat": "tech"
   },
   {
