@@ -14,7 +14,7 @@
 <meta name="application-name" content="Daily Twenty">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&family=Noto+Sans+JP:wght@400;500;700&display=swap">
 <style>
 :root{
   --ground:#F7F8FA; --surface:#FFFFFF; --ink:#14161B; --muted:#586070; --faint:#8A92A0;
@@ -23,7 +23,7 @@
   --t-world:#E4EAF4; --t-business:#E4EFE7; --t-finance:#E6EFF1; --t-tech:#EAE7F4; --t-ent:#F4E7E3; --t-my:#F2ECDA; --t-sg:#F3E4E9;
   --shadow:0 1px 2px rgba(20,22,27,.05),0 6px 18px rgba(20,22,27,.06);
   --serif:"Times New Roman",Times,"Liberation Serif","Nimbus Roman",serif;   /* masthead name only */
-  --sans:"Roboto","Helvetica Neue",Arial,system-ui,sans-serif;
+  --sans:"Roboto","Noto Sans JP","Hiragino Sans","Yu Gothic","Helvetica Neue",Arial,system-ui,sans-serif;
   --bar-h:56px;
 }
 @media (prefers-color-scheme:dark){
@@ -114,6 +114,8 @@ main{padding-block:0 40px}
 .meta b{color:var(--accent);font-weight:700}
 .new{display:inline-block;margin-left:6px;padding:0 6px;border-radius:4px;background:var(--accent);color:var(--surface);font-size:.68rem;letter-spacing:.08em;vertical-align:1px}
 .card h3{margin:0;font-size:1.02rem;line-height:1.3;font-weight:700;letter-spacing:-.005em;text-wrap:pretty}
+:lang(ja) .card h3{line-height:1.45}
+:lang(ja) .meta,:lang(ja) .thumb .mark span{letter-spacing:.02em;text-transform:none}
 .story{color:var(--ink);text-decoration:none}
 .story::after{content:"";position:absolute;inset:0;z-index:1}
 .story:visited{color:var(--visited)}
@@ -172,7 +174,11 @@ footer p{margin:0 0 5px;max-width:80ch}
     <div class="menu" id="menu" role="menu" aria-label="Menu" hidden>
       <button type="button" role="menuitem" id="savedBtn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
-        Saved stories <span class="count" id="savedCount">0</span>
+        <span id="savedLabel">Saved stories</span> <span class="count" id="savedCount">0</span>
+      </button>
+      <button type="button" role="menuitem" id="langBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg>
+        <span id="langLabel">日本語</span>
       </button>
       <button type="button" role="menuitem" id="theme">
         <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"></svg>
@@ -192,7 +198,7 @@ footer p{margin:0 0 5px;max-width:80ch}
 
 <footer class="wrap">
   <p id="sourcesLine"></p>
-  <p>Each headline opens the full article on the publisher's own website in a new tab. Summaries are condensed from each publisher's feed. Saved stories stay in this browser.</p>
+  <p id="noteLine"></p>
   <p id="scheduleLine"></p>
 </footer>
 
@@ -209,12 +215,52 @@ footer p{margin:0 0 5px;max-width:80ch}
   const DATA = JSON.parse(document.getElementById('data').textContent);
   const TILES = {world:'--t-world', business:'--t-business', finance:'--t-finance', tech:'--t-tech', ent:'--t-ent', my:'--t-my', sg:'--t-sg'};
   const SPARE = ['--t-world','--t-business','--t-finance','--t-tech','--t-ent','--t-my','--t-sg'];
-  const SECTIONS = (DATA.sections || []).map((s, i) => ({id:s.id, name:s.name, tile: TILES[s.id] || SPARE[i % SPARE.length]}));
+  const RAW_SECTIONS = (DATA.sections || []).map((s, i) => ({id:s.id, en:s.name, ja:s.name_ja || s.name, tile: TILES[s.id] || SPARE[i % SPARE.length]}));
+  let SECTIONS = [];
   const store = {
     get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
     set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
   };
   let saved = store.get('dt-saved', []);
+
+  // ---- language ----
+  const STR = {
+    en: {
+      other:'Other', saved:'Saved stories', savedTitle:'Saved stories', close:'Close', dark:'Dark mode', light:'Light mode',
+      other_lang:'日本語', save:'Save', unsave:'Saved', saveAria:'Save for later: ', unsaveAria:'Remove from saved: ',
+      isNew:'New', remove:'Remove', story:' story', stories:' stories', none:'No stories in this section today.',
+      nothingSaved:'Nothing saved yet. Tap Save on any story to keep it here — saved stories stay even after they leave the page.',
+      compiled:(t, n, m) => ' · compiled ' + t + ' MYT · ' + n + ' stories from ' + m + ' newsrooms',
+      sourcesLine:list => 'Sources in this edition: ' + list + '.',
+      note:"Each headline opens the full article on the publisher's own website in a new tab. Summaries are condensed from each publisher's feed. Saved stories stay in this browser.",
+      next:t => 'New editions arrive through the day; the next is due around ' + t + ' (Malaysia time).',
+      newer:'A newer edition is ready.', load:'Load it',
+      scrollL:n => 'Scroll ' + n + ' left', scrollR:n => 'Scroll ' + n + ' right',
+      ago:{now:'just now', min:m => m + ' min ago', hour:h => h + ' h ago', yst:'yesterday', day:d => d + ' days ago'},
+      date:{locale:'en-GB', opts:{weekday:'long', day:'numeric', month:'long', year:'numeric', timeZone:'Asia/Kuala_Lumpur'}},
+      short:{locale:'en-GB', opts:{day:'numeric', month:'short'}}
+    },
+    ja: {
+      other:'その他', saved:'保存した記事', savedTitle:'保存した記事', close:'閉じる', dark:'ダークモード', light:'ライトモード',
+      other_lang:'English', save:'保存', unsave:'保存済み', saveAria:'保存する: ', unsaveAria:'保存を解除: ',
+      isNew:'新着', remove:'削除', story:'件', stories:'件', none:'今日はこのセクションの記事がありません。',
+      nothingSaved:'まだ保存した記事はありません。記事の「保存」を押すと、ここに残ります（紙面から消えた後も読めます）。',
+      compiled:(t, n, m) => '・' + t + ' 更新（マレーシア時間）・' + n + '件 / ' + m + '媒体',
+      sourcesLine:list => 'この号の情報源: ' + list + '。',
+      note:'見出しを押すと、各媒体のサイトで記事全文が新しいタブで開きます。要約は各媒体の配信文をもとにしています。保存した記事はこのブラウザーに残ります。',
+      next:t => '紙面は一日に数回更新されます。次回はおよそ ' + t + '（マレーシア時間）。',
+      newer:'新しい号が届きました。', load:'読み込む',
+      scrollL:n => n + 'を左へ', scrollR:n => n + 'を右へ',
+      ago:{now:'たった今', min:m => m + '分前', hour:h => h + '時間前', yst:'昨日', day:d => d + '日前'},
+      date:{locale:'ja-JP', opts:{year:'numeric', month:'long', day:'numeric', timeZone:'Asia/Kuala_Lumpur'},
+             wd:{weekday:'short', timeZone:'Asia/Kuala_Lumpur'}},
+      short:{locale:'ja-JP', opts:{month:'short', day:'numeric'}}
+    }
+  };
+  const hasJa = DATA.stories.some(s => s.lang === 'ja');
+  let lang = store.get('dt-lang', null) || 'en';
+  if (!hasJa) lang = 'en';
+  let T = STR[lang];
 
   // "New" marks stories published since the reader's previous visit (visits are 30+ minutes apart,
   // so loading a fresh edition mid-read keeps the same badges)
@@ -228,30 +274,37 @@ footer p{margin:0 0 5px;max-width:80ch}
   function ago(iso){
     const t = new Date(iso).getTime(); if (isNaN(t)) return '';
     const m = Math.round((Date.now() - t) / 60000);
-    if (m < 2) return 'just now';
-    if (m < 60) return m + ' min ago';
+    if (m < 2) return T.ago.now;
+    if (m < 60) return T.ago.min(m);
     const h = Math.round(m / 60);
-    if (h < 24) return h + ' h ago';
+    if (h < 24) return T.ago.hour(h);
     const d = Math.round(h / 24);
-    if (d === 1) return 'yesterday';
-    if (d < 7) return d + ' days ago';
-    return new Date(iso).toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+    if (d === 1) return T.ago.yst;
+    if (d < 7) return T.ago.day(d);
+    return new Date(iso).toLocaleDateString(T.short.locale, T.short.opts);
   }
   function domain(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return ''; } }
   function safeUrl(u){ return /^https:\/\//i.test(u) ? u : '#'; }
   function el(tag, cls, text){ const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
   const bookmarkSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
-  const sectionName = id => (SECTIONS.find(s => s.id === id) || {}).name || 'Other';
+  const sectionName = id => (SECTIONS.find(s => s.id === id) || {}).name || T.other;
 
   // ---- edition line ----
   const MYT = {hour:'numeric', minute:'2-digit', timeZone:'Asia/Kuala_Lumpur'};
   const ed = new Date(DATA.compiled);
-  const dateStr = ed.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kuala_Lumpur'});
-  const sources = [...new Set(DATA.stories.map(s => s.source))];
-  const edLine = document.getElementById('edition');
-  edLine.append(el('b', null, dateStr),
-    document.createTextNode(' · compiled ' + ed.toLocaleTimeString('en-US', MYT) + ' MYT · ' + DATA.stories.length + ' stories from ' + sources.length + ' newsrooms'));
-  document.getElementById('sourcesLine').textContent = 'Sources in this edition: ' + sources.join(', ') + '.';
+  function headerLines(){
+    const mine = DATA.stories.filter(s => (s.lang || 'en') === lang);
+    const sources = [...new Set(mine.map(s => s.source))];
+    const edLine = document.getElementById('edition');
+    edLine.textContent = '';
+    const day = ed.toLocaleDateString(T.date.locale, T.date.opts) + (T.date.wd ? '（' + ed.toLocaleDateString(T.date.locale, T.date.wd) + '）' : '');
+    edLine.append(el('b', null, day),
+      document.createTextNode(T.compiled(ed.toLocaleTimeString(lang === 'ja' ? 'ja-JP' : 'en-US', MYT), mine.length, sources.length)));
+    document.getElementById('sourcesLine').textContent = T.sourcesLine(sources.join(lang === 'ja' ? '、' : ', '));
+    document.getElementById('noteLine').textContent = T.note;
+    const n = nextUpdate();
+    document.getElementById('scheduleLine').textContent = n ? T.next(n.toLocaleTimeString(lang === 'ja' ? 'ja-JP' : 'en-US', MYT)) : '';
+  }
 
   // ---- cards ----
   function isSaved(link){ return saved.some(s => s.link === link); }
@@ -270,13 +323,13 @@ footer p{margin:0 0 5px;max-width:80ch}
     }
     const body = el('div','body');
     const meta = el('div','meta'); meta.append(el('b',null,s.source), document.createTextNode(s.date ? ' · ' + ago(s.date) : ''));
-    if (isNew(s)) meta.append(el('span','new','New'));
+    if (isNew(s)) meta.append(el('span','new',T.isNew));
     const h = el('h3');
     const link = el('a','story', s.title); link.href = safeUrl(s.link); link.target = '_blank'; link.rel = 'noopener noreferrer';
     h.append(link);
     const foot = el('div','foot');
     const sv = el('button','save'); sv.type = 'button';
-    const setSv = () => { const on = isSaved(s.link); sv.setAttribute('aria-pressed', on); sv.innerHTML = bookmarkSvg; sv.append(document.createTextNode(on ? ' Saved' : ' Save')); sv.setAttribute('aria-label', (on ? 'Remove from saved: ' : 'Save for later: ') + s.title); };
+    const setSv = () => { const on = isSaved(s.link); sv.setAttribute('aria-pressed', on); sv.innerHTML = bookmarkSvg; sv.append(document.createTextNode(' ' + (on ? T.unsave : T.save))); sv.setAttribute('aria-label', (on ? T.unsaveAria : T.saveAria) + s.title); };
     setSv();
     sv.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); toggleSave(s, sec.id); setSv(); });
     foot.append(el('span','domain', domain(s.link) + ' ↗'), sv);
@@ -288,18 +341,18 @@ footer p{margin:0 0 5px;max-width:80ch}
   function render(){
     const main = document.getElementById('main'); main.innerHTML = '';
     SECTIONS.forEach(sec => {
-      const items = DATA.stories.filter(s => s.cat === sec.id);
+      const items = DATA.stories.filter(s => s.cat === sec.id && (s.lang || 'en') === lang);
       const section = el('section','section'); section.id = 'sec-' + sec.id; section.dataset.id = sec.id;
       const head = el('div','sec-head');
       const h2 = el('h2', null, sec.name); h2.id = 'h-' + sec.id;
-      h2.append(el('small', null, items.length + (items.length === 1 ? ' story' : ' stories')));
+      h2.append(el('small', null, items.length + (items.length === 1 ? T.story : T.stories)));
       section.setAttribute('aria-labelledby', h2.id);
       head.append(h2);
-      if (!items.length){ section.append(head, el('p','empty','No stories in this section today.')); main.append(section); return; }
+      if (!items.length){ section.append(head, el('p','empty',T.none)); main.append(section); return; }
       const row = el('div','row'); row.setAttribute('role','list');
       const arrows = el('div','arrows');
-      const prev = el('button','arrow'); prev.type='button'; prev.setAttribute('aria-label','Scroll ' + sec.name + ' left'); prev.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>';
-      const next = el('button','arrow'); next.type='button'; next.setAttribute('aria-label','Scroll ' + sec.name + ' right'); next.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
+      const prev = el('button','arrow'); prev.type='button'; prev.setAttribute('aria-label',T.scrollL(sec.name)); prev.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>';
+      const next = el('button','arrow'); next.type='button'; next.setAttribute('aria-label',T.scrollR(sec.name)); next.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
       const step = () => Math.max(row.clientWidth * 0.85, 280);
       prev.addEventListener('click', () => row.scrollBy({left:-step(), behavior:'smooth'}));
       next.addEventListener('click', () => row.scrollBy({left:step(), behavior:'smooth'}));
@@ -314,7 +367,7 @@ footer p{margin:0 0 5px;max-width:80ch}
 
   // ---- genre bar: jump to a section, and follow the reader down the page ----
   function chips(){
-    const wrap = document.getElementById('chips');
+    const wrap = document.getElementById('chips'); wrap.innerHTML = '';
     SECTIONS.forEach(s => {
       const c = el('button','chip', s.name); c.type = 'button'; c.dataset.id = s.id;
       c.addEventListener('click', () => {
@@ -368,7 +421,7 @@ footer p{margin:0 0 5px;max-width:80ch}
   function openSaved(){
     const body = document.getElementById('savedBody'); body.innerHTML = '';
     if (!saved.length){
-      body.append(el('p','saved-empty','Nothing saved yet. Tap Save on any story to keep it here — saved stories stay even after they leave the page.'));
+      body.append(el('p','saved-empty',T.nothingSaved));
     } else {
       const order = SECTIONS.map(s => s.id);
       const groups = {};
@@ -382,8 +435,8 @@ footer p{margin:0 0 5px;max-width:80ch}
         groups[id].forEach(s => {
           const li = el('li'), d = el('div');
           const a = el('a', null, s.title); a.href = safeUrl(s.link); a.target = '_blank'; a.rel = 'noopener noreferrer';
-          d.append(a, el('div','meta', s.source + ' · ' + domain(s.link) + (s.date ? ' · ' + new Date(s.date).toLocaleDateString('en-GB',{day:'numeric',month:'short'}) : '')));
-          const rm = el('button','rm','Remove'); rm.type = 'button';
+          d.append(a, el('div','meta', s.source + ' · ' + domain(s.link) + (s.date ? ' · ' + new Date(s.date).toLocaleDateString(T.short.locale, T.short.opts) : '')));
+          const rm = el('button','rm',T.remove); rm.type = 'button';
           rm.addEventListener('click', () => {
             saved = saved.filter(x => x.link !== s.link); store.set('dt-saved', saved);
             updCount(); openSaved(); render(); onScroll();
@@ -407,7 +460,7 @@ footer p{margin:0 0 5px;max-width:80ch}
   const SUN = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
   function themeLabel(){
     const dark = effective() === 'dark';
-    document.getElementById('themeLabel').textContent = dark ? 'Light mode' : 'Dark mode';
+    document.getElementById('themeLabel').textContent = dark ? T.light : T.dark;
     document.getElementById('themeIcon').innerHTML = dark ? SUN : MOON;
   }
   document.getElementById('theme').addEventListener('click', () => {
@@ -457,19 +510,32 @@ footer p{margin:0 0 5px;max-width:80ch}
       if (!r.ok) return;
       const j = await r.json();
       if (new Date(j.compiled) - new Date(DATA.compiled) > 1000)
-        toast('A newer edition is ready.', 'Load it', () => location.replace(location.pathname + '?v=' + Date.now()));
+        toast(T.newer, T.load, () => location.replace(location.pathname + '?v=' + Date.now()));
     }catch(e){ /* offline: keep reading what's here */ }
   }
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible' && Date.now() - lastCheck > 10 * 60000) checkEdition();
   });
-  (function scheduleLine(){
-    const n = nextUpdate();
-    if (n) document.getElementById('scheduleLine').textContent =
-      'New editions arrive through the day; the next is due around ' + n.toLocaleTimeString('en-US', MYT) + ' (Malaysia time).';
-  })();
+  // ---- apply a language across the whole page ----
+  function applyLang(){
+    T = STR[lang];
+    SECTIONS = RAW_SECTIONS.map(s => ({id:s.id, name:s[lang] || s.en, tile:s.tile}));
+    document.documentElement.lang = lang;
+    document.getElementById('langLabel').textContent = T.other_lang;
+    document.getElementById('langBtn').hidden = !hasJa;
+    document.getElementById('savedLabel').textContent = T.saved;
+    document.getElementById('savedTitle').textContent = T.savedTitle;
+    document.getElementById('closeSaved').textContent = T.close;
+    themeLabel(); headerLines(); chips(); render(); onScroll();
+  }
+  document.getElementById('langBtn').addEventListener('click', () => {
+    lang = lang === 'ja' ? 'en' : 'ja'; store.set('dt-lang', lang);
+    applyLang();
+    const dlg = document.getElementById('savedDlg'); if (dlg.open) openSaved();
+    window.scrollTo({top:0, behavior:'auto'});
+  });
 
-  chips(); updCount(); themeLabel(); render();
+  updCount(); applyLang();
   window.addEventListener('scroll', onScroll, {passive:true});
   window.addEventListener('resize', onScroll);
   onScroll();

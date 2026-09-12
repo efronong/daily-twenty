@@ -1,5 +1,5 @@
 {
-  "_help": "Sections and the free RSS feeds each one reads. Add or remove feeds here; a feed that fails is skipped and the rest still build. Order of sections = order on the page. Google News feeds (news.google.com) show the real publisher's name, have no photos, and are limited to max_google_per_section stories per row.",
+  "_help": "Sections and the free RSS feeds each one reads. 'feeds' are the English sources, 'feeds_ja' the Japanese ones used by 日本語 mode; 'name'/'name_ja' are the section titles. A feed that fails is skipped and the rest still build. Google News feeds show the real publisher's name and have no photos; they are limited to max_google_per_section (max_google_per_section_ja in Japanese).",
   "per_section": 12,
   "max_per_source": 4,
   "max_google_per_section": 3,
@@ -16,6 +16,13 @@
         {"source": "CNN", "url": "http://rss.cnn.com/rss/edition_world.rss"},
         {"source": "France 24", "url": "https://www.france24.com/en/rss"},
         {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-MY&gl=MY&ceid=MY:en"}
+      ],
+      "name_ja": "国際",
+      "feeds_ja": [
+        {"source": "NHK", "url": "https://www.nhk.or.jp/rss/news/cat6.xml"},
+        {"source": "CNN.co.jp", "url": "http://feeds.cnn.co.jp/rss/cnn/cnn.rdf"},
+        {"source": "AFPBB News", "url": "https://www.afpbb.com/rss/cat/news"},
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/WORLD?hl=ja&gl=JP&ceid=JP:ja"}
       ]
     },
     {
@@ -30,6 +37,13 @@
         {"source": "NPR", "url": "https://feeds.npr.org/1006/rss.xml"},
         {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/money"},
         {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-MY&gl=MY&ceid=MY:en"}
+      ],
+      "name_ja": "ビジネス",
+      "feeds_ja": [
+        {"source": "NHK", "url": "https://www.nhk.or.jp/rss/news/cat5.xml"},
+        {"source": "東洋経済", "url": "https://toyokeizai.net/list/feed/rss"},
+        {"source": "ダイヤモンド", "url": "https://diamond.jp/list/feed/rss/dol"},
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ja&gl=JP&ceid=JP:ja"}
       ]
     },
     {
@@ -42,6 +56,13 @@
         {"source": "Investing.com", "url": "https://www.investing.com/rss/news.rss"},
         {"source": "The Edge Malaysia", "url": "https://theedgemalaysia.com/rss.xml"},
         {"source": "Google News", "url": "https://news.google.com/rss/search?q=stock+markets&hl=en-MY&gl=MY&ceid=MY:en"}
+      ],
+      "name_ja": "マーケット",
+      "feeds_ja": [
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E6%A0%AA%E5%BC%8F%E5%B8%82%E5%A0%B4&hl=ja&gl=JP&ceid=JP:ja"},
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E6%97%A5%E7%B5%8C%E5%B9%B3%E5%9D%87%20%E7%82%BA%E6%9B%BF&hl=ja&gl=JP&ceid=JP:ja"},
+        {"source": "株探", "url": "https://kabutan.jp/news/rss/"},
+        {"source": "ZUU online", "url": "https://zuuonline.com/feed"}
       ]
     },
     {
@@ -55,6 +76,14 @@
         {"source": "BBC News", "url": "https://feeds.bbci.co.uk/news/technology/rss.xml"},
         {"source": "Wired", "url": "https://www.wired.com/feed/rss"},
         {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=en-MY&gl=MY&ceid=MY:en"}
+      ],
+      "name_ja": "テクノロジー",
+      "feeds_ja": [
+        {"source": "ITmedia NEWS", "url": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml"},
+        {"source": "Impress Watch", "url": "https://www.watch.impress.co.jp/data/rss/1.0/ipw/feed.rdf"},
+        {"source": "GIGAZINE", "url": "https://gigazine.net/news/rss_2.0/"},
+        {"source": "CNET Japan", "url": "https://feeds.japan.cnet.com/rss/cnet/all.rdf"},
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=ja&gl=JP&ceid=JP:ja"}
       ]
     },
     {
@@ -69,6 +98,14 @@
         {"source": "GameSpot", "url": "https://www.gamespot.com/feeds/news/"},
         {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/showbiz"},
         {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-MY&gl=MY&ceid=MY:en"}
+      ],
+      "name_ja": "エンタメ・ゲーム",
+      "feeds_ja": [
+        {"source": "ファミ通", "url": "https://www.famitsu.com/rss/fcom_all.rdf"},
+        {"source": "4Gamer", "url": "https://www.4gamer.net/rss/index.xml"},
+        {"source": "映画.com", "url": "https://eiga.com/rss/news/"},
+        {"source": "ORICON NEWS", "url": "https://www.oricon.co.jp/rss/news/"},
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=ja&gl=JP&ceid=JP:ja"}
       ]
     },
     {
@@ -80,6 +117,12 @@
         {"source": "Free Malaysia Today", "url": "https://www.freemalaysiatoday.com/category/nation/feed/"},
         {"source": "The Edge Malaysia", "url": "https://theedgemalaysia.com/rss.xml"},
         {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/NATION?hl=en-MY&gl=MY&ceid=MY:en"}
+      ],
+      "name_ja": "マレーシア",
+      "feeds_ja": [
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2&hl=ja&gl=JP&ceid=JP:ja"},
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%20%E7%B5%8C%E6%B8%88&hl=ja&gl=JP&ceid=JP:ja"},
+        {"source": "NNA ASIA", "url": "https://www.nna.jp/rss/asia_malaysia"}
       ]
     },
     {
@@ -91,7 +134,14 @@
         {"source": "Mothership", "url": "https://mothership.sg/feed/"},
         {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/singapore"},
         {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/NATION?hl=en-SG&gl=SG&ceid=SG:en"}
+      ],
+      "name_ja": "シンガポール",
+      "feeds_ja": [
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%AB&hl=ja&gl=JP&ceid=JP:ja"},
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%AB%20%E7%B5%8C%E6%B8%88&hl=ja&gl=JP&ceid=JP:ja"},
+        {"source": "NNA ASIA", "url": "https://www.nna.jp/rss/asia_singapore"}
       ]
     }
-  ]
+  ],
+  "max_google_per_section_ja": 8
 }

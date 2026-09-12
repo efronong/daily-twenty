@@ -188,7 +188,8 @@ def norm_link(u):
     return urllib.parse.urlunsplit((p.scheme, p.netloc.lower().removeprefix("www."), p.path.rstrip("/"), urllib.parse.urlencode(q), ""))
 
 def norm_title(t):
-    return re.sub(r"[^a-z0-9 ]", "", t.lower())[:70]
+    # keeps Japanese characters too, so Japanese headlines are not all seen as the same story
+    return re.sub(r"[\W_]+", "", t.lower(), flags=re.UNICODE)[:60]
 
 def pub_key(name):
     name = re.sub(r"\b(the|news|online|english)\b", "", name.lower())
@@ -280,45 +281,49 @@ def read_schedule():
 def main():
     cfg = json.loads((ROOT / os.environ.get("FEEDS_FILE", "feeds.json")).read_text(encoding="utf-8"))
     n, per_source = cfg.get("per_section", 12), cfg.get("max_per_source", 4)
-    max_google = cfg.get("max_google_per_section", 3)
-    direct = {s["id"]: [f["source"] for f in s["feeds"] if not is_google(f["url"])] for s in cfg["sections"]}
-    jobs = [(s["id"], f) for s in cfg["sections"] for f in s["feeds"]]
-
-    def load(job):
-        sid, f = job
-        try:
-            return sid, f, parse_feed(fetch(f["url"]), f["source"], is_google(f["url"])), None
-        except Exception as e:  # one broken feed never stops the edition
-            return sid, f, [], f"{type(e).__name__}: {e}"[:160]
-
-    raw = {s["id"]: [] for s in cfg["sections"]}
-    report = []
-    with cf.ThreadPoolExecutor(max_workers=12) as ex:
-        for sid, f, items, err in ex.map(load, jobs):
-            raw[sid] += items
-            report.append((f["source"], sid, len(items), err))
-
-    for src, sid, count, err in sorted(report, key=lambda r: (r[1], r[0])):
-        print(f"  {'OK ' if count else 'ERR'} {sid:9} {src:22} {count:3} items" + (f"   ({err})" if err else ""))
-
-    seen, stories = set(), []
-    # local sections claim their stories first, so a Malaysia story isn't used up by Business
+    langs = [("en", "feeds", cfg.get("max_google_per_section", 3)),
+             ("ja", "feeds_ja", cfg.get("max_google_per_section_ja", cfg.get("max_google_per_section", 3)))]
     ids = [s["id"] for s in cfg["sections"]]
     order = [i for i in ("my", "sg") if i in ids] + [i for i in ids if i not in ("my", "sg")]
-    for sid in order:
-        for i in select(raw[sid], n, per_source, seen, max_google, direct[sid]):
-            i["cat"] = sid
-            stories.append(i)
+
+    jobs = [(lang, s["id"], f) for lang, key, _ in langs for s in cfg["sections"] for f in s.get(key, [])]
+
+    def load(job):
+        lang, sid, f = job
+        try:
+            return lang, sid, f, parse_feed(fetch(f["url"]), f["source"], is_google(f["url"])), None
+        except Exception as e:  # one broken feed never stops the edition
+            return lang, sid, f, [], f"{type(e).__name__}: {e}"[:160]
+
+    raw = {(lang, s["id"]): [] for lang, _, _ in langs for s in cfg["sections"]}
+    report = []
+    with cf.ThreadPoolExecutor(max_workers=14) as ex:
+        for lang, sid, f, items, err in ex.map(load, jobs):
+            raw[(lang, sid)] += items
+            report.append((lang, sid, f["source"], len(items), err))
+
+    for lang, sid, src, count, err in sorted(report):
+        print(f"  {'OK ' if count else 'ERR'} [{lang}] {sid:9} {src:22} {count:3} items" + (f"   ({err})" if err else ""))
+
+    stories = []
+    for lang, key, max_google in langs:
+        seen = set()
+        direct = {s["id"]: [f["source"] for f in s.get(key, []) if not is_google(f["url"])] for s in cfg["sections"]}
+        for sid in order:
+            for i in select(raw[(lang, sid)], n, per_source, seen, max_google, direct[sid]):
+                i["cat"], i["lang"] = sid, lang
+                stories.append(i)
 
     missing = [s for s in stories if not s["image"] and s.get("via") != "google"]
     with cf.ThreadPoolExecutor(max_workers=12) as ex:
         for s, img in zip(missing, ex.map(lambda s: og_image(s["link"]), missing)):
             s["image"] = img
 
-    if len(stories) < 6:
-        sys.exit(f"Only {len(stories)} stories found — keeping yesterday's page instead of publishing an empty one.")
+    english = [s for s in stories if s["lang"] == "en"]
+    if len(english) < 6:
+        sys.exit(f"Only {len(english)} English stories found — keeping the last page instead of publishing an empty one.")
 
-    sections = [{"id": s["id"], "name": s["name"]} for s in cfg["sections"]]
+    sections = [{"id": s["id"], "name": s["name"], "name_ja": s.get("name_ja", s["name"])} for s in cfg["sections"]]
     payload = {
         "compiled": NOW.isoformat(),
         "repo": os.environ.get("GITHUB_REPOSITORY", ""),
@@ -328,17 +333,18 @@ def main():
     }
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data" / "latest.json").write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
-    blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
+    blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\/")
     page = (ROOT / "template.html").read_text(encoding="utf-8").replace("__DATA__", blob)
     (ROOT / "site").mkdir(exist_ok=True)
     (ROOT / "site" / "index.html").write_text(page, encoding="utf-8")
-    # tiny file the page's refresh button checks to see whether a newer edition exists
+    # tiny file the page checks to see whether a newer edition exists
     (ROOT / "site" / "edition.json").write_text(json.dumps({"compiled": payload["compiled"], "stories": len(stories)}), encoding="utf-8")
     if (ROOT / "icons").is_dir():   # home screen and browser tab icons
         shutil.copytree(ROOT / "icons", ROOT / "site" / "icons", dirs_exist_ok=True)
+    jp = [s for s in stories if s["lang"] == "ja"]
     with_img = sum(1 for s in stories if s["image"])
     via_g = sum(1 for s in stories if s.get("via") == "google")
-    print(f"Built site/index.html — {len(stories)} stories, {with_img} with photos, {via_g} via Google News.")
+    print(f"Built site/index.html — {len(english)} English + {len(jp)} Japanese stories, {with_img} with photos, {via_g} via Google News.")
 
 
 if __name__ == "__main__":
