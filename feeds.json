@@ -21,7 +21,6 @@
       "feeds_ja": [
         {"source": "NHK", "url": "https://www.nhk.or.jp/rss/news/cat6.xml"},
         {"source": "CNN.co.jp", "url": "http://feeds.cnn.co.jp/rss/cnn/cnn.rdf"},
-        {"source": "AFPBB News", "url": "https://www.afpbb.com/rss/cat/news"},
         {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/WORLD?hl=ja&gl=JP&ceid=JP:ja"}
       ]
     },
@@ -54,15 +53,15 @@
         {"source": "Yahoo Finance", "url": "https://finance.yahoo.com/news/rssindex"},
         {"source": "CNBC", "url": "https://www.cnbc.com/id/10000664/device/rss/rss.html"},
         {"source": "Investing.com", "url": "https://www.investing.com/rss/news.rss"},
-        {"source": "The Edge Malaysia", "url": "https://theedgemalaysia.com/rss.xml"},
-        {"source": "Google News", "url": "https://news.google.com/rss/search?q=stock+markets&hl=en-MY&gl=MY&ceid=MY:en"}
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=stock+markets&hl=en-MY&gl=MY&ceid=MY:en"},
+        {"source": "Free Malaysia Today", "url": "https://www.freemalaysiatoday.com/category/business/feed/"}
       ],
       "name_ja": "マーケット",
       "feeds_ja": [
         {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E6%A0%AA%E5%BC%8F%E5%B8%82%E5%A0%B4&hl=ja&gl=JP&ceid=JP:ja"},
         {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E6%97%A5%E7%B5%8C%E5%B9%B3%E5%9D%87%20%E7%82%BA%E6%9B%BF&hl=ja&gl=JP&ceid=JP:ja"},
-        {"source": "株探", "url": "https://kabutan.jp/news/rss/"},
-        {"source": "ZUU online", "url": "https://zuuonline.com/feed"}
+        {"source": "ZUU online", "url": "https://zuuonline.com/feed"},
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E6%B1%BA%E7%AE%97%20%E6%A5%AD%E7%B8%BE&hl=ja&gl=JP&ceid=JP:ja"}
       ]
     },
     {
@@ -101,28 +100,26 @@
       ],
       "name_ja": "エンタメ・ゲーム",
       "feeds_ja": [
-        {"source": "ファミ通", "url": "https://www.famitsu.com/rss/fcom_all.rdf"},
         {"source": "4Gamer", "url": "https://www.4gamer.net/rss/index.xml"},
-        {"source": "映画.com", "url": "https://eiga.com/rss/news/"},
-        {"source": "ORICON NEWS", "url": "https://www.oricon.co.jp/rss/news/"},
-        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=ja&gl=JP&ceid=JP:ja"}
+        {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=ja&gl=JP&ceid=JP:ja"},
+        {"source": "Game*Spark", "url": "https://www.gamespark.jp/rss20/index.rdf"},
+        {"source": "GAME Watch", "url": "https://game.watch.impress.co.jp/data/rss/1.0/gmw/feed.rdf"},
+        {"source": "INSIDE", "url": "https://www.inside-games.jp/rss20/index.rdf"},
+        {"source": "アニメ!アニメ!", "url": "https://animeanime.jp/rss20/index.rdf"}
       ]
     },
     {
       "id": "my",
       "name": "Malaysia",
       "feeds": [
-        {"source": "The Star", "url": "https://www.thestar.com.my/rss/News/Nation"},
         {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/malaysia"},
         {"source": "Free Malaysia Today", "url": "https://www.freemalaysiatoday.com/category/nation/feed/"},
-        {"source": "The Edge Malaysia", "url": "https://theedgemalaysia.com/rss.xml"},
         {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/NATION?hl=en-MY&gl=MY&ceid=MY:en"}
       ],
       "name_ja": "マレーシア",
       "feeds_ja": [
         {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2&hl=ja&gl=JP&ceid=JP:ja"},
-        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%20%E7%B5%8C%E6%B8%88&hl=ja&gl=JP&ceid=JP:ja"},
-        {"source": "NNA ASIA", "url": "https://www.nna.jp/rss/asia_malaysia"}
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%20%E7%B5%8C%E6%B8%88&hl=ja&gl=JP&ceid=JP:ja"}
       ]
     },
     {
@@ -138,10 +135,9 @@
       "name_ja": "シンガポール",
       "feeds_ja": [
         {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%AB&hl=ja&gl=JP&ceid=JP:ja"},
-        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%AB%20%E7%B5%8C%E6%B8%88&hl=ja&gl=JP&ceid=JP:ja"},
-        {"source": "NNA ASIA", "url": "https://www.nna.jp/rss/asia_singapore"}
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%AB%20%E7%B5%8C%E6%B8%88&hl=ja&gl=JP&ceid=JP:ja"}
       ]
     }
   ],
-  "max_google_per_section_ja": 8
+  "max_google_per_section_ja": 6
 }
