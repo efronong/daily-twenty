@@ -2,7 +2,8 @@ name: Build The Daily Twenty
 
 on:
   schedule:
-    - cron: "0 22 * * *"   # every day at 6:00 AM Malaysia time
+    - cron: "0 22 * * *"                # 6:00 AM Malaysia time (morning edition)
+    - cron: "0 1,4,7,10,13,16 * * *"    # 9 AM, 12 PM, 3 PM, 6 PM, 9 PM, midnight
   workflow_dispatch:
 
 permissions:
@@ -27,14 +28,15 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch today's stories and build the page
+      - name: Fetch the latest stories and build the page
         id: build
         run: |
           dir=$(dirname "$(git ls-files '*build.py' | head -n1)")
           echo "dir=$dir" >> "$GITHUB_OUTPUT"
           cd "$dir" && python build.py
 
-      - name: Save today's story list
+      - name: Save the morning story list (keeps the schedule switched on)
+        if: github.event.schedule == '0 22 * * *' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
