@@ -1,5 +1,5 @@
 {
- "compiled": "2026-09-12T17:06:49.817521+00:00",
+ "compiled": "2026-09-12T17:12:54.572699+00:00",
  "repo": "efronong/daily-twenty",
  "schedule": [
   [
@@ -34,31 +34,38 @@
  "sections": [
   {
    "id": "world",
-   "name": "World"
+   "name": "World",
+   "name_ja": "国際"
   },
   {
    "id": "business",
-   "name": "Business"
+   "name": "Business",
+   "name_ja": "ビジネス"
   },
   {
    "id": "finance",
-   "name": "Finance & Markets"
+   "name": "Finance & Markets",
+   "name_ja": "マーケット"
   },
   {
    "id": "tech",
-   "name": "Technology"
+   "name": "Technology",
+   "name_ja": "テクノロジー"
   },
   {
    "id": "ent",
-   "name": "Entertainment & Games"
+   "name": "Entertainment & Games",
+   "name_ja": "エンタメ・ゲーム"
   },
   {
    "id": "my",
-   "name": "Malaysia"
+   "name": "Malaysia",
+   "name_ja": "マレーシア"
   },
   {
    "id": "sg",
-   "name": "Singapore"
+   "name": "Singapore",
+   "name_ja": "シンガポール"
   }
  ],
  "stories": [
@@ -69,7 +76,8 @@
    "date": "2026-09-12T16:01:00+00:00",
    "summary": "PKR vice-president R Ramanan posted a cryptic message with the video, saying: 'Sometimes, we already know, but we chose to remain quiet.'",
    "image": "https://media.freemalaysiatoday.com/v3/2026/09/ab2cefb0-6265-44e1-8cb4-a40014773859-Anwar-Ibrahim-singing-tiktok-pic-120926-2.jpg",
-   "cat": "my"
+   "cat": "my",
+   "lang": "en"
   },
   {
    "source": "Malay Mail",
@@ -78,7 +86,8 @@
    "date": "2026-09-12T13:00:00+00:00",
    "summary": "KUALA LUMPUR, Sept 12 — News consumption has reached a turning point: social media now edges television...",
    "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/12/362121.jpg",
-   "cat": "my"
+   "cat": "my",
+   "lang": "en"
   },
   {
    "source": "Free Malaysia Today",
@@ -87,7 +96,8 @@
    "date": "2026-09-12T15:23:00+00:00",
    "summary": "Party president Ahmad Zahid Hamidi says Umno members in Cabinet were professional in carrying out their duties, despite the differing views in the coalition government.",
    "image": "https://media.freemalaysiatoday.com/v3/2026/09/d42b6b62-65d6-4218-b53f-a944bebdc576-Ahmad-Zahid-Hamidi-fmt-120926-7.jpg",
-   "cat": "my"
+   "cat": "my",
+   "lang": "en"
   },
   {
    "source": "Malay Mail",
@@ -96,7 +106,8 @@
    "date": "2026-09-12T12:20:50+00:00",
    "summary": "MIRI, Sept 12 — The remains of all five victims of the Sept 8 helicopter crash in Long Lellang have been handed ov...",
    "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/12/362212.jpg",
-   "cat": "my"
+   "cat": "my",
+   "lang": "en"
   },
   {
    "source": "Free Malaysia Today",
@@ -105,7 +116,8 @@
    "date": "2026-09-12T15:11:00+00:00",
    "summary": "Smoke pollution levels go down, but Serian still at 'very unhealthy' levels, with 'unhealthy' air at four other areas.",
    "image": "https://media.freemalaysiatoday.com/v3/2026/09/f6462164-2c9b-4798-bd59-4bc1b3126ded-jerebu-sarawak-bernama-010926.webp",
-   "cat": "my"
+   "cat": "my",
+   "lang": "en"
   },
   {
    "source": "Malay Mail",
@@ -114,7 +126,8 @@
    "date": "2026-09-12T12:06:24+00:00",
    "summary": "KULIM, Sept 12 — The Home Ministry (KDN) will announce the effective date of amendments to citizenship provi...",
    "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/12/362211.jpg",
-   "cat": "my"
+   "cat": "my",
+   "lang": "en"
   },
   {
    "source": "Free Malaysia Today",
@@ -123,7 +136,8 @@
    "date": "2026-09-12T14:17:00+00:00",
    "summary": "The Umno deputy president says if the two parties could agree on a formula for seat negotiations in Terengganu, a similar approach could be adopted for the next general election.",
    "image": "https://media.freemalaysiatoday.com/v3/2026/09/e471c3ff-f0d7-459a-84f1-9451353efce1-Mohamad-Hasan-fmt-120926-2.jpg",
-   "cat": "my"
+   "cat": "my",
+   "lang": "en"
   },
   {
    "source": "Malay Mail",
@@ -132,7 +146,8 @@
    "date": "2026-09-12T11:58:41+00:00",
    "summary": "KUALA LUMPUR, Sept 12 — The presence of PAS leaders at this year’s Umno general assembly signals the potenti...",
    "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/12/362208.jpg",
-   "cat": "my"
+   "cat": "my",
+   "lang": "en"
   },
   {
    "source": "BusinessToday Malaysia",
@@ -142,27 +157,30 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "my"
+   "cat": "my",
+   "lang": "en"
+  },
+  {
+   "source": "NST Online",
+   "title": "'Remove us if we are no longer needed', says Tok Mat",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNT3c0eVZqTC1uSE13REFhV2lLcFlWQU45VWQ5Yks0LW5XVjYxUE1LWDRkVEQ1aU5RZ2NmWjJBTktxWXREeWtlN1pTT19XSkU1QWVZX2tUblI4aVdidmYzTEQzbGNoZnQyeTkzM1FXampuZm1kcGthNzhtRzBBeThTUjVKQktmb0lIUlBLVllXaFY2RDVIc2d5YldoVXNFSGZvd3c?oc=5",
+   "date": "2026-09-12T13:13:35+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "my",
+   "lang": "en"
   },
   {
    "source": "Malaysiakini",
-   "title": "Tok Mat urges PAS to dissolve one state assembly it controls as 'sincerity test'",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd0llWjNySHhYN2t2WkpEXzFqYzVhMHVKbWx3Yk01SlFsRkNuZlFJV0NYVzVncVJXT094SjRyQ3hGREt3TEROZHoxOUx3bDl2aExHVjRnQmV4MFBiSGl4Q05TTHNsSlljN1VUbVdSQ3NYamUzQUNzM2Q1Z0NlMG9nckd4LVpqam9lWmVycEpyOWNBaDJjZ1JMeko3Tk5VV0liSkxLc0sxdTJDcm5RYlZIYVZSU1Q2UHFQN3hR?oc=5",
-   "date": "2026-09-12T11:43:00+00:00",
+   "title": "Zahid dares Harapan to kick Umno out of Putrajaya, dissolve Parliament",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONE8yLU1GOThzd3Z6WXNubWJSNkxvZTFRcVhxUWtrTnd1YzFzYk1Mbl8wbEwtYzVybzBfYVJXQW9rSHYtOGJSMHpJSHdJMXl1MXc0aEVvUWNWX3l5NW1wMVhUUEdaczJkZnlrNmxwV3FfRFlzUENzWjlHVUN2dXRyRlVfTGRPUUYyaVZ1QU9HT09xQjQ1OV9renpKWW16UTd1VTR5eThfVVVGRndsQ2t3?oc=5",
+   "date": "2026-09-12T12:16:00+00:00",
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "my"
-  },
-  {
-   "source": "Borneo Post",
-   "title": "Daughter vows to become doctor in memory of mother killed in Long Lellang helicopter crash",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdml4SzB0bGtjaWpzMVI0ZEpyQ2lTTEFxeDZQMllHdUdsTTA3c1hMMFB6cmJra3pzZ040UjdHOW1oN2lxWC1vX1VTTVJnQWZhRmRtbjVyV0MtU0lRSHJxQmFQU3V0U3hEdnBtR3J1Z1RSTTBGdWRwZm54dVhJRThZRHpwWUZUVTJDV2VnQ181Smd6QTNXQ3lBaldUSHh5ckNfbmpEX2hWODR1ZkQtT1djbWJmek1CRUpHNDB5dU5hTlRLNmx5V2RGYjlOaFU?oc=5",
-   "date": "2026-09-12T06:56:54+00:00",
-   "summary": "Via Google News.",
-   "image": "",
-   "via": "google",
-   "cat": "my"
+   "cat": "my",
+   "lang": "en"
   },
   {
    "source": "The Straits Times",
@@ -171,7 +189,8 @@
    "date": "2026-09-12T15:10:00+00:00",
    "summary": "He was the agency's third chairman from 1972 to 1975 and had worked there for 30 years.",
    "image": "https://cassette.sphdigital.com.sg/image/straitstimes/71698dde8e8622d3f4eaddcb3f4d1910e39507298f54e670c679cf0d2043cbe5",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "CNA",
@@ -180,7 +199,8 @@
    "date": "2026-09-12T14:44:00+00:00",
    "summary": "Prime Minister Lawrence Wong says Singapore is not immune to such pressures, pointing to racist comments online and divisions between foreigners and Singaporeans.",
    "image": "https://dam.mediacorp.sg/image/upload/s--OfOMYgAE--/c_crop,h_1113,w_1978,x_10,y_1/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/12/lawrence_wong_at_singapore_kadayanallur_muslim_league.png?itok=fGw4eGJy",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "Mothership",
@@ -189,7 +209,8 @@
    "date": "2026-09-12T12:07:15+00:00",
    "summary": "She had talked about facing pressure to eat more to boost sales.",
    "image": "https://static.mothership.sg/1/2026/09/Article-Cover-Pic-2000-x-1050-2026-09-12T112950.556.jpg",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "Malay Mail",
@@ -198,7 +219,8 @@
    "date": "2026-09-12T08:03:43+00:00",
    "summary": "SINGAPORE, Sept 12 — A Singapore court has frozen up to US$499.2 million (RM2.04 billion) in assets linked to iron...",
    "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/12/362155.jpg",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "The Straits Times",
@@ -207,7 +229,8 @@
    "date": "2026-09-12T12:20:54+00:00",
    "summary": "He was speaking at the 85th anniversary celebration of the Singapore Kadayanallur Muslim League.",
    "image": "https://cassette.sphdigital.com.sg/image/straitstimes/dfd4de3deb7ad27f2135acdee71ecbe973220ef76af7de1c91a60815c1b9e049",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "CNA",
@@ -216,7 +239,8 @@
    "date": "2026-09-12T09:08:40+00:00",
    "summary": "With the SGSecure movement in its 10th year, CNA spoke to psychologists from the Internal Security Department and the Ministry of Home Affairs.",
    "image": "https://dam.mediacorp.sg/image/upload/s--yscGtm3d--/c_crop,h_671,w_1193,x_1,y_85/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/11/image_90.png?itok=4T7sIRh4",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "Mothership",
@@ -225,7 +249,8 @@
    "date": "2026-09-12T11:51:03+00:00",
    "summary": "Sad and disappointed.",
    "image": "https://static.mothership.sg/1/2026/09/Untitled-design-22-1.png",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "Malay Mail",
@@ -234,7 +259,8 @@
    "date": "2026-09-12T06:51:01+00:00",
    "summary": "SINGAPORE, Sept 12 — The police have warned cryptocurrency users whose email accounts were recently hacked to chec...",
    "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/12/362137.jpg",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "The Straits Times",
@@ -243,7 +269,8 @@
    "date": "2026-09-12T10:50:00+00:00",
    "summary": "An interim surface pipe was installed, with repairs expected to be done in the next few days.",
    "image": "https://cassette.sphdigital.com.sg/image/straitstimes/b551783af6f1e4c6d7bee57c47c8921b4d936db94a1446b40d1d1ddfd9c3cfc7",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "AsiaOne",
@@ -253,7 +280,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "stomp.sg",
@@ -263,7 +291,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
   },
   {
    "source": "AsiaOne",
@@ -273,7 +302,18 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "sg"
+   "cat": "sg",
+   "lang": "en"
+  },
+  {
+   "source": "France 24",
+   "title": "Tens of thousands of people protest in Germany against far-right AfD",
+   "link": "https://www.france24.com/en/europe/20260912-tens-of-thousands-of-people-protest-in-germany-against-far-right-afd",
+   "date": "2026-09-12T17:12:10+00:00",
+   "summary": "About 150,000 demonstrators took to the streets in around 20 cities across Germany on Saturday against the far-right AfD, after the party scored a crushing victory in a state election last week. The Alternative for Germany (AfD)…",
+   "image": "https://s.france24.com/media/display/83bf7692-aecb-11f1-b02e-005056a97e36/w:1024/p:16x9/000-C84J6TY.jpg",
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "BBC News",
@@ -282,7 +322,8 @@
    "date": "2026-09-12T17:05:34+00:00",
    "summary": "Amodei's call comes amid growing concerns that AI models may become able to inflict serious damage worldwide.",
    "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/9256/live/a1802a30-aeb9-11f1-b1d1-571ed4d7ff2c.jpg",
-   "cat": "world"
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "The Guardian",
@@ -291,7 +332,8 @@
    "date": "2026-09-12T16:06:59+00:00",
    "summary": "Party can boost its campaign power with funds from billionaire backers, but it can also lose support from ordinary Britons All things being equal, pretty much any political strategist would welcome a £72m war chest; a sum higher…",
    "image": "https://i.guim.co.uk/img/media/061f13a224d30f4577e345596b379b5528eb35ce/1440_0_7200_5760/master/7200.jpg?width=700&quality=85&auto=format&fit=max&s=033160fd6acd601705a462fee1e76383",
-   "cat": "world"
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "Al Jazeera",
@@ -300,16 +342,8 @@
    "date": "2026-09-12T16:06:48+00:00",
    "summary": "If there is a Saudi request, Pakistan and Turkiye will intervene, but direct involvement in the Yemen war is unlikely.",
    "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-08-31T102801Z_1444947647_RC2L9NAK0EI2_RTRMADP_3_TURKEY-SAUDI-PAKISTAN-MEETING-1789229095.jpg?resize=1920%2C1440",
-   "cat": "world"
-  },
-  {
-   "source": "France 24",
-   "title": "Kenya: Crocodiles pushed towards homes by rising lakes",
-   "link": "https://www.france24.com/en/video/20260912-kenya-crocodiles-pushed-towards-homes-by-rising-lakes",
-   "date": "2026-09-12T15:51:07+00:00",
-   "summary": "Climate change is forcing Kenya's wildlife officers to go on a crocodile hunt on the shores of Lake Baringo in a bid to curb growing human-wildlife conflict. Lakes in Kenya's Rift Valley have risen to levels not seen in at least…",
-   "image": "https://s.france24.com/media/display/5011a466-ae9c-11f1-906f-005056a90284/w:1024/p:16x9/EN-20260911-215340-215521-CS.jpg",
-   "cat": "world"
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "NPR",
@@ -318,7 +352,8 @@
    "date": "2026-09-12T13:03:20+00:00",
    "summary": "That's a quote from former rugby star Gareth Thomas, who is HIV positive. At the International AIDS Conference in Rio this year, he spoke out about the isolation and discrimination tied to the virus.",
    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x2000+0+0/resize/3000x2000!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F1b%2Fa9%2F01f1fe5c44a9ace40208a6845fb1%2Faids-conference-06404.jpg",
-   "cat": "world"
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "DW",
@@ -327,7 +362,18 @@
    "date": "2026-09-12T11:55:00+00:00",
    "summary": "US President Donald Trump's trip to Ireland to watch a golf tournament has also included meetings with leaders there.",
    "image": "https://www.dw.com/en/trump-visits-ireland-says-unification-would-be-fantastic/image/jpeg",
-   "cat": "world"
+   "cat": "world",
+   "lang": "en"
+  },
+  {
+   "source": "France 24",
+   "title": "Kenya: Crocodiles pushed towards homes by rising lakes",
+   "link": "https://www.france24.com/en/video/20260912-kenya-crocodiles-pushed-towards-homes-by-rising-lakes",
+   "date": "2026-09-12T15:51:07+00:00",
+   "summary": "Climate change is forcing Kenya's wildlife officers to go on a crocodile hunt on the shores of Lake Baringo in a bid to curb growing human-wildlife conflict. Lakes in Kenya's Rift Valley have risen to levels not seen in at least…",
+   "image": "https://s.france24.com/media/display/5011a466-ae9c-11f1-906f-005056a90284/w:1024/p:16x9/EN-20260911-215340-215521-CS.jpg",
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "BBC News",
@@ -336,7 +382,8 @@
    "date": "2026-09-12T16:55:31+00:00",
    "summary": "A TV news presenter has been named as the traditional kingdom of Tooro's new monarch but the late king's family claim he chose an heir.",
    "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/e300/live/11d0fd70-aec7-11f1-89e2-171455bb2760.png",
-   "cat": "world"
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "The Guardian",
@@ -345,7 +392,8 @@
    "date": "2026-09-12T16:05:32+00:00",
    "summary": "US president says on visit to republic that unification will happen eventually so ‘may as well happen now’ Donald Trump has said he would “love” to see a united Ireland and that it “may as well happen now”. The US president…",
    "image": "https://i.guim.co.uk/img/media/ee24264b9b786dc796202e9989d4ee0abfe9aeac/260_0_3976_3183/master/3976.jpg?width=700&quality=85&auto=format&fit=max&s=d7b4ce172fbdeef08bc1d6adba377a0f",
-   "cat": "world"
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "Al Jazeera",
@@ -354,16 +402,8 @@
    "date": "2026-09-12T15:58:53+00:00",
    "summary": "DRC detected the outbreak of the rare Bundibugyo virus in mid-May; nearly 3,400 people have since died.",
    "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/reuters_6a9838da-1788360922.jpg?resize=1920%2C1440",
-   "cat": "world"
-  },
-  {
-   "source": "France 24",
-   "title": "Trump in Ireland: What are Irish people saying about the visit?",
-   "link": "https://www.france24.com/en/video/20260912-trump-in-ireland-what-are-irish-people-saying-about-the-visit",
-   "date": "2026-09-12T15:50:55+00:00",
-   "summary": "US President Donald Trump held talks Saturday in Dublin with his Irish counterpart Catherine Connolly during a weekend visit that's more about a major golf tournament hosted on a course he owns on the country's Atlantic coast. He…",
-   "image": "https://s.france24.com/media/display/81b97d4e-aec0-11f1-a92c-005056a90284/w:1024/p:16x9/EN-20260912-091018-091909-CS.jpg",
-   "cat": "world"
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "Malay Mail",
@@ -373,7 +413,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "world"
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "The Star",
@@ -383,7 +424,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "world"
+   "cat": "world",
+   "lang": "en"
   },
   {
    "source": "Bloomberg",
@@ -392,7 +434,8 @@
    "date": "2026-09-12T15:40:50+00:00",
    "summary": "Pointed offers a strategic twist to the news quiz format, testing not just players’ knowledge of the news but also their confidence in their answers. Join Bloomberg's Lisa Mateo, Christina Ruffini, and Jeff Mason as they play and…",
    "image": "",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "CNBC",
@@ -401,7 +444,8 @@
    "date": "2026-09-12T12:00:01+00:00",
    "summary": "Most battery cells currently rely on raw materials from China. GM is seeking to establish domestic supply chains both for EVs and energy storage.",
    "image": "https://image.cnbcfm.com/api/v1/image/108361876-1789141454960-Kelty.jpg?v=1789157448&w=1920&h=1080",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "The Guardian",
@@ -410,7 +454,8 @@
    "date": "2026-09-12T11:00:33+00:00",
    "summary": "The former New York Times columnist is taking a step away from politics to focus on moral and humanistic concerns the media rarely cover David Brooks knows there are plenty of podcasts out there. But as the veteran commentator…",
    "image": "https://i.guim.co.uk/img/media/fab78bd54316ea44485d0aac34b8148e309971e3/483_0_2700_2160/master/2700.jpg?width=700&quality=85&auto=format&fit=max&s=d170e77dc4f2c765c8450663e8c515b6",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "NPR",
@@ -419,7 +464,8 @@
    "date": "2026-09-12T09:00:00+00:00",
    "summary": "As an Anthropic resignation and OpenAI agents' hack on Hugging Face capture public attention, some researchers worry the industry is racing too fast to develop powerful AI while safety measures lag.",
    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2400+0+0/resize/3600x2400!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbe%2Ff0%2Fa0340bef40fdbbc96a5c5127de82%2Fgettyimages-2285103434.jpg",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "Malay Mail",
@@ -428,7 +474,8 @@
    "date": "2026-09-12T08:30:29+00:00",
    "summary": "PORT KLANG, Sept 12 — The services and manufacturing sectors were the highest contributors to investment value in...",
    "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/12/362157.jpg",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "BBC News",
@@ -437,7 +484,8 @@
    "date": "2026-09-11T15:37:25+00:00",
    "summary": "O'Leary has said airline passengers \"can't afford to fly with the high-fare rapists around Europe\".",
    "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/7e56/live/494cd5f0-adee-11f1-9a5c-a7a4083eb832.jpg",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "Bloomberg",
@@ -446,7 +494,8 @@
    "date": "2026-09-12T15:31:39+00:00",
    "summary": "Leaders of emerging powers including Russia and Iran projected a united front at a weekend summit in New Delhi, with a joint statement that targeted a US-launched war in the Middle East, Washington’s tariff campaign and its…",
    "image": "",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "CNBC",
@@ -455,7 +504,8 @@
    "date": "2026-09-11T16:06:31+00:00",
    "summary": "OpenAI launched ChatGPT for Financial Services, targeting the labor-intensive research, modeling and pitchbook tasks traditionally handled by junior bankers.",
    "image": "https://image.cnbcfm.com/api/v1/image/108361349-1789061236185-gettyimages-2221337331-kokovlis-notitle250625_npN2j.jpeg?v=1789061264&w=1920&h=1080",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "The Guardian",
@@ -464,7 +514,8 @@
    "date": "2026-09-12T10:00:31+00:00",
    "summary": "Canadians ‘angry’ at Trump for suggesting Canada should become 51st state, says mayor, as US businesses see sales fall amid trade war Like many Canadians, Tom Reid isn’t crossing the US-Canada border as often these days. But he…",
    "image": "https://i.guim.co.uk/img/media/32a631f2ba809f9b63c69a408f9891c6a1e7e1ee/354_0_3333_2667/master/3333.jpg?width=700&quality=85&auto=format&fit=max&s=32ed7cebb6f71cd4f74d360de3207201",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "BusinessToday Malaysia",
@@ -474,7 +525,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "The Citizen",
@@ -484,7 +536,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "BusinessToday Malaysia",
@@ -494,16 +547,18 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "business"
+   "cat": "business",
+   "lang": "en"
   },
   {
    "source": "Yahoo Finance",
-   "title": "Jim Cramer Explains Why Merck (MRK) Is His Fantasy Defense Stock",
-   "link": "https://finance.yahoo.com/healthcare/articles/jim-cramer-explains-why-merck-164911925.html",
-   "date": "2026-09-12T16:49:11+00:00",
+   "title": "‘Big Short’ Michael Burry buys fine wine to bet against AI threat and USD",
+   "link": "https://finance.yahoo.com/markets/crypto/articles/big-short-michael-burry-buys-170000046.html",
+   "date": "2026-09-12T17:00:00+00:00",
    "summary": "",
-   "image": "https://media.zenfs.com/en/insidermonkey.com/3fe61364b95991c98978f250ba7bea2c.png",
-   "cat": "finance"
+   "image": "https://media.zenfs.com/en/thestreet_881/5b519be5d113f37dcebc9c66006e4f9d.jpg",
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "Investing.com",
@@ -512,7 +567,8 @@
    "date": "2026-09-12T16:06:23+00:00",
    "summary": "",
    "image": "https://content-media.investing.com/trkd-images/LYNXMPEM8B08O_L.jpg",
-   "cat": "finance"
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "MarketWatch",
@@ -521,7 +577,8 @@
    "date": "2026-09-12T16:01:00+00:00",
    "summary": "“It wasn’t an ACA plan, but it was meaningfully cheaper than anything I could find on the ACA exchange.”",
    "image": "https://images.mktw.net/im-65472748",
-   "cat": "finance"
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "CNBC",
@@ -530,16 +587,18 @@
    "date": "2026-09-12T12:49:15+00:00",
    "summary": "In August, consumer prices rose 3.4% over the past year while wages increased just 3.1%.",
    "image": "https://image.cnbcfm.com/api/v1/image/108359327-1788699994908-gettyimages-1410770965-_dsc0885.jpeg?v=1788700077&w=1920&h=1080",
-   "cat": "finance"
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "Yahoo Finance",
-   "title": "Nvidia takes new role as AI’s $5 trillion bill comes due",
-   "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-takes-role-ai-5-164700743.html",
-   "date": "2026-09-12T16:47:00+00:00",
+   "title": "Teva’s (TEVA) $125 Million BioXcel Bid Offers Upside, but FDA and Auction Risks Remain",
+   "link": "https://finance.yahoo.com/healthcare/articles/teva-teva-125-million-bioxcel-165735518.html",
+   "date": "2026-09-12T16:57:35+00:00",
    "summary": "",
-   "image": "https://media.zenfs.com/en/thestreet_881/7321cff9bdad71afa5b5d47d06551557.jpg",
-   "cat": "finance"
+   "image": "https://media.zenfs.com/en/insidermonkey.com/00160c808210627082fccf241fddec5c.jpg",
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "Investing.com",
@@ -548,7 +607,8 @@
    "date": "2026-09-12T15:24:53+00:00",
    "summary": "",
    "image": "https://content-media.investing.com/trkd-images/LYNXMPEM8B0EQ_L.jpg",
-   "cat": "finance"
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "MarketWatch",
@@ -557,7 +617,8 @@
    "date": "2026-09-12T15:00:00+00:00",
    "summary": "“Am I required to create three new inherited IRAs so that the firm can divide it equally?”",
    "image": "https://images.mktw.net/im-51979575",
-   "cat": "finance"
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "CNBC",
@@ -566,16 +627,18 @@
    "date": "2026-09-11T14:30:29+00:00",
    "summary": "Chinese netizens focused on the price of Apple’s iPhone Duo, as cheaper Xiaomi and Huawei foldables raise value comparisons and muddle the foldable's reception.",
    "image": "https://image.cnbcfm.com/api/v1/image/108360733-17889791162026-09-09t183657z_845063295_rc2ufnaobo1w_rtrmadp_0_apple-event.jpeg?v=1788979182&w=1920&h=1080",
-   "cat": "finance"
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "Yahoo Finance",
-   "title": "Ciena’s (CIEN) Backlog Just Hit $8.5B and Keeps Climbing",
-   "link": "https://finance.yahoo.com/technology/ai/articles/ciena-cien-backlog-just-hit-164644198.html",
-   "date": "2026-09-12T16:46:44+00:00",
+   "title": "This 5.8%-Yielding Dividend Stock Has Made 3 Deals -- Including Nearly $3.2 Billion in Acquisitions -- in the Last 2 Weeks. Should Income Investors Be Worried or Excited?",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/5-8-yielding-dividend-stock-165001437.html",
+   "date": "2026-09-12T16:50:01+00:00",
    "summary": "",
-   "image": "https://media.zenfs.com/en/insidermonkey.com/c817c4fab63cc226a0e31b0127fc86d9.jpg",
-   "cat": "finance"
+   "image": "https://media.zenfs.com/en/motleyfool.com/cfa465af31055fee1efc0aa8d7f1c98b.jpg",
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "Pluang",
@@ -585,7 +648,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "finance"
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "CNN",
@@ -595,7 +659,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "finance"
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "RTL Today",
@@ -605,7 +670,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "finance"
+   "cat": "finance",
+   "lang": "en"
   },
   {
    "source": "Engadget",
@@ -614,7 +680,8 @@
    "date": "2026-09-12T16:37:31+00:00",
    "summary": "Dario Amodei said that \"we owe it to humanity to try.\"",
    "image": "https://www.engadget.com/img/gallery/anthropics-ceo-proposes-a-three-step-plan-to-curb-ai-development/l-intro-1789230534.jpg",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "The Verge",
@@ -623,7 +690,8 @@
    "date": "2026-09-12T16:35:00+00:00",
    "summary": "Amelia Meath and Nick Sanborn, better known as Sylvan Esso, have been bringing their low-key electro-pop to the masses since 2014, bursting onto the scene with their self-titled debut album and the single \"Hey Mami.\" Over the…",
    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Sylvan_Esso_-_Ow__-_Photo_By_Tonje_Thilesen.jpg?quality=90&strip=all&crop=0,0,100,100",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "TechCrunch",
@@ -632,7 +700,8 @@
    "date": "2026-09-12T15:52:11+00:00",
    "summary": "What would it actually look like to \"pace the frontier\"?",
    "image": "https://techcrunch.com/wp-content/uploads/2026/03/Dario-Amodei-Anthropic-1.jpg?w=1024",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "Wired",
@@ -641,7 +710,8 @@
    "date": "2026-09-12T11:08:00+00:00",
    "summary": "Take your home office to new heights with our favorite motorized standing desks.",
    "image": "https://media.wired.com/photos/685f10e6472f227b69cc9560/master/pass/The%20Best%20Standing%20Desks.png",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "Ars Technica",
@@ -650,7 +720,8 @@
    "date": "2026-09-12T11:00:53+00:00",
    "summary": "Unitree might be the world’s most important robotics company.",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/80276b2c-6940-443f-adf2-2aabe4d1e838_2048x1365-1152x648.jpg",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "BBC News",
@@ -659,7 +730,8 @@
    "date": "2026-09-12T01:00:00+00:00",
    "summary": "Shiona McCallum meets mums and hospital staff trialling a new assisted birth innovation.",
    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p93vjy.jpg",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "Engadget",
@@ -668,7 +740,8 @@
    "date": "2026-09-12T16:30:00+00:00",
    "summary": "For some time, Find My sharing was limited to an hour, a day, or indefinitely. That's changing in iOS 27, thanks to more flexible timelines.",
    "image": "https://www.engadget.com/img/gallery/how-to-share-your-iphones-location-for-just-as-long-as-you-need/l-intro-1787842240.jpg",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "The Verge",
@@ -677,7 +750,8 @@
    "date": "2026-09-12T16:23:40+00:00",
    "summary": "Anthropic CEO Dario Amodei says the time has come to slow down AI development and will give third-party evaluators like METR access to its models to help ensure its \"adherence to safety practices and commitments.\" In a winding…",
    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&strip=all&crop=0,0,100,100",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "TechCrunch",
@@ -686,17 +760,19 @@
    "date": "2026-09-12T14:40:00+00:00",
    "summary": "Revolut said it notified affected customers and alerted the relevant government agency, law enforcement, and financial regulators.",
    "image": "https://techcrunch.com/wp-content/uploads/2025/11/revolut.png?resize=1200,629",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "Motor1.com",
    "title": "Man Takes Wife To Ford Dealership. Then He Tells Her Something Shocking: ‘You Did What?'",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBJTG1QQ2ZpajAwUTViRUdRRVZ6aElkQlBCd3ByM0dBcXJpMEctNlhlNzl1VG5PbUhLeWt4TmxCZnlZY1pZQzhIQUpkSzBPS0dHanByd2liVE1ka3RmVmRTVmNwZ0NHZjdJQk1QRWxQWENwNlVMaUE?oc=5",
-   "date": "2026-09-12T17:00:44+00:00",
+   "date": "2026-09-12T17:00:00+00:00",
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "infoq.com",
@@ -706,7 +782,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
   },
   {
    "source": "Mashable",
@@ -716,7 +793,18 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "tech"
+   "cat": "tech",
+   "lang": "en"
+  },
+  {
+   "source": "Variety",
+   "title": "Love Has Everything to Do With It: Darlene Love, Producer Taraji P. Henson and Director Barry Avrich on ‘Darlene Love: I Know Where I’ve Been,’ a Stirring Music Doc Premiering in Toronto",
+   "link": "https://variety.com/2026/music/news/darlene-love-documentary-interview-toronto-film-festival-1236859617/",
+   "date": "2026-09-12T17:12:01+00:00",
+   "summary": "The truly legendary singer Darlene Love had her story already lightly sketched out in a 2013 film about backup singers of yore, 2013’s Oscar-winning “20 Feet From Stardom.” But what Love’s fans — and they are legion — really have…",
+   "image": "https://variety.com/wp-content/uploads/2026/09/Darlene-Love-I-Know-Where-Ive-Been_Still_01-e1789232995955.png",
+   "cat": "ent",
+   "lang": "en"
   },
   {
    "source": "Polygon",
@@ -725,16 +813,8 @@
    "date": "2026-09-12T17:00:14+00:00",
    "summary": "This married comics team is reinventing DC's Jonah Hex",
    "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/jonah_hex_shadow.jpeg",
-   "cat": "ent"
-  },
-  {
-   "source": "Variety",
-   "title": "Venice Film Festival Reveals Award Winners (Updating Live)",
-   "link": "https://variety.com/2026/film/festivals/venice-film-festival-2026-award-winners-list-golden-lion-1236859418/",
-   "date": "2026-09-12T16:57:04+00:00",
-   "summary": "The Venice Film Festival is about to reveal its award winners, including the prestigious Golden Lion for best film. Last year, Jim Jarmusch took home the top prize for his family triptych “Father Mother Sister Brother,” while…",
-   "image": "https://variety.com/wp-content/uploads/2022/06/Leone-doro-Credits-La-Biennale-di-Venezia-foto-ASAC-cr-res.jpg",
-   "cat": "ent"
+   "cat": "ent",
+   "lang": "en"
   },
   {
    "source": "Kotaku",
@@ -743,7 +823,8 @@
    "date": "2026-09-12T16:41:30+00:00",
    "summary": "Moss was one of the first standout games for PlayStation's virtual reality headset",
    "image": "https://kotaku.com/app/uploads/2026/09/26321767178_d9427dd00c_o-1280x720.jpg",
-   "cat": "ent"
+   "cat": "ent",
+   "lang": "en"
   },
   {
    "source": "BBC News",
@@ -752,7 +833,8 @@
    "date": "2026-09-12T16:32:27+00:00",
    "summary": "Best known for The Last Emperor and Sexy Beast, the British film-maker was celebrated for working with international directors throughout his decades-long career.",
    "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/dddd/live/02758cf0-aec3-11f1-89e2-171455bb2760.jpg",
-   "cat": "ent"
+   "cat": "ent",
+   "lang": "en"
   },
   {
    "source": "PC Gamer",
@@ -761,7 +843,8 @@
    "date": "2026-09-12T15:23:03+00:00",
    "summary": "Beast mode activated.",
    "image": "https://cdn.mos.cms.futurecdn.net/vcsDRSBAnGgs7QgC6cWuHK-1280-80.jpg",
-   "cat": "ent"
+   "cat": "ent",
+   "lang": "en"
   },
   {
    "source": "GameSpot",
@@ -770,7 +853,8 @@
    "date": "2026-09-12T05:30:00+00:00",
    "summary": "It's almost time for the first BlizzCon event in two years, as Blizzard prepares to celebrate its past, present, and future with its traditional opening ceremony. This leads into two days of panels and interviews, as Blizzard…",
    "image": "https://www.gamespot.com/wp-content/uploads/2026/09/BlizzCon.jpg?w=300",
-   "cat": "ent"
+   "cat": "ent",
+   "lang": "en"
   },
   {
    "source": "Malay Mail",
@@ -779,7 +863,18 @@
    "date": "2026-09-12T02:23:21+00:00",
    "summary": "ATHEMN, Sept 12 — Two doctors have been placed under arrest in Greece after a prominent music sta...",
    "image": "https://www.malaymail.com/malaymail/uploads/images/2026/09/12/362059.jpg",
-   "cat": "ent"
+   "cat": "ent",
+   "lang": "en"
+  },
+  {
+   "source": "Variety",
+   "title": "Venice Film Festival Reveals Award Winners (Updating Live)",
+   "link": "https://variety.com/2026/film/festivals/venice-film-festival-2026-award-winners-list-golden-lion-1236859418/",
+   "date": "2026-09-12T16:57:04+00:00",
+   "summary": "The Venice Film Festival is about to reveal its award winners, including the prestigious Golden Lion for best film. Last year, Jim Jarmusch took home the top prize for his family triptych “Father Mother Sister Brother,” while…",
+   "image": "https://variety.com/wp-content/uploads/2022/06/Leone-doro-Credits-La-Biennale-di-Venezia-foto-ASAC-cr-res.jpg",
+   "cat": "ent",
+   "lang": "en"
   },
   {
    "source": "Polygon",
@@ -788,16 +883,8 @@
    "date": "2026-09-12T16:12:16+00:00",
    "summary": "News on StarCraft, Warcraft, Diablo, WoW, and Overwatch is coming at BlizzCon 2026 this weekend, here's how to watch Blizzard's opening ceremony.",
    "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/25055924/blizzcon_logo.jpg",
-   "cat": "ent"
-  },
-  {
-   "source": "Variety",
-   "title": "Jeremy Thomas Remembered as a Filmmaker ‘Full of Stories’ and a ‘Rebel With Taste’: ‘The Canon of His Work Is Unmatched’",
-   "link": "https://variety.com/2026/film/global/jeremy-thomas-tributes-luca-guadagnino-1236859499/",
-   "date": "2026-09-12T16:28:38+00:00",
-   "summary": "Tributes have begun flowing from across the film world for Jeremy Thomas, the legendary British producer who passed away on Friday at the age of 77. “He made great movies and was a loyal, dear friend,” said producer and publisher…",
-   "image": "https://variety.com/wp-content/uploads/2026/09/GettyImages-1431749800.jpg",
-   "cat": "ent"
+   "cat": "ent",
+   "lang": "en"
   },
   {
    "source": "Kotaku",
@@ -806,7 +893,8 @@
    "date": "2026-09-12T16:00:34+00:00",
    "summary": "In space, no one can hear you scream (about the ever increasing cost of home ownership)",
    "image": "https://kotaku.com/app/uploads/2026/09/No-Mans-Sky-Cosmos-update-official-image-Hello-Games-1280x720.jpg",
-   "cat": "ent"
+   "cat": "ent",
+   "lang": "en"
   },
   {
    "source": "koreaboo.com",
@@ -816,7 +904,8 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "ent"
+   "cat": "ent",
+   "lang": "en"
   },
   {
    "source": "The Star",
@@ -826,7 +915,821 @@
    "summary": "Via Google News.",
    "image": "",
    "via": "google",
-   "cat": "ent"
+   "cat": "ent",
+   "lang": "en"
+  },
+  {
+   "source": "Vietnam.vn",
+   "title": "グエン・ティ・リエン・フオン保健副大臣は、マレーシアで開催されたASEAN保健大臣会合に、対話パートナー国とともに参加した。",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUkhIaThWYm0taDhUQWJUYnI3YmEtQk5wVmt0QnlpbExvNWNDOVJmT3pMZEVOOXJYUHE4ZG1KNk11MUJHbXJ3bmJpUjNNWG51dDh1eDY1dGM3Q2hjTGpldllzX0hFRTljRTRtdlhSMUVILUpMTFBHeHZnNFllQ1Vhd0ZFeEhQNWhWYzBVMEdDRWk4RGdMUXdLbVVuRlhxWXpMbjdEcHNMSlZuUHpTY193MHNYRHZwRk55d3hnUEJRcEl4aWtOcTUwOFZFdlRxQWdQWjFhLW53?oc=5",
+   "date": "2026-09-12T12:34:11+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "my",
+   "lang": "ja"
+  },
+  {
+   "source": "Oggi.jp",
+   "title": "クアラルンプールの名門ホテルで楽しめる「コスパ最強アフタヌーンティー」",
+   "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE14SUF3UUNiaTI4czdiZW5VcG14U1UzeVh5RVVkVFBDM2ZkY2lVMnFINlE2YTRwZFFPWTRn?oc=5",
+   "date": "2026-09-12T09:02:56+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "my",
+   "lang": "ja"
+  },
+  {
+   "source": "pr-free.jp",
+   "title": "たびチョク ／■「マレーシアのタージ・マハル」へ！車窓を楽しむ特急ETSで古都イポーへ",
+   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9VM0tMUlNjV3lFNlRxcUI2OFpVUTdIdjhqMnd0RXNNZklLNnF1NUtUNjNiZTlWSXNFV0p0MWhuRXBrMGYybFE?oc=5",
+   "date": "2026-09-12T04:09:07+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "my",
+   "lang": "ja"
+  },
+  {
+   "source": "diamond.jp",
+   "title": "「インドネシアは日本の新幹線を選ぶべきだった」と言う人が知らない、中国高速鉄道が東南アジアで苦戦する本当の理由〈2026年度上期7位〉",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ENnpwVG56UE5XaXVYeVBkLUNqbnZUQkhVTS1nN1lpbmh2Z2dfQUtnZmhJa2NsVkhlTlFzZVFSU3poc1NmWWZhbzNnUjFwcEMwMWsyU0JR0gFPQVVfeXFMTXNVeFhTQTVKcjAyaHJzSENuVU5RakxJYnp1ZmxWdXEtZlcxeHJQT0xwLVFXZl9PQUQ5Snp3QkRkcmlCVEVUMzZLUEVIYnZpYw?oc=5",
+   "date": "2026-09-12T02:28:23+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "my",
+   "lang": "ja"
+  },
+  {
+   "source": "国際環境NGO FoE Japan",
+   "title": "マレーシアの市民社会・個人が米政府へのレアアース供給反対のアクションを実施ー戦争への不関与を要求",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE54VEZrMVRXRGY3NGlSdVRfakRDWGNncVdzSUZNV3oxMjZESFhteXViVHhNT2hTS3ltTVlLRVFPU0JMNFZRdUdNYlp4a3NEV2NPamRVWTlva0tqcTR1WUVBb3NVY3FfbGFuX01wYkctaUFXUQ?oc=5",
+   "date": "2026-09-11T20:39:31+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "my",
+   "lang": "ja"
+  },
+  {
+   "source": "BigGo ファイナンス",
+   "title": "BYD、タンジュン・マリム工場計画を断念もマレーシア現地組立の推進は継続",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5hQ0dKRFJJZW1KTkR1R2ZEdS1pbU1sQXA1MHJjOVh5UmdYUFlmeDVCWHJIb0p5SU5vS1dyc1c5VlNnNkJGdjBsdHNhVEI5eUxhbFBlSktEcEw1S0x0UG9uS3EySkszaVBfVVRlZENvcTBPODFG?oc=5",
+   "date": "2026-09-11T18:24:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "my",
+   "lang": "ja"
+  },
+  {
+   "source": "Vietnam.vn",
+   "title": "プーチン大統領はBRICS首脳会議で、インド、南アフリカ、エジプト、マレーシアの首脳と会談を行った。",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeU1jZm1NRnNMTldoVVhMUzlpdFBoa3RMdjVTdkFmV1ZwMk9tbVhxRXRQY2pkUmYtOEZMeVVfVUhZV2JYLU42U0c2YklOLXFNbjZaZW05LXhZYmFMT3Bsa2NzeXRwRmRUY3MyOGFMdHUxWDV4d0NtajBJSVNGM2YwUVpNZ1VEWGZmOWFuNjhSa1ZNN3FoUC1BaHdyWEVVVXJ5T1pVdmhSSDZLam5iOFVkRU9n?oc=5",
+   "date": "2026-09-12T03:44:23+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "my",
+   "lang": "ja"
+  },
+  {
+   "source": "Vietnam.vn",
+   "title": "FIFAによる帰化規則の最新情報：インドネシア、マレーシア、ベトナムの代表チームに影響はあるのか？",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV3VZTlZuVGJLeVBBMUxud0s0TWpzOFlVM1RLUWtzcVluMkI1QnoxQnFMX1Q5alJoZ0hwX0NGSVJ0emstVUlBNW44Nk1CTkRwdDBtTE84bC1MUHRYdEQ5cmd1cUJSWmlWNDJzNDE4ZUxnVWJ4bWhRZ0YtMFRZV3FENzBHNjA5c2JNS1Eyd1NWXzJsMmFBT1h3V3plNlhFSlBlWGlzaUFFdzF6Zw?oc=5",
+   "date": "2026-09-12T03:12:19+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "my",
+   "lang": "ja"
+  },
+  {
+   "source": "ニコニコニュース",
+   "title": "Peach の「片道5,000円タイムセール」9月14日の23:59まで、関西～香港やシンガポールも5,000円？",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1PcmpRd0VQeEpaLWNaRXh4RWh3UGoxUjBQVXFRellwWll4WVVxRXh0SHRWRWlfdmtKN0NMZGh5bDJpTDRvVUUtbklLVHd6amRzRllNc090c3F4T0hxZVB0Rk12QThLWXQyTk1VOGhOcThGUlE?oc=5",
+   "date": "2026-09-12T16:27:17+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "sg",
+   "lang": "ja"
+  },
+  {
+   "source": "旅とおでかけ 鉄道チャンネル",
+   "title": "Peach の「片道5,000円タイムセール」9月14日の23:59まで、関西～香港やシンガポールも5,000円？ 秋冬の対象路線を調べてみた",
+   "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE40VzBpOERpR3VmUFhaQTZJNTN2dEJLVDhCaVpNSFBzVGVpY0NFZzNlekFWS1FZS3Z4bUZJY2dDYXA4THNmX3BqZEVUMHI?oc=5",
+   "date": "2026-09-12T16:20:41+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "sg",
+   "lang": "ja"
+  },
+  {
+   "source": "Vietnam.vn",
+   "title": "シンガポールで「Data for Life」コンペティションの第4シーズンを開始：国際的なイノベーションネットワークを拡大。",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPX1FMOGh2ZlFfc0VZY1p2bncyNnlRdkdtd0hTWlZyVTBIY0lPeWtBY2cyY05RcjNzZnp0YUJMMFh6am5OdC1BMGk4c0Q1MV9DeFlDQk1OSkwyem8tNk03YTI5ak94Sk9zMWpnazFGdG5rRDhPVTZoRWE3N0pxMmhUbXR3bEtLbXFCdFpMU0dYWHdndHpJTWFyaUl3QVA4NmxqaTB6YjJXcTRBWGZOd3I1TXFaX29VcjRKZDBz?oc=5",
+   "date": "2026-09-12T15:37:59+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "sg",
+   "lang": "ja"
+  },
+  {
+   "source": "まいどなニュース",
+   "title": "37歳元朝ドラヒロイン シンガポールを満喫するビキニ姿を公開 「このスタイルでお母さんか」「美脚ですね」",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBuMUJZS2ZoQjA2MDFOQXdDeURBRjRiaGpIMS01WXNRdVUxVE9NZnFqSVd6NV9vT2I4TlFkcjBrS0JmanUxVU9FeVlMZTZsSndp?oc=5",
+   "date": "2026-09-12T12:40:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "sg",
+   "lang": "ja"
+  },
+  {
+   "source": "Yahoo!ニュース",
+   "title": "夏菜＞シンガポールでの水着ショット公開 美ボディー際立つタンクトップ姿も（毎日キレイ）",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfa2p4V3otX3JzS3MzMExpR3k3aFltVHJ2VzgwcldWQ2lNbTI3MC11ZU9OY2NXNVNTaGFqX2xkbFhyQjAzMkVKY2lQTE1jMkRSWnRkNWJSenh6elhReERWend0TGcwVnlQeU5Hd2lJSkFPRG1iaHJNaGV3dk5RcFU?oc=5",
+   "date": "2026-09-12T12:40:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "sg",
+   "lang": "ja"
+  },
+  {
+   "source": "毎日キレイ",
+   "title": "夏菜：シンガポールでの水着ショット公開 美ボディー際立つタンクトップ姿も",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1KVlFyaUhya09GUlc3Vk9malo1aXRwenlWUnVkTC1uRnl3TTNRRHdrUHhaZmZnbkVUYVpGRWRlVm9hZHBzX3hsd1UxQnVfTUxFQ25rLXFNSXlnak9vWTZYR29GSnVjSktYb3lSRHg2SQ?oc=5",
+   "date": "2026-09-12T12:30:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "sg",
+   "lang": "ja"
+  },
+  {
+   "source": "Vietnam.vn",
+   "title": "シンガポール公安省は、シンガポールにおけるデータとAIを活用したソリューションを発掘するためのコンテストを開始した。",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcjR4XzJDQUF0bnZnczB6LW9PTDJYTVVUcmtTQ1hBcmxpcWpraC1qVHFsclVYZ1dOSTVfRTg3eVl5aTNtaGY1a3B5VkNodzhxejBQdnBpWkJBdHhOSlhBNGZpTDZDaUg5di1sejRhQ1RvOWlBR0NycWF0b1o0MWhvcUVMVzFGQTRIbVdEMHRMZEc0ZWZFWktzbDdnRUNxUE9mai1UdA?oc=5",
+   "date": "2026-09-12T13:08:52+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "sg",
+   "lang": "ja"
+  },
+  {
+   "source": "Vietnam.vn",
+   "title": "シンガポールにおける「データ・フォー・ライフ」シーズン4（2026年）：国際的なイノベーション連携の拡大",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTTF2aWhxc1ljVFJBQWxZNkZHN3VycTZqaHlWZE9jeGs5dXFVSDBBYTBXZ1RIZm15ZTNtaktEeFV4RHA4dEFoWk9BWGFGUmFMdzlaeERSdzFMdlBqQ2xyZ0tma3BfU3FnQ3ZJMF9XcncxN1Rza0U3d3RKMVRiRHpIQnZZZXZHY3RYbXRieHMwSURndHBvUVVJWDZ2djJPbjdlQWo4dTVOd1d3dDlqNHdlM2hOTjhZQjFOeWc?oc=5",
+   "date": "2026-09-12T11:49:11+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "sg",
+   "lang": "ja"
+  },
+  {
+   "source": "NHK",
+   "title": "BRICS首脳会議開幕 このあと中印首脳会談へ",
+   "link": "https://news.web.nhk/newsweb/na/nd-20260912de49901",
+   "date": "2026-09-12T10:07:00+00:00",
+   "summary": "中国やロシア、インドなどが加盟するBRICSの首脳会議が、12日からインドで開かれています。 習近平国家主席は会議にあわせて7年ぶりにインドを訪問し、このあとモディ首相と会談する予定で、係争地帯をめ…",
+   "image": "https://imgu.web.nhk/news/u/news/nd/kiji/20260912de49901/20260912de49901_E0000028920_1_l.jpg",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "CNN.co.jp",
+   "title": "初代市長の心臓を発見、言い伝え通り噴水内に 20年ベルギー",
+   "link": "https://www.cnn.co.jp/fringe/35252563.html?ref=rss",
+   "date": "2026-09-12T09:31:00+00:00",
+   "summary": "市内の噴水で改修作業を行っていたら、初代市長の心臓が収められた小箱が見つかった――。ベルギー東部ベルビエの当局が2020年、そんな発見を発表した。同市では1世紀あまりの間、噴水内に市長の心臓が隠されているとの言い伝えが信じられていた。 当局者によると、ピエール・ダビド初代市長の心臓はこの年の8月、小箱に密閉された状態で見つかった。 ダビド氏は1798年から1839年に死亡するまで市政を担った。CNN提携局RTLの報...",
+   "image": "https://www.cnn.co.jp/storage/2026/09/12/b53f0e176d9fd28ab6a6e0eb035f93ac/t/324/432/d/200902085401-restricted-pierre-david-heart.jpg",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "NHK",
+   "title": "ホルムズ海峡の代替ルートで情勢不安定化 市場への影響懸念",
+   "link": "https://news.web.nhk/newsweb/na/nd-20260912de49899",
+   "date": "2026-09-12T09:46:00+00:00",
+   "summary": "ホルムズ海峡を避けて原油を輸送するルートとなっているサウジアラビアのパイプラインが攻撃を受け、操業を一時停止しました。 さらにイランの支援を受ける中東イエメンの反政府勢力は、紅海にある要衝の島を制圧…",
+   "image": "https://imgu.web.nhk/news/u/news/nd/kiji/20260912de49899/20260912de49899_E0000028951_1_l.jpg",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "CNN.co.jp",
+   "title": "9.11前に航空機突入の脅威について警告、CIAが「大統領日報」を機密解除",
+   "link": "https://www.cnn.co.jp/usa/35252562.html?ref=rss",
+   "date": "2026-09-12T06:58:00+00:00",
+   "summary": "1998年9月10日に提出された米大統領向けの諜報（ちょうほう）報告の末尾には、今となっては有名なクリントン大統領（当時）への警告が記されていた。国際テロ組織アルカイダの指導者、オサマ・ビンラディン容疑者に関係するグループが、「爆発物を積んだ航空機を米国の都市に突入させる可能性がある」という内容だ。 ふたを開けてみれば、爆発物は使用されなかった。使われたのは航空機4機のみで、2機はニューヨークの世界貿易...",
+   "image": "https://www.cnn.co.jp/storage/2026/09/12/3e9dbfc6edffb6a76a22e233fad78b97/t/768/512/d/ap010911025947.jpg",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "読売新聞",
+   "title": "フィリピン沖のフェリー炎上事故、死者は７６人に…鎮火した船内から遺体発見・不明１０人以上",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9RTi1DYVd1LTFyNWR5ZlRGNnl6THJjaWV5V0k3ZzgxYkxnTFVXN0NfV3dyM3dIVko1ZmVQQnZXUmpGbERhcE5LQi1qbE12VUo5TEtCYnZZS1VFQ0syZWo2S0dR?oc=5",
+   "date": "2026-09-12T15:07:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "ハリウッド・リポーター・ジャパン",
+   "title": "ヘンリー王子主導の「インヴィクタス・ゲーム」に暗雲 ウガンダが“国王への忠誠”を理由に出場辞退か",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DNjNTd0V1dkNrZnlBMGtGOV9Ha21ubmhUWTdxUFliM3ljdEZoSUJZcGhwUzNoWkdsS0RlUTlIMkRsSFc2OWxKQkd2bG5fRkExT290aTVCQXd0UWxzd3RSaGJnbzNuX09CLVJPMg?oc=5",
+   "date": "2026-09-12T14:34:03+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "newsdig.tbs.co.jp",
+   "title": "極寒のベーリング海で数日間漂流していた15歳少年を救助 転覆した船の上で発見も兄と「いとこ」は遺体で見つかる",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9iR21CTDdJZzJubURVaGFBZlpFMUNDbk5yTkUxcUxCTEpBUWpSNVRYOThnS3ZaMEZoU3hFZkltV3QwVlpuVkV0dDM0ZVo1U1Y5QXVFeGo5RQ?oc=5",
+   "date": "2026-09-12T10:00:53+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "nikkei.com",
+   "title": "中国とインド、国境問題解決へ努力 首脳会談で経済協力探る",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBjLVhhTU1EN014blhtVkFpMXdtc0dzVjNpdXNQZV9CZC15V25wSUZFYWgtbkZZYzZxTENYYS1FT1IyaDduRWZZSXRQWGFWbnpMbDdTS2VoX2N4Q3c1b2ZsWHg1OTljU0EwVzFBUQ?oc=5",
+   "date": "2026-09-12T08:08:32+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "jiji.com",
+   "title": "ハマス奇襲の警告黙殺か イスラエル首相、総選挙前に逆風",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE94bUJWV29uNGRGa0RhZGxsWnlMSWdPTWhveHh2UjlET0o0WkhERmlPblZkSWJXUm9UWVZ6UE9qOW43UXRzSU9OWVZnQ2xEQmVkMl9aY3hIX3hSTEVHMlh4R2hGdw?oc=5",
+   "date": "2026-09-12T07:41:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "47NEWS",
+   "title": "【速報】台湾に武器売却なら習氏訪米せずと中国",
+   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1qN2IyQ2tCTWctdUFhUWdab0g2QVJDUU81dkZCZXkwZXBrMlBLRElJVzJBM0cxTWgtN0t0TmY0Rm00WDMyN1AtLXBNYw?oc=5",
+   "date": "2026-09-12T07:38:21+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "読売新聞",
+   "title": "サウジアラビアの東西パイプラインが攻撃を受け操業を一時停止、イラクの親イラン勢力が関与か",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBYVXBpVmtJRVpSeUlqaUxXMjRCWWVJdXhWMGtoRkUyTlF5a0RDaGFVMGY5V1FyQ3RmNUtJRHZPNk1NUVJ0em9FcVY4c1V0eXpIclZDR1U0TGxSSmNmeHRBbDZ3?oc=5",
+   "date": "2026-09-12T12:22:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "読売新聞",
+   "title": "韓国がスパイ罪の適用範囲拡大、北朝鮮限定の「敵国」から「外国またはそれに準ずる団体」に…中国を念頭",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFByT0s2OXF4QWh3ZzRPQXh4eFNTOXhTOXNxMHpndWExdHU5Tk5yTTVJcFVUbFp3eWgzMjVzdE1TNU9qa3JwMy1tY3N4RUV2cUJhTVJsUGRGcUsxZ2lDaTdiRmVB?oc=5",
+   "date": "2026-09-12T11:11:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "world",
+   "lang": "ja"
+  },
+  {
+   "source": "ダイヤモンド",
+   "title": "長期低迷を脱した新興国株、反発は一時的か本格トレンドか？相場を支える2つのセクター【投資信託の最前線】 - ダイヤモンドZAi NISA投信グランプリ2026",
+   "link": "https://diamond.jp/articles/-/399091",
+   "date": "2026-09-12T12:00:00+00:00",
+   "summary": "「新興国株の好調は、果たして本物なのか――。」 2025年以降、2010年から続いた長い低迷期を脱し、先進国株を約2倍上回る運用成績で脚光を浴びている新興国株式市場。しかし、その上昇を支えるセクターは、中国のネット関連銘柄からテクノロジーハードウェア・半導体株へと大きな変化を見せています。BNPパリバ・アセットマネジメントの最新レポートから、今後の持続性を占う上で押さえておきたいポイントを解説します。",
+   "image": "https://dol.ismcdn.jp/mwimgs/1/6/-/img_1647a039539aec3bef113b97d33ac10a69946.jpg",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "東洋経済",
+   "title": "【原宿の売り場“争奪戦”】国内外のブランドが熱視線／人気区画は 「賃料2倍」のケースも／商業用不動産の空室率は0.1％／中韓勢の存在感／巨大店舗がオープン間近、超高収益・HUMAN MADEの異彩 | ビジネス | 東洋経済オンライン",
+   "link": "https://toyokeizai.net/articles/-/957887?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+   "date": "2026-09-12T10:00:00+00:00",
+   "summary": "気鋭のブランドや流行のファッションアイテムを求め、多くの若者や訪日客が集まる東京・原宿。ここで今、国内外のブランドによる「出店先争奪戦」が過熱している。商業用不動産の平均賃料は過去最高の水準だ。なぜ…",
+   "image": "https://tk.ismcdn.jp/mwimgs/7/1/1200w/img_713efcd55ccd4a93e22ad10818136a34262576.jpg?nextgen=false",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "NHK",
+   "title": "FRB利上げ観測強まる トランプ大統領は利下げ圧力",
+   "link": "https://news.web.nhk/newsweb/na/nd-20260912de49880",
+   "date": "2026-09-12T05:49:00+00:00",
+   "summary": "アメリカのFRB＝連邦準備制度理事会は、15日から金融政策を決める会合を開きます。 イラン情勢を背景に原油価格が再び上昇する中、金融市場ではFRBがインフレの再加速を抑えるためおよそ3年ぶりとなる利…",
+   "image": "https://imgu.web.nhk/news/u/news/nd/kiji/20260912de49880/20260912de49880_E0000028864_2_l.jpg",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "ダイヤモンド",
+   "title": "「結婚しないと孤独死するよ」→哲学者の反論がド正論すぎてスカッとする！ - ニュースな本",
+   "link": "https://diamond.jp/articles/-/398183",
+   "date": "2026-09-12T09:00:00+00:00",
+   "summary": "「独身のままだと老後は孤独死するよ」――結婚を勧める理由として、そんな言葉を聞くことがある。しかし、そもそも一人でいることの何が悪いのか。「孤独死」を盾に結婚を半ば押し付けるような日本社会の“常識”を、哲学者の小島和男氏が問い直す。※本稿は、哲学者の小島和男『生まれたくなんかなかったのに』（幻冬舎）の一部を抜粋・編集したものです。",
+   "image": "https://dol.ismcdn.jp/mwimgs/d/7/-/img_d7eb1de6ec203373d35f32d864af96d3385187.jpg",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "Gizmodo",
+   "title": "iPhone 18 Pro、iPhone Duoのau、楽天、ソフトバンク、ドコモでの本体価格・キャンペーンまとめ（9/12更新）",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPODdRVFNHRUNpUXgyNEcza3JmWE5tWnR4VmFzQWNVd29PRkY5N2pxS1FaXzJfMFlNZ0prcGJEN2xXNlc4eV9aQU02cGVWSWJjbFZTTTM1QkhseEk3c2htX181QUtxQ1AzaFFndTVNdXdKODVfZ19TYW83dVlXY0pqMQ?oc=5",
+   "date": "2026-09-12T14:27:54+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "読売新聞",
+   "title": "「海底ケーブル敷設船」導入を政府支援…台湾周辺で相次ぐ切断事件、日本の大型５隻だけでリスク対応に懸念",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5JUDZkSWdQSXpJdXY3UHJsSl8wZVhKWFQ3bkxjRnRPbjN6YU1DMXVyRlZPTC13dEdXeG01a0FLdEI5NDFwXzBxb3gzSTh4LUVaUk9vMjZTRXZlbUZxeklRbFBfc3g?oc=5",
+   "date": "2026-09-12T13:38:41+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "nlab.itmedia.co.jp",
+   "title": "「ハンカチ問題から解放されました」 無印良品の“790円メッシュポーチ”がかなり便利 「開ける前にどこに入っているのか分かる」「追加購入を考えています」（1/2） | ファッション ねとらぼリサーチ",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA5bTFQSnBUeFpTcFFhSVVYQThZc2lfalpXbkZndVpPeEtXOWFvN1ktcDZJaHBfWmIyY2xsSVpjVk8wcFJlbmJ0RzBZTEZkN2xwZVNqSTl0R3BFT3NJaGZRY2hiSdIBaEFVX3lxTE1jWEFraGp0aXlyNktOdjQ1M3ZxZ1I3anBJTmlwdHdBRzBnU084bktvcUpsRnJRMkQyWmt1MmNNMFN0Z2xnOXJhXzc1VVJJNTlOUTZBWGRUM0JPYmh4SWZMdFlZdmY5bHNi?oc=5",
+   "date": "2026-09-12T12:56:42+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "産経ニュース",
+   "title": "民泊活用か生活環境か 悩む政府 インバウンド「受け皿」期待も地域住民の悲鳴軽視できず",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Mc3FicHBtTldXNUttU1JSRnJNblpiLTNUSWdlX3ltcDhNUWZBcEx6RTNUd1FaOXgtZlV4ekQyanpWbTkzekJqcTJkUno1dW8yV2ItY0ZDNUdyOUN6WUFUQXVacWs3X1UzV3Jrd1ZIUkFZMWhFUmc?oc=5",
+   "date": "2026-09-12T12:23:31+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "株探",
+   "title": "フィジカルAIは急拡大必至、勇往邁進の「ロボット部品」関連6銘柄 ＜株探トップ特集＞",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mZkFJcnZabVNrTWtkaC05THlfUVhJNWY2Z1doQnp4QlQ1NHlvWnZiNkpDRUhiSnRoUkV3UGVSUjdaLWc4LUlKYkI3WXkxYnRwYktrTWtadXEzRVU4VHlVSw?oc=5",
+   "date": "2026-09-12T10:30:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "carview!",
+   "title": "まさかの“修復歴なし”!? 千葉豪雨で大量発生「冠水中古車」の恐ろしい実態「水没車」を見抜くポイントは？",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcXRMUlJGV0Zna3BBbWFLbVljbDdsdi1rMXJLSUZEdm5XcEVldjBhV0NUQlJodTJXR1ltQVZ1NUR2X05LRVE2TlA3Sk15LUtSZ2Ntb2JkeEVlUXNnM2d5cXhqcU42QkZ3cG1WTWdkYTdMb0VPVlVOZDk3X2JQSFZrOGZBSjZmRHFM?oc=5",
+   "date": "2026-09-12T10:12:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "乗りものニュース",
+   "title": "「この駅、酒飲みは通過禁止!?」 駅前に伝説の“鳥貴族1号店”→350円＆限定酒という強烈な誘惑 マスコット像まで立っている!?",
+   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE44aHRrZ1Y0VnRfaC1KQllrQmY3ZW5uNEdRS05oLWdDandBV2tUVjZlaGl3UFJNa2VZS2hudmNZdjZiUmdub2xQakRn?oc=5",
+   "date": "2026-09-12T09:12:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "nlab.itmedia.co.jp",
+   "title": "「雑草が生えてくるのが嫌で購入」草むしりを減らせる“除草・防草グッズ”3選 「施工が楽で簡単」「かなり庭がスッキリ」（1/2） | 住まい ねとらぼリサーチ",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xUGFTZm5ReVVzSnpTTUlWLVdCejl6REx6UE9mT0paS2hXcDBmUHdIRnRzNjdLRkdERGVYRUpJd1M1WWg2S0pqNkViOXpnVlFoVS1KVTNwZllleVQ5YmcwS3Y1NNIBaEFVX3lxTE1QdDJsV09YNEZkemVnTEJjV1BMMUNwRko4YWYtbG1mSlJxeFVZRDZuemwxMjFZQ3RfUGdfOW9NRmkyeGNKd2ViTm1uOUR6Zk5VQmtDOWZUazlKUGRVMzRiaWREWkkzU0Za?oc=5",
+   "date": "2026-09-12T12:50:06+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "business",
+   "lang": "ja"
+  },
+  {
+   "source": "ZUU online",
+   "title": "ルルレモンの株価が年初来54.04％安と半減 モンクレールは下落率トップ、3.45％安で年初来安値圏｜「SVT グローバル」9月10日",
+   "link": "https://zuuonline.com/archives/303140",
+   "date": "2026-09-12T03:02:00+00:00",
+   "summary": "主に欧米のファッション・ビューティ関連株で構成する「SVT グローバル」は9月10日、21銘柄が下落する売り優勢の展開となった。上昇率トップは「コーチ」を擁するタペストリーで1.90％高。現地時間の9月9日には2027年スプリングコレクションが米国・ニューヨークで開催され、グローバルアンバサダーの幾田りらが来場。ブラ[…]",
+   "image": "https://cdn.zuuonline.com/600/400/olnckswmpdzxsfdfdHaVetmwTAkqSbwN/e37fb820-908f-454d-9c36-ac63fa75ff26.jpg",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "ZUU online",
+   "title": "日々是相場［夕刊］―― 2026年9月11日（金）",
+   "link": "https://zuuonline.com/archives/303142",
+   "date": "2026-09-11T10:30:00+00:00",
+   "summary": "日経平均 64,011.34円 ▼1,259.61円 為替 １ドル＝154.08円 売買高（東証プライム、以下同） 26億6,821万株 売買代金 8兆7129億23百万円 値上り銘柄数 510銘柄 値下り銘柄数 986銘柄 騰落レシオ（25日） 112.57％ 市況概況 米国での利上げ懸念や原油高、日本での利上げ懸[…]",
+   "image": "https://cdn.zuuonline.com/600/400/sFtGqhibZVjpPWMnkwRwmeWfGfSJFUrm/225c06cf-f7de-443e-8c66-5882ba800e25.jpg",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "ZUU online",
+   "title": "アンダースロー：2027年度の新規国債発行額は2025年度並みで「ショック」とはならない",
+   "link": "https://zuuonline.com/archives/303141",
+   "date": "2026-09-11T09:00:00+00:00",
+   "summary": "この記事は2026年9月11日に配信されたメールマガジン「アンダースロー：2027年度の新規国債発行額は2025年度並みで「ショック」とはならない」を一部編集し、転載したものです。 目次シンカーECB9月理事会：底堅いマクロ経済見通しを背景に25bpの利上げを決定2027年度の新規国債発行額は2025年度並みで「ショッ[…]",
+   "image": "https://cdn.zuuonline.com/600/400/dKRkLnuFVnhAGxrIHRHCkSSjrbvJYpkl/184deb6f-2fca-4cca-aacc-c2c748702cd5.jpg",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "ZUU online",
+   "title": "日本のベストセラーカーのホンダN-BOXが各タイプの個性を際立たせる一部改良を実施",
+   "link": "https://zuuonline.com/archives/303045",
+   "date": "2026-09-11T08:00:00+00:00",
+   "summary": "この記事は2026年8月29日に「CAR and DRIVER」で公開された「日本のベストセラーカーのホンダN-BOXが各タイプの個性を際立たせる一部改良を実施」を一部編集し、転載したものです。 ホンダがN-BOXをマイナーチェンジ。N-BOX CUSTOMのフロントフェイスをより迫力のあるデザインに刷新するとともに、[…]",
+   "image": "https://cdn.zuuonline.com/600/422/hzvNwjFrQrutFHdFmQHVHWOxEjEMksuT/e16a73b1-6d72-4b10-a2ce-2f8c3b05d413.jpg",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "財経新聞",
+   "title": "KOSPIと日経平均が大幅安、原油100ドル超と米金融引き締めを警戒",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBORjhmWnh2cl9mZlFXUTNldVF3YVBBUzkxZTRoaUFSemlReUdaWDZIMlFYRWFNY1l5SFJFMkkyN210czRYcXYyZ2NuZ0VXVENQTU0tLWdBdVE2TElWM1JzZWw2TdIBaEFVX3lxTE9YSlFUelZhcG1UT2FuT3lnNlRKeGJXYi1HdDdhQi1tWjlWOGtweGZzTFVBS3VxTVI1amEwR05vY010bUNjYnRINkloT190UjNGZVJNOUJxSEY1RTY3Q1VTU0JHQ2xWdHNR?oc=5",
+   "date": "2026-09-12T14:31:39+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "株探",
+   "title": "米国株式市場見通し：利上げ後の調整場面では10月以降のリバウンドも見据えたい",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PWlZ4ZzBCNHh3dmhFZFJlbGtaNHJ3MUwxcGtXSmROUXVMQTVmSEZyb09GbmcwbHlVUnZUcDAxZ3FDQmVMZGdZN0V6Tnh5RXd4RXc?oc=5",
+   "date": "2026-09-12T14:30:14+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "Vietnam.vn",
+   "title": "財務省は、英国資本がベトナムの株式市場に流入するよう呼びかけている。",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMXd2TzA1bGV0ZXh4cDZ2RE9lai1mMkowcDhRUU5JQmJ4cktaY05kbGw1Mng2WGJjX1pfTmJ2NVFjVzdVZF9ZckE3RFFVRE1iNnN0bXNJLWJyRkVCTEFJb011Rm04bVVZU2tadGtLNHFiTURGLU9wRFdrQ0VDcWVScXBfdldQdkdtT3BBY3ZHb1gxVEgyQlItU0R1aw?oc=5",
+   "date": "2026-09-12T13:48:36+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "diamond.jp",
+   "title": "長期低迷を脱した新興国株、反発は一時的か本格トレンドか？相場を支える2つのセクター【投資信託の最前線】",
+   "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5ILWNxQy1VWTJIakJ1UTlKUGQyU2s1NC1ZUF9vLWRnZjhhb3hOOU1HZHM2VmhoZWdBcjlpbTNCaXBKcnFKS2xzMDJ6OTHSAU9BVV95cUxPT2ZLRHREUFNTeU43S2wzY21TM1hYXzk4MU80bDIydV83ZUl2a2d1U0tLazlfLS0za1ZkV3dKbFhKVTY5dEhhSUlTUUxkRTVR?oc=5",
+   "date": "2026-09-12T12:00:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "ｄメニューニュース",
+   "title": "国内株式市場見通し：大型イベント通過後のリバウンドを見据える局面にも",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNeWRiaW1EMGtueTVCcnB3cG15Z0NlT0V4TnlrRjRsdnZEVVRfamE4bk5rT043aGNRSXdqdS1FU25Wb1JlblpKWTlCcmZuWFkwMS1LNlR0X04xZE1CUmRSRm92MS1LWG9xWlU2MTFYWFpRTU44cUVZWjA3dHJaZjRwRVItQmNsaGvSAYwBQVVfeXFMTnB3ajhJcUc0WHNCYl9YR1hhcWNzajljSUZnX01rUDhWZlZJQk95TF9RS3ZNVnRfaVVzNkRIVTlGb3UyUEFEY2dCdHNxNVJzbExrb2YzWmNZZ0M1eDRndFNDQlEwdWRTRkJ6WEpFcnJhaU41QzVBZzB5S1FDMHQyQ19ULVg5dkF1enRoQWc?oc=5",
+   "date": "2026-09-12T06:50:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "Yahoo!ニュース",
+   "title": "利上げ観測拡大も強気 長期金利一服、株は大幅上昇 米市場（時事通信）",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBEcGNvT0hfdWJScXhpV1psQXlpZTFKUF9mUDhwMFdKUS1UR0FXeHZrTHNqUlhibEFtTkx2WVBrbE45NVlLSGFCNzNlSVJ2WHlJRVRwN0FJcUx5ZkdlRlBEd0pxVlZNMWhSanducURxMVQxdmhVcjd0N1BRNGUyNm8?oc=5",
+   "date": "2026-09-12T06:32:17+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "株探",
+   "title": "新興市場見通し：全体相場の方向感定まりにくい、9月中間配当の権利確定前に売り惜しみも",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0wenJwX3RMUklzdU0zekZKM3hMNjladWR2LVBud0NwdzVuNHowZ2QwUDAxbnl4TUpXYXUzT1o1T2xaVE5kaWdjNzFJbTNTNGItZ1E?oc=5",
+   "date": "2026-09-12T12:30:11+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "株探",
+   "title": "ユーロ週間見通し：底堅いか、ECBの利上げ休止観測も円買い縮小で持ち直し",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCWVhSaW90ZWpXNEJ3R0Rzd3IxbHlIRjFhVjhhbnZFV1hPeVVnSEpma25hNGJjLTQ3UjRWVWdfb3JtZGtYcHZFelg4WkJEN0F0NGc?oc=5",
+   "date": "2026-09-12T06:46:55+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "finance",
+   "lang": "ja"
+  },
+  {
+   "source": "GIGAZINE",
+   "title": "「体の炎症に注意を向けること」が免疫反応を調節するのに役立つ可能性",
+   "link": "https://gigazine.net/news/20260912-paying-attention-body-immune-response/",
+   "date": "2026-09-12T14:00:00+00:00",
+   "summary": "体に痛みや不快感があったらすぐに「どこが悪いんだろう？」と考え込む人もいれば、体のどこかに違和感があってもあえて無視し続けて、気にならなくなるまで我慢するという人もいます。新たな研究では、「体の炎症に注意を向けること」が免疫反応の調節を助ける可能性があることが示されました。 続きを読む...",
+   "image": "https://i.gzn.jp/img/2026/09/12/paying-attention-body-immune-response/00.jpg",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "CNET Japan",
+   "title": "Anthropicが「AI反対派」を監視・通報しているとの報道 同社は反論",
+   "link": "https://japan.cnet.com/article/35252557/",
+   "date": "2026-09-12T08:52:00+00:00",
+   "summary": "米AnthropicがAI開発に反対する活動家を監視し、犯罪を起こす恐れがあるとして警察に通報していると、米誌The American Prospectが9日（現地時間）に報じた。「Claude」を手がける同社は「活動家を監視するための予測型監視システムを構築してはいない」と反論している。",
+   "image": "https://japan.cnet.com/storage/2026/09/12/dd4b070048721dd84592f45ba6d014d2/t/184/138/d/04.jpeg",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "ITmedia NEWS",
+   "title": "「壁紙DIY」とイマドキの超短焦点4Kプロジェクターを寝室で試したら検証が止められなくなった",
+   "link": "https://www.itmedia.co.jp/news/article/2609/12/2000001428/",
+   "date": "2026-09-12T01:31:00+00:00",
+   "summary": "壁際数cmの距離に置くだけで100インチ超えの大画面が手に入る超短焦点プロジェクターを試しました。",
+   "image": "https://www.itmedia.co.jp/news/article/ogp/2609/12/2000001428/10006287/2048",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "Impress Watch",
+   "title": "防災の第一歩に「ウォッシャブルタンク」 防災用品も入る給水タンク【ミニレビュー】",
+   "link": "https://www.watch.impress.co.jp/docs/review/minireview/2138487.html",
+   "date": "2026-09-12T01:00:00+00:00",
+   "summary": "災害関連のニュースを見る度に、防災対策をしなくてはいけないと思いつつ、これまで災害に遭遇したことがなかったこともあり、本格的な対策をしていませんでした。",
+   "image": "https://www.watch.impress.co.jp/img/ipw/list/2138/487/01.jpg",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "GIGAZINE",
+   "title": "映画『楽園追放 心のレゾナンス』劇場限定予告編がYouTubeでも公開され前作主人公アンジェラの登場が明らかに",
+   "link": "https://gigazine.net/news/20260912-expelled-from-paradise-resonance-theater-trailer/",
+   "date": "2026-09-12T10:00:00+00:00",
+   "summary": "2026年11月13日(金)から全国ロードショー予定となっている映画『楽園追放 心のレゾナンス』の、上映予定館でのみ公開されている劇場限定予告編がYouTubeで公開されました。この予告編で、ここまで姿を見せていなかった前作主人公アンジェラ・バルザックの登場が明らかになっています。 続きを読む...",
+   "image": "https://i.gzn.jp/img/2026/09/12/expelled-from-paradise-resonance-theater-trailer/00.png",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "CNET Japan",
+   "title": "核融合の異常、AIが0.2秒前に予測して回避 米PPPLが実験",
+   "link": "https://japan.cnet.com/article/35252555/",
+   "date": "2026-09-11T22:13:00+00:00",
+   "summary": "米プリンストンプラズマ物理研究所（PPPL）は9月2日、核融合実験で特定の異常をAIで予測し、装置を制御して回避したと発表した。米国の実験装置「DIII-D」で試し、異常の発生を約0.2秒前に予測した。核融合に必要な高温のプラズマを安定して保つための技術だ。",
+   "image": "https://japan.cnet.com/storage/2026/09/12/0b458bd01e4b68e45058775bf1310f9e/t/184/138/d/02.jpeg",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "ITmedia NEWS",
+   "title": "なぜ酒蔵の許諾なしに？ 「VTuberコラボ日本酒」騒動、主催者が経緯説明 仲介者による調整で「準備進んでいると認識」",
+   "link": "https://www.itmedia.co.jp/news/article/2609/11/2000001427/",
+   "date": "2026-09-11T10:51:13+00:00",
+   "summary": "イベント団体「絶品グルメ屋台の会」は9月11日、神田明神納涼祭りに合わせて企画していた「VTuberコラボ日本酒」の販売を取りやめ、企画を中止すると発表した。同企画を巡っては、製造元として告知されていた諸橋酒造（新潟県長岡市）が、コラボを「一切許諾したことはない」と声明を出したことで、物議を醸していた。同会は「結果として諸橋酒造の了解には至っていなかった」と説明し、謝罪した。",
+   "image": "https://www.itmedia.co.jp/news/article/ogp/2609/11/2000001427/10006277/2048",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "Yahoo!ニュース",
+   "title": "自宅に「8番出口」の〝異変〟を再現 ⇒「防犯カメラ」の前を横切ると…目が追ってくる仕掛けに「夏休みの工作これで決まりだわ」",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43bnB5YTNaNjVQUEV0WTN3ajZESVlMZEI0dlByQ3dMaGgzRWtDTnVwM3ZuaTlqUUxNdi05RTJiQlRoTk82WW1LY2lUXzBzNXNBdUlEbHJhWmtUZzY5R29MaDhWQzF0SGhNUjVjNnl5Uk9WaVZJUDU3UUlGNkpLSEE?oc=5",
+   "date": "2026-09-12T14:50:06+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "nikkei.com",
+   "title": "富士通がAI半導体を輸出、スパコン技術活用 米国やアジアの需要開拓",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9mcUEySldCTnh0cnF5VFE0VWlFX3Z3el83OV8yRVMzbGhnS1h3VVRNRlR5Vzh2YmZEdEp5dEZZaHM5LVdSWXhSbmpEenk4Y2YzM21LRTJDa0UwM1Q0bkRXMDhsVFVXblZYMTdlcQ?oc=5",
+   "date": "2026-09-12T09:00:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "AUTOMATON",
+   "title": "レベルファイブ日野社長、“AI盛り込みトレイラー発表会”について「派手にしたかった」ためと弁明。ただ発売するゲームには、“安易なAI出力データ”は入れない",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0wLUdJMHI0dVNVelI2YklTeTJmeUpjRW9Db3JYYWc1QlBIQ1U1d3RTUTY0QlRLUFFLSWE2SzdCNHpGUzJNUmxUYzF6cUpXQy1DM183azAyTTJNa1p5ZHlmRk5xNjRWUWV0V3kyRA?oc=5",
+   "date": "2026-09-12T06:55:46+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "Yahoo!ニュース",
+   "title": "対米投資第3弾 次世代原発が有力",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAweGFhVkVQZDhxSlZReWRrb3UzaDJ1LWJlX1ZBRk9iUkF4Y1EyVS1Zb05KLUJMb3RDRkwwM183UWdneEVNUzlpQXpXN3M2VUdv?oc=5",
+   "date": "2026-09-12T13:06:04+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "nikkei.com",
+   "title": "数学難問をAIで解決、フィールズ賞25人が非難声明「科学に有害」",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5nRnVLeUQwaDBNc0FfYlhxc2lqdXp4cUthLW5XUXk3WmxaZUw2UmlSYmZfSmdyVnhQdFJKb3AxRVhOY2RBdlctVTdqcWh5bTVYNGIxV3pCVzk5aDFySWg2bUFSRURnVEgxeU5hVg?oc=5",
+   "date": "2026-09-12T01:33:51+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "tech",
+   "lang": "ja"
+  },
+  {
+   "source": "4Gamer",
+   "title": "新作「VELVET CANDY TINT KISS」や移植作品「源狼 GENROH」が発表。オトメイトパーティー2026の1日目夜公演で発表された情報を公開",
+   "link": "https://www.4gamer.net/games/041/G104197/20260911013/",
+   "date": "2026-09-12T12:40:00+00:00",
+   "summary": "アイディアファクトリーは，本日開催したイベント「オトメイトパーティー2026」1日目",
+   "image": "https://www.4gamer.net/games/041/G104197/20260911013/SS/003.jpg",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "4Gamer",
+   "title": "「Fate/EXTRA Record」，主人公と契約するサーヴァント候補の1人「アーチャー」にフォーカスしたキャラクターPVが公開に",
+   "link": "https://www.4gamer.net/games/520/G052062/20260911058/",
+   "date": "2026-09-12T09:40:00+00:00",
+   "summary": "アニプレックスは本日（2026年9月12日），ノーツが手掛ける新作「Fate/EXTRARecord」に登場するキャラクターの1人，「アーチャー」にフォーカスしたプロモーションムービーを公開した。",
+   "image": "https://www.4gamer.net/games/520/G052062/20260911058/SS/002.jpg",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "4Gamer",
+   "title": "週刊Steam広場 第170号：「Valheim」が正式リリースされ，「WARDOGS」の早期アクセスがスタート",
+   "link": "https://www.4gamer.net/games/038/G003821/20260912002/",
+   "date": "2026-09-12T09:00:00+00:00",
+   "summary": "今週発売されたSteamの注目タイトルやセール情報をお届けする「週刊Steam広場」。今週は，サバイバルゲーム「Valheim」が正式にリリースされ，最大100人参加のタクティカルFPS「WARDOGS」の早期アクセスがスタートした。",
+   "image": "https://www.4gamer.net/games/038/G003821/20260912002/TN/006.jpg",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "4Gamer",
+   "title": "9月12日はクイズの日。「ウィズジェネレーション」でクイズ募集キャンペーンがスタート。採用されたクイズは実際にゲーム内で出題される",
+   "link": "https://www.4gamer.net/games/036/G103653/20260912005/",
+   "date": "2026-09-12T05:03:38+00:00",
+   "summary": "コロプラは本日（2026年9月12日），今冬配信予定の「クイズアクションRPGウィズジェネレーション」で，「クイズの日」を記念するキャンペーンを開始した。今回のキャンペーンは「あなたの考えたクイズが出題される！！ゲームを彩るクイズ大募集！」と銘打って，新たな問題を募集するものだ。",
+   "image": "https://www.4gamer.net/games/036/G103653/20260912005/SS/001.jpg",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "steranet.jp",
+   "title": "9/14(月)の「風、薫る」直美(上坂樹里)は柳生(中村倫也)から派出看護婦会の調査報告を聞く。そんなある日、恵風看護婦会にツヤ(東野絢香)がやってくる",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE12ZTJrYk50V24zVE9TTlREQUFVb1FGaTBqSTY4RS1jTjd0aW1uNDE5OVk2MVYzcENmb0YwZk5BcG5YbkVZcHlVLVBlVTRnOVNE?oc=5",
+   "date": "2026-09-12T15:02:38+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "モデルプレス",
+   "title": "WEST.パーソナリティラジオ「bayじゃないか」内容変更で放送 メンバー2人が脱退発表・グループの今後は協議中",
+   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5fbVQ3SDBpX0JYeDh6Vndia254VHh5UkRGSmtHOVhya0p5MXVNSy1RekNycVVwTnNTbFhadEhqUFpIbXhmdU1FUGhtd9IBR0FVX3lxTFBoTlppLXBVZUhKR0RhaUdfS1JyR3BQOGxRYUh4XzlYNXJYbkZtcTBEa0NVYm5nZEhrQXNtZ1Ita1J3SEgwNndR?oc=5",
+   "date": "2026-09-12T14:35:05+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "Yahoo!ニュース",
+   "title": "西山朋佳白玲勝ち2勝1敗、4連覇と女性初の棋士に向け先行 ヒューリック杯白玲戦第3局",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4xcDdVQ0RhQ0FmVENyQWE5WWVlNlhvOWNKZ0tuMVhtRnZrNk15RnFIRHNmTzBDQlkteXk4b3FxM2VINHVPbHhncGktTEtaR0xl?oc=5",
+   "date": "2026-09-12T14:34:22+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "週刊女性PRIME",
+   "title": "妊娠中の田中みな実、Netflix『ダウンタイム』試写会での“10センチヒールブーツ”にファンから集まる心配の声（3ページ目）",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1tUUtabUxuUzZVTzBKOUNtY2RNRlZ1c01fVzVhNzZvLUhDbjl4b2FmVGtsN19KWlV2Skpra3ppT0VSd09rNmF3eVpZU05UYnpEMldPX2c5ZkY?oc=5",
+   "date": "2026-09-12T13:48:23+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "nlab.itmedia.co.jp",
+   "title": "駐車場で“子猫”を拾ったと思い、育てたら…… 成長した“驚きの正体”に「大変ですね」「まさに怪獣」（2/3）",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBQMGYtUk5LRndUbUlQLXdCbHBiTGZLdTM0bWFDR0FVSEg4LVBFVzRZYVdMaWVlbTg4MktBRm1weWM5X25BM3lRQWxLZWMzbkN2aW0xdVBVcXEyT3dFYmR3SQ?oc=5",
+   "date": "2026-09-12T13:00:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "Yahoo!ニュース",
+   "title": "「痩せた…」「これはショック」大腸がんで人工肛門…松本人志〝術後の出演姿〟に心配の声も「気張らず頑張って」「大丈夫かな」",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0teVc2a0g4VWcwVlppTVpuMklXaC0ybkRGbnU4d0NPUTJxdml0NTlfZmxTTngtWjBxVXNEaUs2VUpjWXlZaHhFRFRkemhWTWxucDJ4Y0YwdTFtVVBUQlZXTGZiRURXd19YQ2JsM2lLUnNsMjdsOXB4RmJuNW12aGM?oc=5",
+   "date": "2026-09-12T14:00:02+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "Yahoo!ニュース",
+   "title": "明石家さんま グレート義太夫さん訃報に失意 玉緒さん、板東さんら「特に俺の仲間の人が」訃報続く（スポニチアネックス）",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5seHhlVkZEeGFpNXZ1WUc4MmdBZ0FyWHRTZ0k5c2hKYktfQXc2ZUhHOEZ5X0dhbXpvMUlyRTRSX0FXaExmcE1XOXJqV1ZMSmRvVmZDNTRVcGtoTXRRc285dk5reUxsVTBvOEdZdXZZSDJHV3hhOHU0VHpmZWdtUXM?oc=5",
+   "date": "2026-09-12T13:49:45+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "ent",
+   "lang": "ja"
+  },
+  {
+   "source": "Yahoo!ニュース",
+   "title": "リュック・ベッソン監督、久々のSFに着手「相当ぶっ飛んだものになる」（映画.com）",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5sYUp2Rjg1LWZxUG5CVnowZFJFZFZrX09BVktvQ3VWb1pyQkNDNkVidVZrRTRlNjd2ck1ZTm52NnRyNWZ2UnNLTzVWbEdSOHk4NXJRUkQ1Q0VhbEM0dXlTdGU3ZUVWRVZFSlM5RlZhWVRNSl83VmtGY0YtX1pfdTQ?oc=5",
+   "date": "2026-09-12T13:30:00+00:00",
+   "summary": "Via Google News.",
+   "image": "",
+   "via": "google",
+   "cat": "ent",
+   "lang": "ja"
   }
  ]
 }
