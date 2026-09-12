@@ -249,6 +249,34 @@ def og_image(url):
     return ""
 
 
+def read_schedule():
+    """UTC [hour, minute] pairs from the workflow's cron lines, so the page can say when the next edition is due."""
+    wf = next(ROOT.glob(".github/workflows/*.yml"), None) or next(ROOT.parent.glob(".github/workflows/*.yml"), None)
+    if not wf:
+        return []
+    def expand(field, top):
+        out = set()
+        for part in field.split(","):
+            if part == "*":
+                out.update(range(top))
+            elif part.startswith("*/"):
+                out.update(range(0, top, int(part[2:])))
+            elif "-" in part:
+                a, b = map(int, part.split("-")); out.update(range(a, b + 1))
+            else:
+                out.add(int(part))
+        return out
+    times = set()
+    for m in re.finditer(r'cron:\s*["\']([^"\']+)["\']', wf.read_text(encoding="utf-8")):
+        f = m.group(1).split()
+        if len(f) == 5 and f[2:] == ["*", "*", "*"]:
+            try:
+                times.update((h, mi) for h in expand(f[1], 24) for mi in expand(f[0], 60))
+            except ValueError:
+                pass
+    return sorted([list(t) for t in times])
+
+
 def main():
     cfg = json.loads((ROOT / os.environ.get("FEEDS_FILE", "feeds.json")).read_text(encoding="utf-8"))
     n, per_source = cfg.get("per_section", 12), cfg.get("max_per_source", 4)
@@ -294,6 +322,7 @@ def main():
     payload = {
         "compiled": NOW.isoformat(),
         "repo": os.environ.get("GITHUB_REPOSITORY", ""),
+        "schedule": read_schedule(),
         "sections": sections,
         "stories": stories,
     }
@@ -303,6 +332,8 @@ def main():
     page = (ROOT / "template.html").read_text(encoding="utf-8").replace("__DATA__", blob)
     (ROOT / "site").mkdir(exist_ok=True)
     (ROOT / "site" / "index.html").write_text(page, encoding="utf-8")
+    # tiny file the page's refresh button checks to see whether a newer edition exists
+    (ROOT / "site" / "edition.json").write_text(json.dumps({"compiled": payload["compiled"], "stories": len(stories)}), encoding="utf-8")
     if (ROOT / "icons").is_dir():   # home screen and browser tab icons
         shutil.copytree(ROOT / "icons", ROOT / "site" / "icons", dirs_exist_ok=True)
     with_img = sum(1 for s in stories if s["image"])

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>The Daily Twenty</title>
-<meta name="description" content="A daily reading page of world, business, technology, entertainment, Malaysia and Singapore news.">
+<meta name="description" content="A daily reading page of world, business, finance, technology, entertainment, Malaysia and Singapore news.">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
@@ -17,16 +17,17 @@
   --ground:#F7F8FA; --surface:#FFFFFF; --ink:#14161B; --muted:#586070; --faint:#8A92A0;
   --rule:#E1E4E9; --accent:#1D3F8F; --accent-soft:#E7ECF7; --focus:#2F6FEB; --visited:#6B5C8E;
   --tile-ink:#27303F;
-  --t-world:#E4EAF4; --t-business:#E4EFE7; --t-tech:#EAE7F4; --t-ent:#F4E7E3; --t-my:#F2ECDA; --t-sg:#F3E4E9;
+  --t-world:#E4EAF4; --t-business:#E4EFE7; --t-finance:#E6EFF1; --t-tech:#EAE7F4; --t-ent:#F4E7E3; --t-my:#F2ECDA; --t-sg:#F3E4E9;
   --shadow:0 1px 2px rgba(20,22,27,.05),0 6px 18px rgba(20,22,27,.06);
   --serif:"Times New Roman",Times,"Liberation Serif","Nimbus Roman",serif;
+  --bar-h:56px;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --ground:#0E1014; --surface:#161920; --ink:#E8EAEE; --muted:#A0A8B6; --faint:#737C8C;
     --rule:#262B34; --accent:#9DB6FF; --accent-soft:#1D2536; --focus:#9DB6FF; --visited:#B7A6DE;
     --tile-ink:#D3D8E2;
-    --t-world:#1A2231; --t-business:#18251D; --t-tech:#1F1C2D; --t-ent:#2A1E1B; --t-my:#27231A; --t-sg:#2A1C22;
+    --t-world:#1A2231; --t-business:#18251D; --t-finance:#172428; --t-tech:#1F1C2D; --t-ent:#2A1E1B; --t-my:#27231A; --t-sg:#2A1C22;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 20px rgba(0,0,0,.35);
   }
 }
@@ -34,14 +35,14 @@
   --ground:#0E1014; --surface:#161920; --ink:#E8EAEE; --muted:#A0A8B6; --faint:#737C8C;
   --rule:#262B34; --accent:#9DB6FF; --accent-soft:#1D2536; --focus:#9DB6FF; --visited:#B7A6DE;
   --tile-ink:#D3D8E2;
-  --t-world:#1A2231; --t-business:#18251D; --t-tech:#1F1C2D; --t-ent:#2A1E1B; --t-my:#27231A; --t-sg:#2A1C22;
+  --t-world:#1A2231; --t-business:#18251D; --t-finance:#172428; --t-tech:#1F1C2D; --t-ent:#2A1E1B; --t-my:#27231A; --t-sg:#2A1C22;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 20px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 img{max-width:100%}
 html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.45;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1240px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
 button,input{font:inherit;color:inherit}
@@ -58,37 +59,32 @@ button,input{font:inherit;color:inherit}
 .edition b{color:var(--ink);font-weight:700}
 @media (max-width:520px){.edition{font-size:.82rem}}
 
-/* Toolbar */
-.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
-.bar-inner{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;padding-block:10px}
-.search{flex:1 1 240px;display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:0 14px;min-height:40px}
-.search svg{flex:none;color:var(--faint)}
-.search input{border:0;background:transparent;outline:0;width:100%;font-size:1rem;min-height:38px}
-.tools{display:flex;gap:8px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--rule);background:var(--surface);cursor:pointer;font-size:.95rem;white-space:nowrap}
-.btn:hover{border-color:var(--muted)}
-.icon-btn{position:relative;flex:none;width:40px;height:40px;display:inline-grid;place-items:center;border-radius:50%;border:1px solid var(--rule);background:var(--surface);color:var(--ink);cursor:pointer;text-decoration:none;padding:0}
+/* Menu button */
+.icon-btn{position:relative;flex:none;width:40px;height:40px;display:inline-grid;place-items:center;border-radius:50%;border:1px solid var(--rule);background:var(--surface);color:var(--ink);cursor:pointer;padding:0}
 .icon-btn:hover{border-color:var(--muted)}
 .icon-btn svg{width:18px;height:18px}
 .icon-btn .dot{position:absolute;top:6px;right:6px;width:8px;height:8px;border-radius:50%;background:var(--accent);border:2px solid var(--surface)}
-#shuffle.spin svg{transition:transform .35s ease;transform:rotate(180deg)}
 .menu-wrap{position:relative;flex:none;align-self:flex-start}
-.menu{position:absolute;right:0;top:calc(100% + 8px);z-index:40;min-width:220px;padding:6px;background:var(--surface);border:1px solid var(--rule);border-radius:12px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.menu{position:absolute;right:0;top:calc(100% + 8px);z-index:60;min-width:220px;padding:6px;background:var(--surface);border:1px solid var(--rule);border-radius:12px;box-shadow:var(--shadow);display:flex;flex-direction:column}
 .menu button{display:flex;align-items:center;gap:10px;width:100%;padding:10px 12px;border:0;border-radius:8px;background:transparent;cursor:pointer;text-align:left;font-size:1rem;color:var(--ink)}
 .menu button:hover,.menu button:focus-visible{background:var(--accent-soft)}
 .menu button svg{width:18px;height:18px;flex:none;color:var(--muted)}
-.menu .count{margin-left:auto}
 .count{font-variant-numeric:tabular-nums;background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:0 7px;font-size:.8rem;line-height:1.5}
-.chips{display:flex;gap:6px;overflow-x:auto;padding-block:0 10px;scrollbar-width:none}
+.menu .count{margin-left:auto}
+
+/* Genre bar */
+.bar{position:sticky;top:0;z-index:30;background:var(--ground);border-bottom:1px solid var(--rule)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-block:10px;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
-.chip{flex:none;border:1px solid var(--rule);background:transparent;border-radius:999px;padding:5px 13px;cursor:pointer;font-size:.92rem;color:var(--muted)}
-.chip[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.chip{flex:none;border:1px solid var(--rule);background:transparent;border-radius:999px;padding:6px 14px;cursor:pointer;font-size:.92rem;color:var(--muted);white-space:nowrap}
+.chip:hover{border-color:var(--muted);color:var(--ink)}
+.chip[aria-current="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
 
 /* Sections */
-main{padding-block:8px 40px}
-.section{padding-block:26px 6px;border-bottom:1px solid var(--rule)}
-.section:last-of-type{border-bottom:0}
-.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px}
+main{padding-block:0 40px}
+.section{padding-block:0 10px;scroll-margin-top:calc(var(--bar-h) + 4px)}
+.section + .section{border-top:1px solid var(--rule)}
+.sec-head{position:sticky;top:var(--bar-h);z-index:12;display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-block:16px 10px;background:var(--ground);transition:opacity .18s linear}
 .sec-head h2{margin:0;font-size:1.55rem;font-weight:700;text-wrap:balance}
 .sec-head h2 small{font-weight:400;font-style:italic;color:var(--faint);font-size:1rem;margin-left:8px;font-variant-numeric:tabular-nums}
 .arrows{display:flex;gap:6px}
@@ -113,7 +109,6 @@ main{padding-block:8px 40px}
 .meta{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
 .meta b{color:var(--accent);font-weight:700}
 .new{display:inline-block;margin-left:6px;padding:0 6px;border-radius:4px;background:var(--accent);color:var(--surface);font-size:.68rem;letter-spacing:.08em;vertical-align:1px}
-a.btn{text-decoration:none;color:var(--ink)}
 .card h3{margin:0;font-size:1.13rem;line-height:1.24;font-weight:700;text-wrap:pretty}
 .story{color:var(--ink);text-decoration:none}
 .story::after{content:"";position:absolute;inset:0;z-index:1}
@@ -129,22 +124,30 @@ a.btn{text-decoration:none;color:var(--ink)}
 .save[aria-pressed="true"] svg path{fill:currentColor}
 
 /* Saved dialog */
-dialog{border:1px solid var(--rule);border-radius:14px;background:var(--surface);color:var(--ink);padding:0;width:min(560px,calc(100vw - 32px));max-height:min(80vh,720px)}
+dialog{border:1px solid var(--rule);border-radius:14px;background:var(--surface);color:var(--ink);padding:0;width:min(600px,calc(100vw - 32px));max-height:min(84vh,780px)}
 dialog::backdrop{background:rgba(10,12,16,.45)}
-.dlg-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--surface)}
+.dlg-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--surface);z-index:2}
 .dlg-head h2{margin:0;font-size:1.3rem}
-.saved-list{list-style:none;margin:0;padding:6px 20px 18px;display:flex;flex-direction:column}
-.saved-list li{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;padding-block:12px;border-bottom:1px solid var(--rule)}
+.btn{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--rule);background:var(--surface);cursor:pointer;font-size:.95rem;white-space:nowrap}
+.btn:hover{border-color:var(--muted)}
+.saved-group{padding:14px 20px 4px}
+.saved-group h3{margin:0 0 8px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.saved-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.saved-list li{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;padding-block:11px;border-bottom:1px solid var(--rule)}
 .saved-list li:last-child{border-bottom:0}
 .saved-list a{color:var(--ink);font-weight:700;text-decoration:none;line-height:1.25}
 .saved-list a:hover{text-decoration:underline}
-.saved-list .meta{margin-top:4px}
+.saved-list .meta{margin-top:4px;text-transform:none;letter-spacing:0;font-size:.82rem;font-style:italic;color:var(--faint)}
 .saved-list .rm{flex:none;border:0;background:transparent;color:var(--faint);cursor:pointer;font-size:.85rem;padding:2px 4px}
 .saved-list .rm:hover{color:var(--ink)}
 .saved-empty{padding:22px 20px;color:var(--muted);font-style:italic;margin:0}
 
-footer{border-top:1px solid var(--rule);padding-block:22px 36px;color:var(--faint);font-size:.9rem}
-footer p{margin:0 0 6px;max-width:70ch}
+/* Toast */
+.toast{position:fixed;left:50%;bottom:max(20px,env(safe-area-inset-bottom));transform:translateX(-50%);z-index:70;display:flex;align-items:center;gap:12px;max-width:calc(100vw - 32px);padding:11px 16px;border-radius:12px;background:var(--ink);color:var(--ground);box-shadow:var(--shadow);font-size:.97rem}
+.toast button{flex:none;border:0;border-radius:8px;padding:6px 12px;background:var(--ground);color:var(--ink);cursor:pointer;font-size:.92rem;font-weight:700}
+
+footer{border-top:1px solid var(--rule);padding-block:20px 36px;color:var(--faint);font-size:.78rem;line-height:1.5}
+footer p{margin:0 0 5px;max-width:80ch}
 </style>
 </head>
 <body>
@@ -175,31 +178,18 @@ footer p{margin:0 0 6px;max-width:70ch}
   </div>
 </header>
 
-<div class="bar">
+<nav class="bar" aria-label="Sections">
   <div class="wrap">
-    <div class="bar-inner">
-      <label class="search" for="q">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="q" type="search" placeholder="Search headlines, summaries, sources" autocomplete="off">
-      </label>
-      <div class="tools">
-        <button class="icon-btn" id="shuffle" type="button" aria-label="Shuffle stories" title="Shuffle stories">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="M4 4l5 5"/></svg>
-        </button>
-        <a class="icon-btn" id="refresh" hidden target="_blank" rel="noopener" aria-label="Refresh now (opens GitHub)" title="Refresh now: opens GitHub, press “Run workflow” and the page updates in about two minutes">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
-        </a>
-      </div>
-    </div>
-    <div class="chips" id="chips" role="toolbar" aria-label="Filter by section"></div>
+    <div class="chips" id="chips"></div>
   </div>
-</div>
+</nav>
 
 <main class="wrap" id="main"></main>
 
 <footer class="wrap">
   <p id="sourcesLine"></p>
   <p>Each headline opens the full article on the publisher's own website in a new tab. Summaries are condensed from each publisher's feed. Saved stories stay in this browser.</p>
+  <p id="scheduleLine"></p>
 </footer>
 
 <dialog id="savedDlg" aria-labelledby="savedTitle">
@@ -207,41 +197,30 @@ footer p{margin:0 0 6px;max-width:70ch}
   <div id="savedBody"></div>
 </dialog>
 
+<div class="toast" id="toast" role="status" aria-live="polite" hidden><span id="toastText"></span><button type="button" id="toastAction" hidden></button></div>
+
 <script type="application/json" id="data">__DATA__</script>
 <script>
 (function(){
   const DATA = JSON.parse(document.getElementById('data').textContent);
-  const TILES = {world:'--t-world', business:'--t-business', tech:'--t-tech', ent:'--t-ent', my:'--t-my', sg:'--t-sg'};
-  const SPARE = ['--t-world','--t-business','--t-tech','--t-ent','--t-my','--t-sg'];
+  const TILES = {world:'--t-world', business:'--t-business', finance:'--t-finance', tech:'--t-tech', ent:'--t-ent', my:'--t-my', sg:'--t-sg'};
+  const SPARE = ['--t-world','--t-business','--t-finance','--t-tech','--t-ent','--t-my','--t-sg'];
   const SECTIONS = (DATA.sections || []).map((s, i) => ({id:s.id, name:s.name, tile: TILES[s.id] || SPARE[i % SPARE.length]}));
   const store = {
     get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
     set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
   };
   let saved = store.get('dt-saved', []);
-  // "New" marks stories published since the reader's previous visit
-  const lastVisit = store.get('dt-last-visit', null);
-  store.set('dt-last-visit', Date.now());
+
+  // "New" marks stories published since the reader's previous visit (visits are 30+ minutes apart,
+  // so loading a fresh edition mid-read keeps the same badges)
+  const nowMs = Date.now(), lastSeen = store.get('dt-last-seen', null);
+  let lastVisit = store.get('dt-last-visit', null);
+  if (!lastSeen || nowMs - lastSeen > 30 * 60000){ lastVisit = lastSeen; store.set('dt-last-visit', lastVisit); }
+  store.set('dt-last-seen', nowMs);
   const isNew = s => lastVisit && s.date && new Date(s.date).getTime() > lastVisit;
-  if (DATA.repo){
-    const r = document.getElementById('refresh');
-    r.href = 'https://github.com/' + DATA.repo + '/actions/workflows/daily.yml';
-    r.hidden = false;
-  }
-  let activeSection = 'all';
-  const order = {};
-  SECTIONS.forEach(s => order[s.id] = DATA.stories.filter(x => x.cat === s.id));
 
-  // Edition line
-  const ed = new Date(DATA.compiled);
-  const dateStr = ed.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kuala_Lumpur'});
-  const timeStr = ed.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'Asia/Kuala_Lumpur'});
-  const sources = [...new Set(DATA.stories.map(s => s.source))];
-  document.getElementById('edition').innerHTML = '';
-  const b = document.createElement('b'); b.textContent = dateStr;
-  document.getElementById('edition').append(b, document.createTextNode(' · compiled ' + timeStr + ' MYT · ' + DATA.stories.length + ' stories from ' + sources.length + ' newsrooms'));
-  document.getElementById('sourcesLine').textContent = 'Sources in this edition: ' + sources.join(', ') + '.';
-
+  // ---- helpers ----
   function ago(iso){
     const t = new Date(iso).getTime(); if (isNaN(t)) return '';
     const m = Math.round((Date.now() - t) / 60000);
@@ -258,7 +237,19 @@ footer p{margin:0 0 6px;max-width:70ch}
   function safeUrl(u){ return /^https:\/\//i.test(u) ? u : '#'; }
   function el(tag, cls, text){ const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
   const bookmarkSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
+  const sectionName = id => (SECTIONS.find(s => s.id === id) || {}).name || 'Other';
 
+  // ---- edition line ----
+  const MYT = {hour:'numeric', minute:'2-digit', timeZone:'Asia/Kuala_Lumpur'};
+  const ed = new Date(DATA.compiled);
+  const dateStr = ed.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kuala_Lumpur'});
+  const sources = [...new Set(DATA.stories.map(s => s.source))];
+  const edLine = document.getElementById('edition');
+  edLine.append(el('b', null, dateStr),
+    document.createTextNode(' · compiled ' + ed.toLocaleTimeString('en-US', MYT) + ' MYT · ' + DATA.stories.length + ' stories from ' + sources.length + ' newsrooms'));
+  document.getElementById('sourcesLine').textContent = 'Sources in this edition: ' + sources.join(', ') + '.';
+
+  // ---- cards ----
   function isSaved(link){ return saved.some(s => s.link === link); }
 
   function card(s, sec){
@@ -274,103 +265,135 @@ footer p{margin:0 0 6px;max-width:70ch}
       img.src = s.image; th.append(img);
     }
     const body = el('div','body');
-    const meta = el('div','meta'); const src = el('b',null,s.source); meta.append(src, document.createTextNode(s.date ? ' · ' + ago(s.date) : ''));
+    const meta = el('div','meta'); meta.append(el('b',null,s.source), document.createTextNode(s.date ? ' · ' + ago(s.date) : ''));
     if (isNew(s)) meta.append(el('span','new','New'));
     const h = el('h3');
     const link = el('a','story', s.title); link.href = safeUrl(s.link); link.target = '_blank'; link.rel = 'noopener noreferrer';
     h.append(link);
-    const sum = el('p','sum', s.summary);
     const foot = el('div','foot');
-    const dom = el('span','domain', domain(s.link) + ' ↗');
     const sv = el('button','save'); sv.type = 'button';
     const setSv = () => { const on = isSaved(s.link); sv.setAttribute('aria-pressed', on); sv.innerHTML = bookmarkSvg; sv.append(document.createTextNode(on ? ' Saved' : ' Save')); sv.setAttribute('aria-label', (on ? 'Remove from saved: ' : 'Save for later: ') + s.title); };
     setSv();
-    sv.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); toggleSave(s); setSv(); });
-    foot.append(dom, sv);
-    body.append(meta, h, sum, foot);
+    sv.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); toggleSave(s, sec.id); setSv(); });
+    foot.append(el('span','domain', domain(s.link) + ' ↗'), sv);
+    body.append(meta, h, el('p','sum', s.summary), foot);
     a.append(th, body);
-    a.dataset.text = (s.title + ' ' + s.summary + ' ' + s.source).toLowerCase();
     return a;
   }
 
   function render(){
-    const q = document.getElementById('q').value.trim().toLowerCase();
     const main = document.getElementById('main'); main.innerHTML = '';
-    let shown = 0;
     SECTIONS.forEach(sec => {
-      if (activeSection !== 'all' && activeSection !== sec.id) return;
-      const items = order[sec.id].filter(s => !q || (s.title + ' ' + s.summary + ' ' + s.source).toLowerCase().includes(q));
-      shown += items.length;
-      const section = el('section','section'); section.id = 'sec-' + sec.id; section.setAttribute('aria-labelledby','h-' + sec.id);
+      const items = DATA.stories.filter(s => s.cat === sec.id);
+      const section = el('section','section'); section.id = 'sec-' + sec.id; section.dataset.id = sec.id;
       const head = el('div','sec-head');
-      const h2 = el('h2', null, sec.name); h2.id = 'h-' + sec.id; h2.append(el('small', null, items.length + (items.length === 1 ? ' story' : ' stories')));
+      const h2 = el('h2', null, sec.name); h2.id = 'h-' + sec.id;
+      h2.append(el('small', null, items.length + (items.length === 1 ? ' story' : ' stories')));
+      section.setAttribute('aria-labelledby', h2.id);
       head.append(h2);
+      if (!items.length){ section.append(head, el('p','empty','No stories in this section today.')); main.append(section); return; }
       const row = el('div','row'); row.setAttribute('role','list');
-      if (items.length){
-        const arrows = el('div','arrows');
-        const prev = el('button','arrow'); prev.type='button'; prev.setAttribute('aria-label','Scroll ' + sec.name + ' left'); prev.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>';
-        const next = el('button','arrow'); next.type='button'; next.setAttribute('aria-label','Scroll ' + sec.name + ' right'); next.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
-        const step = () => Math.max(row.clientWidth * 0.85, 280);
-        prev.addEventListener('click', () => row.scrollBy({left:-step(), behavior:'smooth'}));
-        next.addEventListener('click', () => row.scrollBy({left:step(), behavior:'smooth'}));
-        const upd = () => { prev.disabled = row.scrollLeft < 4; next.disabled = row.scrollLeft + row.clientWidth >= row.scrollWidth - 4; };
-        row.addEventListener('scroll', upd, {passive:true}); requestAnimationFrame(upd); window.addEventListener('resize', upd);
-        arrows.append(prev, next); head.append(arrows);
-        items.forEach(s => { const c = card(s, sec); c.setAttribute('role','listitem'); row.append(c); });
-        section.append(head, row);
-      } else {
-        section.append(head, el('p','empty', q ? 'No ' + sec.name + ' stories match “' + q + '”.' : 'No stories in this section today.'));
-      }
+      const arrows = el('div','arrows');
+      const prev = el('button','arrow'); prev.type='button'; prev.setAttribute('aria-label','Scroll ' + sec.name + ' left'); prev.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>';
+      const next = el('button','arrow'); next.type='button'; next.setAttribute('aria-label','Scroll ' + sec.name + ' right'); next.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
+      const step = () => Math.max(row.clientWidth * 0.85, 280);
+      prev.addEventListener('click', () => row.scrollBy({left:-step(), behavior:'smooth'}));
+      next.addEventListener('click', () => row.scrollBy({left:step(), behavior:'smooth'}));
+      const upd = () => { prev.disabled = row.scrollLeft < 4; next.disabled = row.scrollLeft + row.clientWidth >= row.scrollWidth - 4; };
+      row.addEventListener('scroll', upd, {passive:true}); requestAnimationFrame(upd); window.addEventListener('resize', upd);
+      arrows.append(prev, next); head.append(arrows);
+      items.forEach(s => { const c = card(s, sec); c.setAttribute('role','listitem'); row.append(c); });
+      section.append(head, row);
       main.append(section);
     });
   }
 
+  // ---- genre bar: jump to a section, and follow the reader down the page ----
   function chips(){
     const wrap = document.getElementById('chips');
-    [{id:'all',name:'All sections'}].concat(SECTIONS).forEach(s => {
-      const c = el('button','chip', s.name); c.type='button'; c.setAttribute('aria-pressed', s.id === activeSection);
-      c.addEventListener('click', () => { activeSection = s.id; wrap.querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', x === c)); render(); });
+    SECTIONS.forEach(s => {
+      const c = el('button','chip', s.name); c.type = 'button'; c.dataset.id = s.id;
+      c.addEventListener('click', () => {
+        const target = document.getElementById('sec-' + s.id);
+        if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      });
       wrap.append(c);
     });
   }
+  function markCurrent(id){
+    document.querySelectorAll('.chip').forEach(c => {
+      const on = c.dataset.id === id;
+      c.setAttribute('aria-current', on);
+      if (on) c.scrollIntoView({block:'nearest', inline:'nearest'});
+    });
+  }
 
-  function toggleSave(s){
+  // The section title freezes under the genre bar while you read that section,
+  // then fades out as the next section arrives.
+  let ticking = false;
+  function onScroll(){
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      ticking = false;
+      const barH = document.querySelector('.bar').offsetHeight;
+      document.documentElement.style.setProperty('--bar-h', barH + 'px');
+      let current = null;
+      document.querySelectorAll('.section').forEach(sec => {
+        const head = sec.querySelector('.sec-head');
+        if (!head) return;
+        const box = sec.getBoundingClientRect(), h = head.offsetHeight;
+        const room = box.bottom - barH - h;                 // space left before the next section takes over
+        head.style.opacity = room < 70 ? Math.max(0, room / 70).toFixed(2) : '1';
+        if (box.top - barH - h < 8 && box.bottom - barH > h) current = sec.dataset.id;
+      });
+      markCurrent(current || (document.querySelector('.section') || {dataset:{}}).dataset.id);
+    });
+  }
+
+  // ---- saved stories, grouped by genre ----
+  function toggleSave(s, cat){
     if (isSaved(s.link)) saved = saved.filter(x => x.link !== s.link);
-    else saved.unshift({title:s.title, link:s.link, source:s.source, date:s.date});
+    else saved.unshift({title:s.title, link:s.link, source:s.source, date:s.date, cat:cat || s.cat || 'other', summary:s.summary || '', savedAt:Date.now()});
     store.set('dt-saved', saved); updCount();
   }
-  function updCount(){ document.getElementById('savedCount').textContent = saved.length; document.getElementById('savedDot').hidden = !saved.length; }
-
+  function updCount(){
+    document.getElementById('savedCount').textContent = saved.length;
+    document.getElementById('savedDot').hidden = !saved.length;
+  }
   function openSaved(){
     const body = document.getElementById('savedBody'); body.innerHTML = '';
-    if (!saved.length){ body.append(el('p','saved-empty','Nothing saved yet. Tap Save on any story to keep it here for later.')); }
-    else {
-      const ul = el('ul','saved-list');
-      saved.forEach(s => {
-        const li = el('li'); const d = el('div');
-        const a = el('a', null, s.title); a.href = safeUrl(s.link); a.target = '_blank'; a.rel = 'noopener noreferrer';
-        const m = el('div','meta'); m.append(el('b',null,s.source), document.createTextNode(' · ' + domain(s.link)));
-        d.append(a, m);
-        const rm = el('button','rm','Remove'); rm.type='button';
-        rm.addEventListener('click', () => { saved = saved.filter(x => x.link !== s.link); store.set('dt-saved', saved); updCount(); openSaved(); render(); });
-        li.append(d, rm); ul.append(li);
+    if (!saved.length){
+      body.append(el('p','saved-empty','Nothing saved yet. Tap Save on any story to keep it here — saved stories stay even after they leave the page.'));
+    } else {
+      const order = SECTIONS.map(s => s.id);
+      const groups = {};
+      saved.forEach(s => (groups[s.cat] = groups[s.cat] || []).push(s));
+      const rank = id => { const i = order.indexOf(id); return i === -1 ? 999 : i; };
+      const ids = Object.keys(groups).sort((a, b) => rank(a) - rank(b));
+      ids.forEach(id => {
+        const g = el('div','saved-group');
+        g.append(el('h3', null, sectionName(id)));
+        const ul = el('ul','saved-list');
+        groups[id].forEach(s => {
+          const li = el('li'), d = el('div');
+          const a = el('a', null, s.title); a.href = safeUrl(s.link); a.target = '_blank'; a.rel = 'noopener noreferrer';
+          d.append(a, el('div','meta', s.source + ' · ' + domain(s.link) + (s.date ? ' · ' + new Date(s.date).toLocaleDateString('en-GB',{day:'numeric',month:'short'}) : '')));
+          const rm = el('button','rm','Remove'); rm.type = 'button';
+          rm.addEventListener('click', () => {
+            saved = saved.filter(x => x.link !== s.link); store.set('dt-saved', saved);
+            updCount(); openSaved(); render(); onScroll();
+          });
+          li.append(d, rm); ul.append(li);
+        });
+        g.append(ul); body.append(g);
       });
-      body.append(ul);
     }
     const dlg = document.getElementById('savedDlg');
-    if (!dlg.open){ if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open',''); }
+    if (!dlg.open){ dlg.showModal ? dlg.showModal() : dlg.setAttribute('open',''); }
   }
 
-  function shuffle(){
-    SECTIONS.forEach(sec => {
-      const a = order[sec.id].slice();
-      for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
-      order[sec.id] = a;
-    });
-    render();
-  }
-
-  // Theme
+  // ---- theme + menu ----
   const root = document.documentElement;
   const mq = window.matchMedia ? matchMedia('(prefers-color-scheme: dark)') : null;
   const stored = store.get('dt-theme', null);
@@ -383,7 +406,12 @@ footer p{margin:0 0 6px;max-width:70ch}
     document.getElementById('themeLabel').textContent = dark ? 'Light mode' : 'Dark mode';
     document.getElementById('themeIcon').innerHTML = dark ? SUN : MOON;
   }
-  // Menu (top right)
+  document.getElementById('theme').addEventListener('click', () => {
+    const n = effective() === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', n); store.set('dt-theme', n); themeLabel();
+  });
+  if (mq && mq.addEventListener) mq.addEventListener('change', themeLabel);
+
   const menuBtn = document.getElementById('menuBtn'), menu = document.getElementById('menu');
   function setMenu(open){ menu.hidden = !open; menuBtn.setAttribute('aria-expanded', open); if (open) menu.querySelector('button').focus(); }
   menuBtn.addEventListener('click', e => { e.stopPropagation(); setMenu(menu.hidden); });
@@ -394,17 +422,53 @@ footer p{margin:0 0 6px;max-width:70ch}
     if (e.key === 'ArrowDown'){ e.preventDefault(); items[(i + 1) % items.length].focus(); }
     if (e.key === 'ArrowUp'){ e.preventDefault(); items[(i - 1 + items.length) % items.length].focus(); }
   });
-  document.getElementById('theme').addEventListener('click', () => { const n = effective() === 'dark' ? 'light' : 'dark'; root.setAttribute('data-theme', n); store.set('dt-theme', n); themeLabel(); });
-  if (mq && mq.addEventListener) mq.addEventListener('change', themeLabel);
-  new MutationObserver(themeLabel).observe(root, {attributes:true, attributeFilter:['data-theme']});
-
-  document.getElementById('q').addEventListener('input', render);
-  document.getElementById('shuffle').addEventListener('click', e => { const b = e.currentTarget; b.classList.toggle('spin'); shuffle(); });
   document.getElementById('savedBtn').addEventListener('click', () => { setMenu(false); openSaved(); });
   document.getElementById('closeSaved').addEventListener('click', () => document.getElementById('savedDlg').close());
   document.getElementById('savedDlg').addEventListener('click', e => { if (e.target.id === 'savedDlg') e.target.close(); });
 
+  // ---- newer editions arrive on their own ----
+  if (/[?&]v=\d+/.test(location.search)) history.replaceState(null, '', location.pathname + location.hash);
+  function nextUpdate(){
+    const sched = DATA.schedule || []; if (!sched.length) return null;
+    const now = new Date(); let best = null;
+    for (let d = 0; d < 2; d++) for (const [h, m] of sched){
+      const t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + d, h, m));
+      if (t > now && (!best || t < best)) best = t;
+    }
+    return best;
+  }
+  let toastTimer;
+  function toast(text, actionLabel, action){
+    const t = document.getElementById('toast'), b = document.getElementById('toastAction');
+    document.getElementById('toastText').textContent = text;
+    b.hidden = !actionLabel; b.textContent = actionLabel || ''; b.onclick = action || null;
+    t.hidden = false; clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.hidden = true, actionLabel ? 12000 : 5000);
+  }
+  let lastCheck = Date.now();
+  async function checkEdition(){
+    lastCheck = Date.now();
+    try{
+      const r = await fetch('edition.json?t=' + Date.now(), {cache:'no-store'});
+      if (!r.ok) return;
+      const j = await r.json();
+      if (new Date(j.compiled) - new Date(DATA.compiled) > 1000)
+        toast('A newer edition is ready.', 'Load it', () => location.replace(location.pathname + '?v=' + Date.now()));
+    }catch(e){ /* offline: keep reading what's here */ }
+  }
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && Date.now() - lastCheck > 10 * 60000) checkEdition();
+  });
+  (function scheduleLine(){
+    const n = nextUpdate();
+    if (n) document.getElementById('scheduleLine').textContent =
+      'New editions arrive through the day; the next is due around ' + n.toLocaleTimeString('en-US', MYT) + ' (Malaysia time).';
+  })();
+
   chips(); updCount(); themeLabel(); render();
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
 })();
 </script>
 </body>

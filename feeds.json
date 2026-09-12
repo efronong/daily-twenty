@@ -20,7 +20,7 @@
     },
     {
       "id": "business",
-      "name": "Business & Markets",
+      "name": "Business",
       "feeds": [
         {"source": "BBC News", "url": "https://feeds.bbci.co.uk/news/business/rss.xml"},
         {"source": "CNBC", "url": "https://www.cnbc.com/id/10001147/device/rss/rss.html"},
@@ -30,6 +30,18 @@
         {"source": "NPR", "url": "https://feeds.npr.org/1006/rss.xml"},
         {"source": "Malay Mail", "url": "https://www.malaymail.com/feed/rss/money"},
         {"source": "Google News", "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-MY&gl=MY&ceid=MY:en"}
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Markets",
+      "feeds": [
+        {"source": "MarketWatch", "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories"},
+        {"source": "Yahoo Finance", "url": "https://finance.yahoo.com/news/rssindex"},
+        {"source": "CNBC", "url": "https://www.cnbc.com/id/10000664/device/rss/rss.html"},
+        {"source": "Investing.com", "url": "https://www.investing.com/rss/news.rss"},
+        {"source": "The Edge Malaysia", "url": "https://theedgemalaysia.com/rss.xml"},
+        {"source": "Google News", "url": "https://news.google.com/rss/search?q=stock+markets&hl=en-MY&gl=MY&ceid=MY:en"}
       ]
     },
     {
