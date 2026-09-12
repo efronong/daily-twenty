@@ -148,6 +148,32 @@ dialog::backdrop{background:rgba(10,12,16,.45)}
 .saved-list .rm:hover{color:var(--ink)}
 .saved-empty{padding:22px 20px;color:var(--muted);margin:0}
 
+/* Mascot */
+.mascot{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:50;width:auto;height:var(--mascot-h,240px);touch-action:none;cursor:grab;background:none;border:0;padding:0;filter:drop-shadow(0 8px 14px rgba(20,22,27,.18));transition:opacity .25s ease}
+.mascot.homing{transition:transform .34s cubic-bezier(.22,.9,.26,1.12), opacity .25s ease}
+.mascot.dragging{cursor:grabbing}
+.mascot.dim{opacity:.18;pointer-events:none}
+.mascot img{height:100%;width:auto;display:block;-webkit-user-drag:none;user-select:none;pointer-events:none}
+.mascot-inner{display:block;height:100%;transform-origin:50% 97%}
+.mascot:focus-visible{outline:2px solid var(--focus);outline-offset:6px;border-radius:12px}
+@media (max-width:640px){.mascot{--mascot-h:172px;right:6px}}
+/* one movement per pose */
+.pose-bunny .mascot-inner{animation:m-rock 3s ease-in-out infinite}
+.pose-back .mascot-inner{animation:m-sway 4.2s ease-in-out infinite}
+.pose-dreamy .mascot-inner{animation:m-bob 3.8s ease-in-out infinite}
+.pose-pray .mascot-inner{animation:m-hop 2.4s ease-in-out infinite}
+.pose-heart .mascot-inner{animation:m-beat 2s ease-in-out infinite}
+.mascot.dragging .mascot-inner{animation:m-flail .42s ease-in-out infinite}
+.mascot.landed .mascot-inner{animation:m-land .24s ease-out}
+@keyframes m-rock{0%,100%{transform:rotate(-4deg) translateY(0)}50%{transform:rotate(4deg) translateY(-3px)}}
+@keyframes m-sway{0%,100%{transform:translateX(0) rotate(0)}25%{transform:translateX(-4px) rotate(-1.5deg)}75%{transform:translateX(4px) rotate(1.5deg)}}
+@keyframes m-bob{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-6px) rotate(1.5deg)}}
+@keyframes m-hop{0%,55%,100%{transform:translateY(0) scaleY(1)}12%{transform:translateY(-2px) scaleY(.93) scaleX(1.05)}22%{transform:translateY(-16px) scaleY(1.06) scaleX(.96)}35%{transform:translateY(0) scaleY(.95) scaleX(1.04)}45%{transform:translateY(-8px) scaleY(1.02)}}
+@keyframes m-beat{0%,100%{transform:scale(1)}18%{transform:scale(1.07)}34%{transform:scale(1)}52%{transform:scale(1.05)}}
+@keyframes m-flail{0%,100%{transform:rotate(-7deg) translateY(0)}50%{transform:rotate(7deg) translateY(-4px)}}
+@keyframes m-land{0%{transform:scaleY(.9) scaleX(1.06)}60%{transform:scaleY(1.03) scaleX(.98)}100%{transform:scaleY(1) scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.mascot .mascot-inner{animation:none!important}.mascot.homing{transition:none}}
+
 /* Toast */
 .toast{position:fixed;left:50%;bottom:max(20px,env(safe-area-inset-bottom));transform:translateX(-50%);z-index:70;display:flex;align-items:center;gap:12px;max-width:calc(100vw - 32px);padding:11px 16px;border-radius:12px;background:var(--ink);color:var(--ground);box-shadow:var(--shadow);font-size:.97rem}
 .toast button{flex:none;border:0;border-radius:8px;padding:6px 12px;background:var(--ground);color:var(--ink);cursor:pointer;font-size:.92rem;font-weight:700}
@@ -207,6 +233,10 @@ footer p{margin:0 0 5px;max-width:80ch}
   <div id="savedBody"></div>
 </dialog>
 
+<button class="mascot pose-bunny" id="mascot" type="button" aria-label="Mascot">
+  <span class="mascot-inner"><img id="mascotImg" src="mascot/bunny.png" alt=""></span>
+</button>
+
 <div class="toast" id="toast" role="status" aria-live="polite" hidden><span id="toastText"></span><button type="button" id="toastAction" hidden></button></div>
 
 <script type="application/json" id="data">__DATA__</script>
@@ -235,6 +265,7 @@ footer p{margin:0 0 5px;max-width:80ch}
       note:"Each headline opens the full article on the publisher's own website in a new tab. Summaries are condensed from each publisher's feed. Saved stories stay in this browser.",
       next:t => 'New editions arrive through the day; the next is due around ' + t + ' (Malaysia time).',
       newer:'A newer edition is ready.', load:'Load it',
+      mascot:'Mascot — tap to change her pose, drag her around',
       scrollL:n => 'Scroll ' + n + ' left', scrollR:n => 'Scroll ' + n + ' right',
       ago:{now:'just now', min:m => m + ' min ago', hour:h => h + ' h ago', yst:'yesterday', day:d => d + ' days ago'},
       date:{locale:'en-GB', opts:{weekday:'long', day:'numeric', month:'long', year:'numeric', timeZone:'Asia/Kuala_Lumpur'}},
@@ -250,6 +281,7 @@ footer p{margin:0 0 5px;max-width:80ch}
       note:'見出しを押すと、各媒体のサイトで記事全文が新しいタブで開きます。要約は各媒体の配信文をもとにしています。保存した記事はこのブラウザーに残ります。',
       next:t => '紙面は一日に数回更新されます。次回はおよそ ' + t + '（マレーシア時間）。',
       newer:'新しい号が届きました。', load:'読み込む',
+      mascot:'マスコット — タップでポーズが変わります。ドラッグで動かせます',
       scrollL:n => n + 'を左へ', scrollR:n => n + 'を右へ',
       ago:{now:'たった今', min:m => m + '分前', hour:h => h + '時間前', yst:'昨日', day:d => d + '日前'},
       date:{locale:'ja-JP', opts:{year:'numeric', month:'long', day:'numeric', timeZone:'Asia/Kuala_Lumpur'},
@@ -527,6 +559,7 @@ footer p{margin:0 0 5px;max-width:80ch}
     document.getElementById('savedTitle').textContent = T.savedTitle;
     document.getElementById('closeSaved').textContent = T.close;
     themeLabel(); headerLines(); chips(); render(); onScroll();
+    if (window.mascotLabel) window.mascotLabel();
   }
   document.getElementById('langBtn').addEventListener('click', () => {
     lang = lang === 'ja' ? 'en' : 'ja'; store.set('dt-lang', lang);
@@ -534,6 +567,73 @@ footer p{margin:0 0 5px;max-width:80ch}
     const dlg = document.getElementById('savedDlg'); if (dlg.open) openSaved();
     window.scrollTo({top:0, behavior:'auto'});
   });
+
+  // ---- mascot: tap to change pose, drag her anywhere, she hops home ----
+  (function mascot(){
+    const POSES = ['bunny','back','dreamy','pray','heart'];
+    const box = document.getElementById('mascot'), img = document.getElementById('mascotImg');
+    let pose = Math.min(store.get('dt-pose', 0) | 0, POSES.length - 1);
+    let dragging = false, moved = false, startX = 0, startY = 0, x = 0, y = 0;
+
+    function show(i){
+      pose = (i + POSES.length) % POSES.length;
+      img.src = 'mascot/' + POSES[pose] + '.png';
+      box.className = 'mascot pose-' + POSES[pose] + (dragging ? ' dragging' : '');
+      store.set('dt-pose', pose);
+    }
+    POSES.concat('drag').forEach(n => { const p = new Image(); p.src = 'mascot/' + n + '.png'; });   // keep the swap instant
+
+    box.addEventListener('pointerdown', e => {
+      dragging = true; moved = false;
+      startX = e.clientX - x; startY = e.clientY - y;
+      box.setPointerCapture(e.pointerId);
+      box.classList.remove('homing');
+    });
+    box.addEventListener('pointermove', e => {
+      if (!dragging) return;
+      const nx = e.clientX - startX, ny = e.clientY - startY;
+      if (!moved && Math.hypot(nx - x, ny - y) < 5) return;
+      if (!moved){ moved = true; box.classList.add('dragging'); img.src = 'mascot/drag.png'; }
+      const r = box.getBoundingClientRect();
+      x = Math.min(Math.max(nx, -(window.innerWidth - r.width - 20)), 20);     // stay on screen
+      y = Math.min(Math.max(ny, -(window.innerHeight - r.height - 20)), 20);
+      box.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+    });
+    function release(){
+      if (!dragging) return;
+      dragging = false;
+      if (!moved){ show(pose + 1); return; }                                   // a tap, not a drag
+      const RETURN_MS = 340;
+      box.classList.add('homing');
+      box.style.transform = 'translate(0,0)';
+      x = y = 0;
+      let landed = false;
+      const land = () => {                                                     // the moment she is home again
+        if (landed) return;
+        landed = true;
+        clearTimeout(timer);
+        box.removeEventListener('transitionend', onEnd);
+        box.classList.remove('homing', 'dragging');
+        img.src = 'mascot/' + POSES[pose] + '.png';                            // straight back to her pose
+        box.classList.add('landed');
+        setTimeout(() => box.classList.remove('landed'), 240);
+      };
+      const onEnd = e => { if (e.propertyName === 'transform') land(); };
+      box.addEventListener('transitionend', onEnd);
+      const timer = setTimeout(land, RETURN_MS);
+    }
+    box.addEventListener('pointerup', release);
+    box.addEventListener('pointercancel', release);
+    box.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); show(pose + 1); } });
+
+    // she steps aside while you read your saved stories
+    const dlg = document.getElementById('savedDlg');
+    dlg.addEventListener('close', () => box.classList.remove('dim'));
+    document.getElementById('savedBtn').addEventListener('click', () => box.classList.add('dim'));
+
+    window.mascotLabel = () => box.setAttribute('aria-label', T.mascot);
+    show(pose);
+  })();
 
   updCount(); applyLang();
   window.addEventListener('scroll', onScroll, {passive:true});

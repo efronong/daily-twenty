@@ -339,8 +339,9 @@ def main():
     (ROOT / "site" / "index.html").write_text(page, encoding="utf-8")
     # tiny file the page checks to see whether a newer edition exists
     (ROOT / "site" / "edition.json").write_text(json.dumps({"compiled": payload["compiled"], "stories": len(stories)}), encoding="utf-8")
-    if (ROOT / "icons").is_dir():   # home screen and browser tab icons
-        shutil.copytree(ROOT / "icons", ROOT / "site" / "icons", dirs_exist_ok=True)
+    for folder in ("icons", "mascot"):   # icons, and the mascot's poses
+        if (ROOT / folder).is_dir():
+            shutil.copytree(ROOT / folder, ROOT / "site" / folder, dirs_exist_ok=True)
     jp = [s for s in stories if s["lang"] == "ja"]
     with_img = sum(1 for s in stories if s["image"])
     via_g = sum(1 for s in stories if s.get("via") == "google")
